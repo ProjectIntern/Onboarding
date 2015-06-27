@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $('#message').hide().fadeIn(3000)
-  $('#login').hide().fadeIn(5500)
-
+  $('.message').hide().fadeIn(1500)
+  $('.login').hide().fadeIn(3000)
   return

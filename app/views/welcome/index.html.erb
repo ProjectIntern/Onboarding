@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
   <title>Welcome</title>
   </head>
 
     <body>
       <div class="container">
         <center>
-          <div id="message">
-            <h1>Welcome to Gap Inc.</h1>
-            <h2>"Insert quote here"</h2>
+          <div class="message">
+            <p>Welcome to Gap Inc.</p>
           </div>
           
-          <div id="login">  
+          <div class="login">  
             <%= link_to "Learn More", :controller => :login, :get => :index%>
           </div>
         </center>

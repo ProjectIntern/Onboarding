@@ -1,13 +1,54 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  background:url('welcome.jpg');
+}
 
 .container {
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
+  color: white;
   position: absolute;
   top: 40%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+}
+
+.message {
+  font-size: 40pt;
+  text-shadow: 10px 8px 10px black;
+  font-weight: 900;
+  padding: 20px 20px;
+
+}
+
+.login {
+  font-size: 20pt;
+  display: block;
+  width: 50%;
+  opacity: .8;
+  background-color: black;
+}
+
+.login:hover {
+  background-color: #888888;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
