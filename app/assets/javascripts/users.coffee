@@ -1,3 +1,8 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
+
+$(document).ready ->
+  $('#exists').hide().fadeIn(1000)
+  $('#exists').fadeOut(3000)
+  return

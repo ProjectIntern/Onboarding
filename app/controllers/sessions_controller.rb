@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :user_logged_on, only:[:new, :create] 
+  before_action :user_logged_on, only:[:new, :create, :index] 
 
   def new
   end
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id 
       redirect_to '/'
     else
-      redirect_to '/login'
+      redirect_to '/error'
     end
   end
 
