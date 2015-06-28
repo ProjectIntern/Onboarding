@@ -37,11 +37,12 @@ input[type=email] {
   transform: translateX(-50%) translateY(-50%);
 }
 
-p {
+#signup {
   font-size: 40pt;
   text-shadow: 4px 5px 5px black;
   font-weight: lighter;
   outline: 2px black;
+  margin-bottom: 10px;
 }
 
 .btn-submit{

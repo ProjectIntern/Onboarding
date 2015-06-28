@@ -7,7 +7,7 @@
   <body>
     <div class="login">
       <div class="container">
-        <p>Sign Up</p>
+        <div id="signup">Sign Up</div>
         <div class="form">
           <%= form_for(@user) do |f| %>
             <%= f.text_field :first_name, :placeholder => "First Name" %>
@@ -16,6 +16,7 @@
             <%= f.password_field :password, :placeholder => "Password" %>
             </div>
             <%= f.submit "Create Account", class: "btn-submit" %>
+            <%= link_to "Already have an account?", login_path, method: "get"%>
           <% end %>
       </div>
     </div>
