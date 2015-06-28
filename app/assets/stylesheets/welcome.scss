@@ -3,10 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
   background:url('welcome.jpg');
+  font-family: 'Roboto', helvetica, sans-serif;
+
 }
 
 .container {
-  font-family: 'Roboto', sans-serif;
   color: white;
   position: absolute;
   top: 40%;
@@ -24,15 +25,15 @@ html {
 
 }
 
-.login {
+.log {
   font-size: 20pt;
-  display: block;
   width: 50%;
   opacity: .8;
   background-color: black;
+  padding: 5px;
 }
 
-.login:hover {
+.log:hover {
   background-color: #888888;
 }
 

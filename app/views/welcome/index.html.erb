@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-  <title>Welcome</title>
-  </head>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+<title>Welcome</title>
+</head>
 
-    <body>
-      <div class="container">
-        <center>
-          <div class="message">
-            <p>Welcome to Gap Inc.</p>
-          </div>
-          
-          <div class="login">  
-            <%= link_to "Learn More", :controller => :login, :get => :index%>
-          </div>
-        </center>
+<body>
+  <div class="container">
+    <center>
+      <div class="message">
+        <p>Welcome to Gap Inc.</p>
       </div>
-    </body>
-
-</html>
+      
+      <div class="log">  
+        <%= link_to "Log In", login_path, method: "get" %>
+      </div>
+    </center>
+  </div>
+</body>
