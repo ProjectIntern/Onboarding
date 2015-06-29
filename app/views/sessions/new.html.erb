@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="container">
+        <div class="form">
+          <%= form_for(:session, url: login_path) do |f| %>
+          <%= f.email_field :email, :placeholder => "Email" %>
+          <%= f.password_field :password, :placeholder => "Password" %>
+        </div>
+          <%= f.submit "Log In", class: "btn-submit" %>
+          <%= link_to "Don't have an account?", signup_path, method: "get", action: 'create'%>
+          <% end %>
+        </div>
+    </div>
+  </body>
+</html>
+
+

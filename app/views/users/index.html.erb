@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="container">
+        <div id="signup">Sign Up</div>
+        <div class="form">
+          <%= form_for(@user) do |f| %>
+            <%= f.text_field :first_name, :placeholder => "First Name" %>
+            <%= f.text_field :last_name, :placeholder => "Last Name" %>
+            <%= f.email_field :email, :placeholder => "Email" %>
+            <%= f.password_field :password, :placeholder => "Password" %>
+            </div>
+            <%= f.submit "Create Account", class: "btn-submit" %>
+            <%= link_to "Already have an account?", login_path, method: "get"%>
+          <% end %>
+      </div>
+    </div>
+    <div id="exists">Email already exists.</div>
+    </body>
+</html>

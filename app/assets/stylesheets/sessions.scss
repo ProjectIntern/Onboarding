@@ -1,0 +1,42 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#submit {
+  background-color: black;
+  padding: 10px 80px;
+  opacity: .75;
+}
+
+#submit:hover{
+  background-color: #888888;
+}
+
+.btn-submit {
+  width: 100%;
+  font-size: 16pt;
+  margin-bottom: 25px;
+  opacity: .75;
+  cursor: pointer;
+}
+
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#error{
+  position: fixed;
+  color: white;
+  top: 75%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
