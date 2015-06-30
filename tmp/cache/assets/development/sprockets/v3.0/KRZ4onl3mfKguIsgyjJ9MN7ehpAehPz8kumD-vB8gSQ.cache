@@ -1,0 +1,8 @@
+I"‹(function() {
+  $(document).ready(function() {
+    $('#exists').hide().fadeIn(1000);
+    $('#exists').fadeOut(3000);
+  });
+
+}).call(this);
+:ET
