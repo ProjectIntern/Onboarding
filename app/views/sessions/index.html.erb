@@ -5,10 +5,10 @@
   </head>
 
   <body>
-    <div class="title">Gap Inc.</div>
     <div class="login">
       <div class="container">
         <div class="form">
+          Gap Inc.
           <%= form_for(:session, url: login_path) do |f| %>
           <%= f.email_field :email, :placeholder => "Email" %>
           <%= f.password_field :password, :placeholder => "Password" %>

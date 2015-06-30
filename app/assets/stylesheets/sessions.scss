@@ -44,14 +44,8 @@ body {
 }
 
 .title {
-  font: black;
   font-size: 42pt;
-  top: 22.5%;
-  left: 50%;
-  position: fixed;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  margin-bottom: 10px;
 }
 
 .container a {
