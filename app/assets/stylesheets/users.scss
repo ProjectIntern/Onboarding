@@ -4,11 +4,10 @@
 .form {
   text-align: center;
   margin: 0 auto 10px;
-  padding: 20px;
+  padding: 10px 20px;
   width: 300px;
   background: black;
-  opacity: .9;
-
+  opacity: .75;
 }
 
 input[type=text],
@@ -38,10 +37,8 @@ input[type=email] {
 
 #signup {
   font-size: 30pt;
-  color: white;
-  text-shadow: 4px 5px 5px black;
+  color: black;
   font-weight: lighter;
-  outline: 2px black;
   margin-bottom: 10px;
 }
 
@@ -63,11 +60,9 @@ input[type=email] {
 
 #exists {
   position: fixed;
-  color: white;
-  background: black;
-  opacity: .8;
+  color: black;
   padding: 2.5px 5px;
-  top: 92.5%;
+  top: 90%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);

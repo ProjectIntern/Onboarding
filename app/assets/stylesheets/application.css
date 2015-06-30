@@ -19,15 +19,16 @@ html{
   width: 100%;
 }
 body{
+  font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
   margin: 0;
+
 }
 .wrapper {
   left: 0;
   margin: 0;
   overflow: hidden;
   position: relative;
-  font-family: 'Roboto', helvetica, sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -38,13 +39,12 @@ body{
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
-  width: 285px;
+  width: 225px;
   z-index: 2;
 }
 
 /* Basic styling */
 .menu ul {
-  border-top: 1px solid #636366;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,16 +52,14 @@ body{
 
 .menu li {
   border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
   line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
+  padding-left: 10px;
 }
 
 .menu a {
-  color: #fff;
-  font-size: 15px;
+  color: white;
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-size: 10pt;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -69,13 +67,19 @@ body{
 .icon-close {
   cursor: pointer;
   color: white;
+  font-size: 10pt;
+}
+
+.icon-close i {
+  margin-right: 5px;
 }
 
 .icon-menu {
-  color: #fff;
+  position: fixed;
+  color: white;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-size: 10pt;
   padding:15px 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -95,7 +99,7 @@ body{
   z-index: 1;
   width: 100%;
   height: 100%;
-  opacity: .5;
+  opacity: .7;
   display: none;
 }
 
@@ -104,7 +108,6 @@ a:link {
 }
 
 a:visited {
-    color: white;
     text-decoration: none;
 }
 
@@ -115,5 +118,6 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
 
 

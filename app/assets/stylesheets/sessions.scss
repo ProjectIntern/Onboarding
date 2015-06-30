@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: url("welcome.jpg");
+  background: url("minimal.jpg");
   background-size: cover;
 }
 
 #submit {
   background-color: black;
-  padding: 10px 80px;
+  padding: 10px 50px;
   opacity: .75;
 }
 
@@ -33,14 +33,33 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#error{
+#error {
   position: fixed;
-  color: white;
+  color: black;
   top: 75%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+.title {
+  font: black;
+  font-size: 42pt;
+  top: 22.5%;
+  left: 50%;
+  position: fixed;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.container a {
+  color: black;
+} 
+
+
+
+
 
 
