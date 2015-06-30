@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   resources :users
   get '/exists' => 'users#index'
-
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'
   get '/error' => 'sessions#index'
