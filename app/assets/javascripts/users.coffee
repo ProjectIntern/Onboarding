@@ -4,5 +4,5 @@
 
 $(document).ready ->
   $('#exists').hide().fadeIn(1000)
-  $('#exists').fadeOut(3000)
+  $('#exists').fadeOut(4000)
   return

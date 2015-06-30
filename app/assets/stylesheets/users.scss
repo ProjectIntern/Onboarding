@@ -1,15 +1,13 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .form {
   text-align: center;
   margin: 0 auto 10px;
-  padding: 20px;
+  padding: 10px 20px;
   width: 300px;
   background: black;
-  opacity: .9;
-
+  opacity: .75;
 }
 
 input[type=text],
@@ -39,9 +37,8 @@ input[type=email] {
 
 #signup {
   font-size: 30pt;
-  text-shadow: 4px 5px 5px black;
+  color: black;
   font-weight: lighter;
-  outline: 2px black;
   margin-bottom: 10px;
 }
 
@@ -63,11 +60,9 @@ input[type=email] {
 
 #exists {
   position: fixed;
-  color: white;
-  background: black;
-  opacity: .8;
+  color: black;
   padding: 2.5px 5px;
-  top: 92.5%;
+  top: 90%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);

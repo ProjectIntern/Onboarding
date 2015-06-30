@@ -5,19 +5,40 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    
   </head>
   
   <body>
-    <div class="nav pull-right">
+    <div class= "wrapper">
       <% if current_user %>
-        <ul>
-          <li><%= current_user.email %></li>
-          <li><%= link_to "Log Out", logout_path, method: "delete" %></li>
-        </ul>
-      <% end %>
+    <div class="menu">
+
+    <!-- Menu -->
+      <ul>
+        <li><div class="icon-close">
+          <i class="fa fa-bars"></i>
+          CLOSE
+            </div>
+        </li>
+        <li><a href="#"><%= current_user.email %></a></li>
+        <li><a href="#"><%= link_to "Log Out", logout_path, method: "delete" %></a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
 
-    <%= yield %>
+    <!-- Main body -->
+    <div class="icon-menu">
+      <i class="fa fa-bars"></i>
+      MENU
+    </div>
+  </div>
+  <% end %>
+
+  <%= yield %>
 
   </body>
+
 </html>
