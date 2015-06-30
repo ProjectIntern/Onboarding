@@ -4,5 +4,5 @@
 
 $(document).ready ->
   $('#error').hide().fadeIn(1000)
-  $('#error').fadeOut(3000)
+  $('#error').fadeOut(4000)
   return

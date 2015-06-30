@@ -14,3 +14,35 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var main = function() {
+  /* Push the body and the nav over by 285px over */
+  $('.icon-menu').click(function() {
+    $('.menu').animate({
+      left: "0px"
+    }, 150);
+
+    $('body').animate({
+      left: "285px"
+    }, 150);
+
+
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(150);
+  });
+
+  /* Then push them back */
+$(document).on('click', '#mask, .icon-close', function() {
+    $('#mask').remove();
+    $('.menu').animate({
+      left: "-285px"
+    }, 150);
+
+    $('body').animate({
+      left: "0px"
+    }, 150);
+  });
+};
+
+
+$(document).ready(main);

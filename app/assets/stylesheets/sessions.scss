@@ -1,10 +1,14 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: url("minimal.jpg");
+  background-size: cover;
+}
 
 #submit {
   background-color: black;
-  padding: 10px 80px;
+  padding: 10px 50px;
   opacity: .75;
 }
 
@@ -29,14 +33,28 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-#error{
+#error {
   position: fixed;
-  color: white;
-  top: 75%;
+  color: black;
+  top: 80%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+.title {
+  font-size: 42pt;
+  margin-bottom: 10px;
+
+}
+
+.container a {
+  color: black;
+} 
+
+
+
+
 
 
