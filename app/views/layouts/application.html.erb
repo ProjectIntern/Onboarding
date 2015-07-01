@@ -34,7 +34,16 @@
     <div class="nav-bar">
       <ul>
         <li><i class="fa fa-bars" id="icon-menu">MENU</i></li>
-        <li><i class="fa fa-ellipsis-v"></i></li>
+        <li><i class="fa fa-ellipsis-v" id="logout-menu"></i></li>
+       </ul>
+    </div>
+
+    <!--Elipsis menu -->
+    <div class ="onclick-menu">
+      <ul class ="onclick-menu-content">
+        <li><a href="#">View Profile</a></li>
+        <li><a href="#">Edit Profile</a></li>
+        <li><%= link_to "Log Out", logout_path, method: "delete" %></a></li>
       </ul>
     </div>
 

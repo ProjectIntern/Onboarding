@@ -44,5 +44,20 @@ $(document).on('click', '#mask, .icon-close', function() {
   });
 };
 
+$(document).ready(function() {
+    $('#logout-menu').click(function() {
+      $('.onclick-menu-content').toggleClass('visible');
+      $('body').append('<div id="invisible-mask"></div>');
+      $('#invisible-mask').fadeIn(50);
+
+    });
+  });
+
+$(document).ready(function() {
+    $(document).on('click', '#invisible-mask', function() {
+      $('#invisible-mask').remove();
+      $('.onclick-menu-content').removeClass('visible');
+    });
+  });
 
 $(document).ready(main);
