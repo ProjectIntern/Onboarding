@@ -17,8 +17,8 @@
 html{
   height: 100%;
   width: 100%;
-  top: 0;
 }
+
 body{
   font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
@@ -127,7 +127,6 @@ i#icon-menu.fa.fa-bars:hover {
 }
 
 .onclick-menu ul{
-  color: white;
   list-style: none;
   position: fixed;
   right: 25px;
@@ -155,6 +154,10 @@ i#icon-menu.fa.fa-bars:hover {
   display: block;
 }
 
+.onclick-menu-content i::before{
+  margin-right: 5px;
+}
+
 #invisible-mask{
   position: fixed;
   left: 0;
@@ -173,6 +176,7 @@ i#icon-menu.fa.fa-bars:hover {
   width: 50px;
   text-align: center;
 }
+
 
 a:link {
     text-decoration: none;
