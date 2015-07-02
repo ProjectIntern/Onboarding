@@ -20,11 +20,11 @@ var main = function() {
   $('#icon-menu').click(function() {
     $('.menu').animate({
       left: "0px"
-    }, 150);
+    }, 300);
 
     $('body').animate({
       left: "285px"
-    }, 150);
+    }, 300);
 
 
     $('body').append('<div id="mask"></div>');
@@ -36,11 +36,11 @@ $(document).on('click', '#mask, .icon-close', function() {
     $('#mask').remove();
     $('.menu').animate({
       left: "-285px"
-    }, 150);
+    }, 300);
 
     $('body').animate({
       left: "0px"
-    }, 150);
+    }, 300);
   });
 };
 
