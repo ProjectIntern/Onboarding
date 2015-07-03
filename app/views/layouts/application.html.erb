@@ -6,7 +6,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
     
   </head>
   
@@ -18,16 +18,16 @@
     <!-- Menu -->
 
     <ul>
-        <li><div class="icon-close">
-          <i class="fa fa-bars"></i>
-          CLOSE
-            </div>
-        </li>
-        <li><a href="#"><%= current_user.email %></a></li>
-        <li><i class="fa fa-comments">&nbsp;<%= link_to"Posts", posts_path, method: "get", action: "posts#index"%></i></li>
+           <li><div class="icon-close">
+          <i class="fa fa-times"></i>
+          Close
+          </div></li>
+        <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "content#index" %></i></li>
+        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "posts#index"%></i></li>
         <li><i class="fa fa-users">Interns</i></li>
         <li><i class="fa fa-bus">Shuttle Times</i></li>
         <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
+     
 
       </ul>
     </div>

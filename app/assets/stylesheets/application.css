@@ -20,6 +20,7 @@ html{
 }
 
 body{
+  background-image: url('jeans.jpg');
   font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
   margin: 0;
@@ -36,7 +37,7 @@ body{
 
 /* Initial menu */
 .menu {
-  background: #3366FF;
+  background: rgba(25,25,25, .5);
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -54,7 +55,6 @@ body{
 }
 
 .menu li {
-  border-bottom: 1px solid #3366FF;
   line-height: 50px;
   padding-left: 10px;
 }
@@ -64,12 +64,17 @@ body{
   text-decoration: none;
 }
 
+.menu li:first-child{
+  color: black;
+  background: black;
+}
+
 .menu i::before{
   margin-right: 10px;
 }
 
 i.fa.fa-comments::before {
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 i.fa.fa-users::before {
@@ -77,24 +82,22 @@ i.fa.fa-users::before {
 }
 
 i.fa.fa-bus::before {
-  margin-right: 9px;
+  margin-right: 10px;
+}
+
+i.fa.fa-home::before {
+  margin-right: 5px;
 }
 
 .icon-close {
   cursor: pointer;
-  color: white;
-  font-size: 10pt;
-}
-
-.icon-close:hover{
-  color: #3366FF;
 }
 
 .icon-close i {
   margin-right: 5px;
 }
 
-#mask {
+#masks {
   background: #000;
   position: fixed;
   left: 0;
@@ -107,7 +110,7 @@ i.fa.fa-bus::before {
 }
 
 .nav-bar {
-  background-color: #3366FF;
+  background-color: black;
   position: fixed;
   width: 100%;
   top: 0;
@@ -130,7 +133,7 @@ i.fa.fa-bus::before {
 }
 
 .nav-bar ul li:last-child:hover{
-  color: black;
+  color: #888888;
 }
 .nav-bar ul li i{
   margin-right: 10px;
@@ -142,7 +145,7 @@ i#icon-menu.fa.fa-bars::before {
 }
 
 i#icon-menu.fa.fa-bars:hover {
-  color: black;
+  color: #888888;
 }
 
 .onclick-menu ul{
@@ -151,7 +154,7 @@ i#icon-menu.fa.fa-bars:hover {
   right: 25px;
   top: 7%;
   z-index: 3;
-  color: #3366FF;
+  color: white;
 }
 
 .onclick-menu-content li{
@@ -160,9 +163,8 @@ i#icon-menu.fa.fa-bars:hover {
 }
 
 .onclick-menu-content {
-  background-color: white;
+  background-color: rgba(25,25,25, .3);;
   padding: 0px;
-  box-shadow: 5px 5px 15px black;
   display: none;
 }
 
@@ -175,7 +177,7 @@ i#icon-menu.fa.fa-bars:hover {
 }
 
 .onclick-menu a {
-  color: #3366FF;
+  color: white;
   text-decoration: none;
 }
 

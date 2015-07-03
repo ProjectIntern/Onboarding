@@ -27,13 +27,13 @@ var main = function() {
     }, 300);
 
 
-    $('body').append('<div id="mask"></div>');
-    $('#mask').fadeIn(150);
+    $('body').append('<div id="invisible-mask"></div>');
+    $('#invisible-mask').fadeIn(150);
   });
 
   /* Then push them back */
-$(document).on('click', '#mask, .icon-close', function() {
-    $('#mask').remove();
+$(document).on('click', '#invisible-mask, .icon-close', function() {
+    $('#invisible-mask').remove();
     $('.menu').animate({
       left: "-285px"
     }, 300);

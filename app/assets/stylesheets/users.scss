@@ -2,13 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 .form {
   text-align: center;
   margin: 0 0 10px;
   padding: 5px 15px 5px 10px;
   width: 250px;
-  background: #3366FF;
+  background: black;
   display: inline-block;
 }
 
@@ -27,22 +26,31 @@ input[type=email] {
   font-family: "Roboto", helvetica, sans-serif;
 }
 
+.box {
+  width: 375px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background: rgba(25,25,25, .5);
+}
+
 .container {
+  display: block;
   width: 275px;
-  height: 450px;
+  margin: 10% auto;
   text-align: center;
-  margin: 20% auto;
 }
 
 #signup {
   font-size: 42pt;
-  color: black;
-  font-weight: lighter;
+  color: white;
   margin-bottom: 10px;
 }
 
 .btn-submit{
-  background-color: #3366FF;
+  background-color: black;
   font-size: 12pt;
   font-weight: lighter;
   text-transform: uppercase;
@@ -54,15 +62,17 @@ input[type=email] {
 }
 
 .btn-submit:hover {
-  background-color: white;
-  color: #3366FF;
+  background-color: #888888;
+  color: white;
 }
 
 #exists {
   position: fixed;
-  color: black;
+  color: white;
+  width: 100%;
+  background: rgba(25,25,25, .8);
   padding: 2.5px 5px;
-  top: 90%;
+  top: 85%;
   left: 50%;
   text-align: center;
   -moz-transform: translateX(-50%) translateY(-50%);
