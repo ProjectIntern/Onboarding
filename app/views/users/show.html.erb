@@ -6,7 +6,7 @@
 <body>
   <%= t = @user %>
   <ul class = "information">
-    <li> <%= t.image %> </li>
+    <li> <%= image_tag @user.image, :class => "profile_pic"%> </li>
     <li> <%= t.first_name %> </li>
     <li> <%= t.last_name %> </li>
     <li> <%= t.email %> </li>

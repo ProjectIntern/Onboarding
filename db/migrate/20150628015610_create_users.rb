@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :password_digest
       t.string :code
-      t.string :image
+      t.string :image, :default => 'http://skolafund.com/img/sponsorskolafund-picture.jpg'
       t.string :facebook
       t.string :linkedin
       t.string :twitter

@@ -214,6 +214,11 @@ a:active {
     text-decoration: none;
 }
 
+.profile_pic{
+  height: 175px;
+  width: 150px;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 736px) {
   .nav-bar ul li:last-child{
