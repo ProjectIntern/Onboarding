@@ -1,11 +1,6 @@
-class CreateUsers < ActiveRecord::Migration
+class CreateProfiles < ActiveRecord::Migration
   def change
-    create_table :users do |t|
-      t.string :first_name
-      t.string :last_name
-      t.string :email
-      t.string :password_digest
-      t.string :code
+    create_table :profiles do |t|
       t.string :image
       t.string :facebook
       t.string :linkedin
@@ -15,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :position
       t.string :school
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

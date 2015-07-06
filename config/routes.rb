@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   root 'content#index'
-  get '/welcome' => "content#index"
   resources :users
   get 'signup' => 'users#new'
-  get '/exists' => 'users#index'
+  get '/exists' => 'users#exists'
   
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'
@@ -13,6 +12,10 @@ Rails.application.routes.draw do
   resources :posts
   get '/posts' => 'posts#index'
   get '/shuttle' => 'shuttle#index' 
+  get '/users/:id' => 'users#show', as: :profile
+  get '/users/:id/edit' => 'users#edit', as: :edit_profile
+  get '/users' => 'users#index'
+  patch '/users/:id' => 'users#update'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
