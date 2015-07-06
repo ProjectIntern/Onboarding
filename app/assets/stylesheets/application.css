@@ -14,18 +14,21 @@
  *= require_self
  */
 /* Initial body */
-html{
+html {
   height: 100%;
   width: 100%;
+  overflow: scroll;
+  background-image: url('jeans.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body{
-  background-image: url('jeans.jpg');
   font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
   margin: 0;
-
 }
+
 .wrapper {
   left: 0;
   margin: 0;
@@ -42,7 +45,7 @@ body{
   height: 100%;
   position: fixed;
   width: 225px;
-  z-index: 2;
+  z-index: 100;
 }
 
 /* Basic styling */
@@ -52,6 +55,7 @@ body{
   padding: 0;
   color: white;
   display: inline-block;
+  width: 100%;
 }
 
 .menu li {
@@ -128,7 +132,6 @@ i.fa.fa-home::before {
 
 .nav-bar ul li:last-child{
   float: right;
-  margin-right: 20px;
   padding-left: 20px;
 }
 
@@ -153,7 +156,7 @@ i#icon-menu.fa.fa-bars:hover {
   position: fixed;
   right: 25px;
   top: 7%;
-  z-index: 3;
+  z-index: 100;
   color: white;
 }
 
@@ -184,6 +187,7 @@ i#icon-menu.fa.fa-bars:hover {
 #logout-menu {
   width: 50px;
   text-align: center;
+  z-index: 100;
 }
 
 #invisible-mask{
@@ -211,5 +215,14 @@ a:active {
     text-decoration: none;
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  .nav-bar ul li:last-child{
+  float: right;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+}
 
 

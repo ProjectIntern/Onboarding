@@ -22,10 +22,12 @@
           <i class="fa fa-times"></i>
           Close
           </div></li>
-        <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "content#index" %></i></li>
-        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "posts#index"%></i></li>
+        <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
+        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users">Interns</i></li>
-        <li><i class="fa fa-bus">Shuttle Times</i></li>
+
+        <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+
         <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
      
 
