@@ -70,3 +70,82 @@ input[type=email] {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+//Edit form styling
+
+.edit_background {
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+  overflow: scroll;
+}
+
+.edit_form {
+  text-align: left;
+  padding: 5px 15px 5px 10px;
+  width: 250px;
+  display: inline-block;
+  color: #0008B;
+  width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  color: black;
+  width: 100%;
+  border: 3px, solid, white;
+  border-radius: 0px;
+  height: 30px;
+  margin: 7px auto;
+  text-indent: 10px;
+  font-size: 12pt;
+  font-weight: lighter;
+  font-family: "Roboto", helvetica, sans-serif;
+}
+
+.edit_container {
+  display: block;
+  width: 500px;
+  height: 100%;
+  margin: 5% auto;
+  text-align: center;
+  }
+
+.basic_information {
+  background: white;
+  width: 100%;
+  padding: 2.5px 15px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.change_password {
+  background: white;
+  width: 100%;
+  padding: 2px 15px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.social_media {
+  background: white;
+  width: 100%;
+  padding: 2.5px 15px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.btn{
+  background-color: black;
+  font-size: 12pt;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0;
+  font-family: "Roboto", helvetica, sans-serif;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #888888;
+  color: white;
+  cursor: pointer;
+}
+

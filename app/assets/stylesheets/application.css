@@ -187,7 +187,6 @@ i#icon-menu.fa.fa-bars:hover {
 #logout-menu {
   width: 50px;
   text-align: center;
-  z-index: 100;
 }
 
 #invisible-mask{
