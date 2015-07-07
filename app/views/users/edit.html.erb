@@ -24,7 +24,7 @@
               <span>University</span>
               <%= f.text_field :school, :placeholder => "University" %>
               <span>About Me</span><br>
-              <%= f.text_area :about, :placeholder => "Tell us about yourself!" %>
+              <%= f.text_area :about, :placeholder => "Tell us about yourself!", :maxlength => 500 %>
               <span>Profile Picture</span><br>
               <%= image_tag @user.image, :class => "profile_pic"%> 
               <%= f.file_field :picture, :placeholder => "Picture" %><br>
