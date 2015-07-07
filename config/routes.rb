@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root 'content#index'
   get 'signup' => 'users#new'
+  get 'home' => 'home#index'
+  get 'about' => 'about#index'
+  get 'map' => 'map#index'
   resources :users
   get '/exists' => 'users#index'
   get '/login' => 'sessions#new'

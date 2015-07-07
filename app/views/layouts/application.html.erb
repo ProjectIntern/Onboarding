@@ -23,6 +23,11 @@
             </div>
         </li>
         <li><a href="#"><%= current_user.email %></a></li>
+        <li><a href="#"><%= link_to "Home", home_path %></a></li>
+        <li><a href="#"><%= link_to "About/History", about_path %></a></li>
+        <li><a href="#"><%= link_to "Map/Shuttle Schedule", map_path %></a></li>
+        <li><a href="#">People Locator</a></li>
+        <li><a href="#">Benefits</a></li>
         <li><a href="#"><%= link_to "Log Out", logout_path, method: "delete" %></a></li>
         <li><a href="#">Help</a></li>
         <li><a href="#">Contact</a></li>
