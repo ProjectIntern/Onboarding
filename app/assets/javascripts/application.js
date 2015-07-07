@@ -17,32 +17,47 @@
 
 var main = function() {
   /* Push the body and the nav over by 285px over */
-  $('.icon-menu').click(function() {
+  $('#icon-menu').click(function() {
     $('.menu').animate({
       left: "0px"
-    }, 150);
+    }, 300);
 
     $('body').animate({
       left: "285px"
-    }, 150);
+    }, 300);
 
 
-    $('body').append('<div id="mask"></div>');
-    $('#mask').fadeIn(150);
+    $('body').append('<div id="invisible-mask"></div>');
+    $('#invisible-mask').fadeIn(150);
   });
 
   /* Then push them back */
-$(document).on('click', '#mask, .icon-close', function() {
-    $('#mask').remove();
+$(document).on('click', '#invisible-mask, .icon-close', function() {
+    $('#invisible-mask').remove();
     $('.menu').animate({
       left: "-285px"
-    }, 150);
+    }, 300);
 
     $('body').animate({
       left: "0px"
-    }, 150);
+    }, 300);
   });
 };
 
+$(document).ready(function() {
+    $('#logout-menu').click(function() {
+      $('.onclick-menu-content').toggleClass('visible');
+      $('body').append('<div id="invisible-mask"></div>');
+      $('#invisible-mask').fadeIn(50);
+
+    });
+  });
+
+$(document).ready(function() {
+    $(document).on('click', '#invisible-mask', function() {
+      $('#invisible-mask').remove();
+      $('.onclick-menu-content').removeClass('visible');
+    });
+  });
 
 $(document).ready(main);

@@ -1,43 +1,27 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  background: url("minimal.jpg");
-  background-size: cover;
-}
 
 #submit {
-  background-color: black;
   padding: 10px 50px;
-  opacity: .75;
 }
 
-#submit:hover{
-  background-color: #888888;
-}
 
 .btn-submit {
   width: 100%;
   font-size: 16pt;
   margin-bottom: 25px;
-  opacity: .75;
   cursor: pointer;
-}
-
-.login {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 #error {
   position: fixed;
-  color: black;
-  top: 80%;
+  color: white;
+  top: 70%;
   left: 50%;
+  width: 100%;
+  background: rgba(25,25,25, .8);
+  text-align: center;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -46,12 +30,19 @@ body {
 .title {
   font-size: 42pt;
   margin-bottom: 10px;
+  color: white;
 
 }
 
 .container a {
-  color: black;
+  color: white;
 } 
+
+.shell {
+  width: 375;
+  height: 539;
+  background-color: rgba(25,25,25,.3);
+}
 
 
 

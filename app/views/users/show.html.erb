@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+</head>
+<body>
+  <div class="profile_background">
+    <div class="profile_container">
+      <div class="img_container">
+        <%= image_tag @user.image, :class => "profile_pic"%>
+        <ul>
+          <% if @user.facebook != "a"%>
+          <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+          <% end %>
+          <% if @user.linkedin != "a"%>
+          <li><%= link_to image_tag("linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
+          <% end %>
+          <% if @user.twitter != "a"%>          
+          <li><%= link_to image_tag("twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
+          <% end %>
+          <% if @user.instagram != "a"%>
+          <li><%= link_to image_tag("instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="information_container">
+        <ul>
+          <li> <div class="name"><%=@user.first_name%>  <%=@user.last_name%></div></li>
+          <li> <%= @user.position %> </li>
+          <li> <%= @user.location %> </li>
+          <li> <%= @user.school %> </li>
+          <li> <%= @user.email %> </li>
+        </ul>
+      </div>
+
+
+    <div class="about_container">
+      <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<%= @user.about %> </span>
+    </div>
+    </div>
+
+  </div>
+  
+
+</body>
+</html>

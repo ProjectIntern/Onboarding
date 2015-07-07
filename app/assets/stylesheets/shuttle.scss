@@ -1,0 +1,42 @@
+// Place all the styles related to the Shuttle controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.shuttle {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  display: block;
+}
+
+.shuttle_background {
+  height: 100%;
+  width: 100%;
+  background: #888888;
+  overflow: scroll;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  .shuttle {
+  padding-top: 20%;
+  text-align: center;
+  display: block;
+  overflow: scroll;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  background: #888888;
+}
+
+  iframe {
+    width: 500px;
+    height: 650px;
+  }
+}
+
+
+
+
+

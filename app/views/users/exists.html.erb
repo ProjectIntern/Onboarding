@@ -15,11 +15,12 @@
               <%= f.email_field :email, :placeholder => "Email" %>
               <%= f.password_field :password, :placeholder => "Password" %>
               <%= f.text_field :code, :placeholder => "Sign-up Code" %>
-          </div>
+            </div>
             <%= f.submit "Create Account", class: "btn-submit" %>
-            <%= link_to "Already have an account?", login_path, method: "get"%>
+              <%= link_to "Already have an account?", login_path, method: "get"%>
           <% end %>
+        </div>
       </div>
-    </div>
+    <div id="exists">Email already exists or incorrect code.</div>
   </body>
 </html>
