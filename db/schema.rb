@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20150706041148) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "code"
-    t.string   "image",           default: "http://skolafund.com/img/sponsorskolafund-picture.jpg"
+    t.string   "image",           default: "default.jpg"
     t.string   "facebook"
     t.string   "linkedin"
     t.string   "twitter"
