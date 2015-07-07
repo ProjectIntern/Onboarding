@@ -11,13 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150628015610) do
+ActiveRecord::Schema.define(version: 20150702195157) do
+
+  create_table "posts", force: :cascade do |t|
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "code"
+    t.string   "image",           default: "default.jpg"
+    t.string   "facebook",        default: ""
+    t.string   "linkedin",        default: ""
+    t.string   "twitter",         default: ""
+    t.string   "instagram",       default: ""
+    t.string   "location"
+    t.string   "default"
+    t.string   "position"
+    t.string   "school"
+    t.string   "about"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
