@@ -21,17 +21,14 @@
           <i class="fa fa-bars"></i>
           CLOSE
             </div></li>
-       <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
-        <li><a href="#"><%= link_to "About/History", about_path %></a></li>
-       <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
-        <li><a href="#">People Locator</a></li>
-        <li><a href="#">Benefits</a></li>
-       <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Contact</a></li>
-        
+        <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
+        <li><i class="fa fa-globe"><%= link_to "About/History", about_path, method: "get", action: "index" %></i></li>
         <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
+        <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-users">People Locator</i></li>
+        <li><a href="#">Benefits</a></li>
+        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
      
       </ul>
     </div>
