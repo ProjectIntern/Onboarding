@@ -7,13 +7,14 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_digest
       t.string :code
       t.string :image, :default => 'default.jpg'
-      t.string :facebook
-      t.string :linkedin
-      t.string :twitter
-      t.string :instagram
-      t.string :location
-      t.string :position
-      t.string :school
+      t.string :facebook, :default => ""
+      t.string :linkedin, :default => ""
+      t.string :twitter, :default => ""
+      t.string :instagram, :default => ""
+      t.string :location, :default
+      t.string :position, :default
+      t.string :school, :default
+      t.string :about, :default
 
       t.timestamps
     end
