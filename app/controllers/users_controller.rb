@@ -38,7 +38,6 @@ class UsersController < ApplicationController
       redirect_to '/exists'
     elsif @user.save
       session[:id] = @user.id
-      @user[:image] = "http://skolafund.com/img/sponsorskolafund-picture.jpg"
       redirect_to '/'
     else
       redirect_to '/signup'

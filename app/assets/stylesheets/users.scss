@@ -89,7 +89,6 @@ h1 {
   padding: 5px 15px 5px 10px;
   width: 250px;
   display: inline-block;
-  color: #0008B;
   width: 100%;
 }
 
@@ -167,14 +166,17 @@ input[type=email] {
   width: 500px;
   height: 500px;
   margin: 100px 10%;
-  padding-top: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
 }
 
 .img_container {
-  width: 175px;
+  width: 200px;
   float: left;
   padding: 20px 10px 10px 10px;
-  margin-left: 50px;
+  margin-left: 37.5px;
+  margin-right: 30px;
 }
 
 .img_container li {
@@ -187,14 +189,15 @@ input[type=email] {
 
 .img_container ul{
   padding: 0px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .information_container {
   float: right;
   width: 175px;
-  margin-right: 50px;
-  margin-left: 30px;
-  margin-bottom: 12.5px;
+  margin-right: 37.5px;
+  margin-bottom: 35px;
 }
 
 .information_container li {
@@ -224,13 +227,42 @@ textarea {
 .name {
   font-size: 30pt;
   font-weight: 900;
+  margin-bottom: 40px;
 }
 
 .about_container {
-  width: 380px;
+  width: 450px;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 45px;
 }
+
+//Styling for users index
+
+.interns img{
+  width: 200px;
+  height: 267px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.interns_container {
+  margin-left: 100px;
+}
+
+.movie:nth-child(5n){
+  right: 0;
+}
+
+.interns_wrapper{
+  padding-top: 100px;
+  width: 100%;
+  background-color: rgba(25,25,25,.9);
+}
+
+
 
 
 

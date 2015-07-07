@@ -5,10 +5,14 @@
   </head>
 
   <body>
-   <% @users.each do |t| %>
-
-   <h1><%= t.email %></h1>
-   <%= link_to "profile", user_path(t), method: "get", action: "show" %>
-   <% end %> 
+  <div class="interns_wrapper">
+    <div class="interns_container">
+      <div class="interns">
+         <% @users.each do |t| %>
+         <%= link_to image_tag(t.image, size: "160x150"), user_path(t), method: "get", action: "show" %>
+         <% end %>
+       </div> 
+     </div>
+   </div>
   </body>
 </html>
