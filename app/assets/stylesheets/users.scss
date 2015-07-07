@@ -1,13 +1,14 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .form {
   text-align: center;
-  margin: 0 auto 10px;
-  padding: 10px 20px;
-  width: 300px;
+  margin: 0 0 10px;
+  padding: 5px 15px 5px 10px;
+  width: 250px;
   background: black;
-  opacity: .75;
+  display: block;
 }
 
 input[type=text],
@@ -17,34 +18,31 @@ input[type=email] {
   width: 100%;
   border: 3px, solid, white;
   border-radius: 0px;
-  height: 60px;
-  margin: 10px auto;
+  height: 30px;
+  margin: 7px auto;
   text-indent: 10px;
-  font-size: 16pt;
+  font-size: 12pt;
   font-weight: lighter;
   font-family: "Roboto", helvetica, sans-serif;
 }
 
 .container {
+  display: block;
+  width: 275px;
+  margin: 10% auto;
   text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+
 }
 
 #signup {
-  font-size: 30pt;
-  color: black;
-  font-weight: lighter;
+  font-size: 42pt;
+  color: white;
   margin-bottom: 10px;
 }
 
 .btn-submit{
   background-color: black;
-  font-size: 16pt;
+  font-size: 12pt;
   font-weight: lighter;
   text-transform: uppercase;
   margin-top: 10px;
@@ -56,15 +54,183 @@ input[type=email] {
 
 .btn-submit:hover {
   background-color: #888888;
+  color: white;
 }
 
 #exists {
   position: fixed;
-  color: black;
+  color: white;
+  width: 100%;
+  background: rgba(25,25,25, .8);
   padding: 2.5px 5px;
-  top: 90%;
+  top: 85%;
   left: 50%;
+  text-align: center;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+//Edit profile styling
+
+h1 {
+  margin-left: 5px;
+}
+
+.edit_background {
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+  overflow: scroll;
+}
+
+.edit_form {
+  text-align: left;
+  padding: 5px 15px 5px 10px;
+  width: 250px;
+  display: inline-block;
+  color: #0008B;
+  width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  color: black;
+  width: 100%;
+  border: 3px, solid, white;
+  border-radius: 0px;
+  height: 30px;
+  margin: 7px auto;
+  text-indent: 5px;
+  font-size: 12pt;
+  font-weight: lighter;
+  font-family: "Roboto", helvetica, sans-serif;
+}
+
+.edit_container {
+  display: block;
+  width: 500px;
+  height: 100%;
+  margin: 5% auto;
+  text-align: center;
+  }
+
+.basic_information {
+  background: white;
+  width: 100%;
+  padding: 2.5px 20px 10px 15px;
+  margin-bottom: 20px;
+}
+
+.change_password {
+  background: white;
+  width: 100%;
+  padding: 2.5px 20px 10px 15px;
+  margin-bottom: 20px;
+}
+
+.social_media {
+  background: white;
+  width: 100%;
+  padding: 2.5px 20px 10px 15px;
+  margin-bottom: 20px;
+}
+
+.btn{
+  background-color: black;
+  font-size: 12pt;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0;
+  font-family: "Roboto", helvetica, sans-serif;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #888888;
+  color: white;
+  cursor: pointer;
+}
+
+//Show profile styling
+
+.profile_background{
+  height: 100%;
+  width: 100%;
+  background: #F5F5F5;
+  overflow: scroll;
+}
+
+.profile_container{
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin: 100px 10%;
+  padding-top: 75px;
+}
+
+.img_container {
+  width: 175px;
+  float: left;
+  padding: 20px 10px 10px 10px;
+  margin-left: 50px;
+}
+
+.img_container li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.img_container ul{
+  padding: 0px;
+}
+
+.information_container {
+  float: right;
+  width: 175px;
+  margin-right: 50px;
+  margin-left: 30px;
+  margin-bottom: 12.5px;
+}
+
+.information_container li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.information_container ul{
+  padding: 0px;
+}
+
+textarea {
+  color: black;
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  border-radius: 0px;
+  margin: 7px auto;
+  text-indent: 5px;
+  font-size: 12pt;
+  font-weight: lighter;
+  font-family: "Roboto", helvetica, sans-serif;
+  }
+
+.name {
+  font-size: 30pt;
+  font-weight: 900;
+}
+
+.about_container {
+  width: 380px;
+  text-align: left;
+  margin-left: 60px;
+}
+
+
+

@@ -11,35 +11,48 @@
   </head>
   
   <body>
-    <div class= "wrapper">
       <% if current_user %>
     <div class="menu">
 
     <!-- Menu -->
-      <ul>
+
+    <ul>
         <li><div class="icon-close">
           <i class="fa fa-bars"></i>
           CLOSE
-            </div>
-        </li>
-        <li><a href="#"><%= current_user.email %></a></li>
-        <li><a href="#"><%= link_to "Home", home_path %></a></li>
+            </div></li>
+       <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
         <li><a href="#"><%= link_to "About/History", about_path %></a></li>
-        <li><a href="#"><%= link_to "Map/Shuttle Schedule", map_path %></a></li>
+       <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
         <li><a href="#">People Locator</a></li>
         <li><a href="#">Benefits</a></li>
-        <li><a href="#"><%= link_to "Log Out", logout_path, method: "delete" %></a></li>
+       <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
         <li><a href="#">Help</a></li>
         <li><a href="#">Contact</a></li>
+        
+        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
+     
       </ul>
     </div>
 
-    <!-- Main body -->
-    <div class="icon-menu">
-      <i class="fa fa-bars"></i>
-      MENU
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <ul>
+        <li><i class="fa fa-bars" id="icon-menu">MENU</i></li>
+        <li><i class="fa fa-ellipsis-v" id="logout-menu"></i></li>
+       </ul>
     </div>
-  </div>
+
+    <!--Elipsis menu -->
+    <div class ="onclick-menu">
+      <ul class ="onclick-menu-content">
+        <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
+        <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
+        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
+      </ul>
+    </div>
+
   <% end %>
 
   <%= yield %>
