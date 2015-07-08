@@ -238,29 +238,45 @@ textarea {
 
 //Styling for users index
 
+.interns_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  overflow: scroll;
+}
+
+.interns_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.img_container {
+  height: 307px;
+  width: 200px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  background: white;
+}
+
 .interns img{
   width: 200px;
   height: 267px;
   text-align: center;
   position: relative;
-  margin-bottom: 50px;
-  margin-right: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
-.interns_container {
-  margin-left: 100px;
-}
 
-.movie:nth-child(5n){
-  right: 0;
-}
 
-.interns_wrapper{
-  padding-top: 100px;
-  width: 100%;
-  background-color: rgba(25,25,25,.9);
-}
+
 
 
 
