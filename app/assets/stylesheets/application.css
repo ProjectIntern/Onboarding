@@ -116,6 +116,7 @@ i.fa.fa-home::before {
   background-color: #000033;
   position: fixed;
   width: 100%;
+  height: 51px;
   top: 0;
   left: 0;
   z-index: 50;
@@ -131,7 +132,14 @@ i.fa.fa-home::before {
 }
 
 .nav-bar ul li:last-child{
-  float: right;
+  right: 0;
+  position: absolute;
+  padding-left: 20px;
+}
+
+.nav-bar ul li:first-child{
+  left: 0;
+  position: absolute;
   padding-left: 20px;
 }
 
@@ -219,14 +227,10 @@ a:active {
   width: 200px;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 736px) {
+@media screen and (min-width: 320px) and (max-width: 383px) {
   .nav-bar ul li:last-child{
-  float: right;
-  margin-right: 10px;
-  padding-left: 20px;
+    width: 50px;
 }
-
 }
 
 
