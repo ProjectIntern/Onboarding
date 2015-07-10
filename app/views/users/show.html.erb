@@ -35,11 +35,34 @@
       </div>
 
 
-    <div class="about_container">
-      <span> <%= @user.about %> </span>
-    </div>
+      <div class="about_container">
+        <span> <%= @user.about %> </span>
+      </div>
     </div>
 
-  </div>
-</body>
+      <div class="message_container">
+        
+        <div class="contacts_container"></div>
+
+        <div class="conversation_container">
+          <div class="messages_content">
+            <% @conversations.each do |f| %>
+              <% if (f.sender == current_user.email and f.receiver == @user.email) or (f.sender == @user.email and f.receiver == current_user.email) %>
+                <%= f.comment %><br>
+                <%= f.sender %><br>
+              <% end %>
+            <% end %>
+          </div>
+
+          <div class="messages_text">
+            <%= form_for(@conversation) do |f| %>
+              <%= f.text_area :comment, :placeholder => "Leave a message." %>
+              <%= f.text_field :receiver, :value => "#{@user.email}", class: "hidden" %>
+              <%= f.submit "Leave message", class: "btn-submit" %>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

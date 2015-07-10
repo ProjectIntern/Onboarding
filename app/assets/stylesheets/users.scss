@@ -169,7 +169,9 @@ input[type=email] {
   padding-right: 20px;
   padding-left: 20px;
   margin-top: 50px;
-  margin-left: 75px;
+  margin-left: 50px;
+  margin-right: auto;
+  float: left;
 }
 
 .img_container {
@@ -275,6 +277,72 @@ textarea {
   margin-bottom: 10px;
   display: inline-block;
 }
+
+/* Styling for the messages container */
+
+.message_container {
+  width: 750px;
+  height: 575px;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 50px;
+  float: right;
+}
+
+.contacts_container {
+  height: 100%;
+  width: 15%;
+  background-color: rgba(0,0,51,1);
+  float: left;
+}
+
+.conversation_container {
+  float: right;
+  height: 100%;
+  width: 85%;
+}
+
+.messages_content {
+  height: 75%;
+  width: 100%;
+}
+
+.messages_text {
+  height: 25%;
+  width: 100%;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.messages_text textarea{
+  height: 131px;
+  width: 631px;
+  resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 384px) and (max-width: 736px) {

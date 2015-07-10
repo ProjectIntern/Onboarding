@@ -23,7 +23,7 @@
           Close
           </div></li>
         <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
-        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-comments"><%= link_to "Posts", root_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
 
         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>

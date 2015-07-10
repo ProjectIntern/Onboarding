@@ -16,6 +16,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @conversation = Conversation.new
+    @conversations = Conversation.all
   end
 
   def update
@@ -33,6 +35,7 @@ class UsersController < ApplicationController
 
   def create
     code = "gapinc"
+    @conversation = @user.conversations.new(conversation_params)
     @user = User.new(user_params)
     if h = User.find{ |h| h['email'] == @user.email.to_str or @user.code.to_str != code}
       redirect_to '/exists'
@@ -43,9 +46,4 @@ class UsersController < ApplicationController
       redirect_to '/signup'
     end
   end
-
-  private
-    def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
-    end
 end
