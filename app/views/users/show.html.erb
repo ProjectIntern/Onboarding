@@ -44,7 +44,7 @@
         
         <div class="contacts_container">
           <% for i in @users %>
-            <%= image_tag i.image, :class => "contact_pic" %>
+            <%= link_to image_tag(i.image, :class => "contact_pic"), user_path(i), method: "get", action: "show" %>
           <% end %>
         </div>
 
