@@ -48,8 +48,11 @@
           <div class="messages_content">
             <% @conversations.each do |f| %>
               <% if (f.sender == current_user.email and f.receiver == @user.email) or (f.sender == @user.email and f.receiver == current_user.email) %>
-                <%= f.comment %><br>
-                <%= f.sender %><br>
+                <% if f.sender == current_user.email %>
+                  <div class="push-left"><%= f.comment%><br><%= f.sender %><br><br></div>
+                  <% elsif f.sender == @user.email %>
+                  <div class="push-right"><%= f.comment%><br><%= f.sender %><br><br></div>
+                <% end %>
               <% end %>
             <% end %>
           </div>
@@ -58,7 +61,7 @@
             <%= form_for(@conversation) do |f| %>
               <%= f.text_area :comment, :placeholder => "Leave a message." %>
               <%= f.text_field :receiver, :value => "#{@user.email}", class: "hidden" %>
-              <%= f.submit "Leave message", class: "btn-submit" %>
+              <%= f.submit "Submit", class: "msg-submit" %>
             <%end%>
           </div>
         </div>

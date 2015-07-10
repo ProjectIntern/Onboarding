@@ -158,6 +158,7 @@ input[type=email] {
   width: 100%;
   background: #F5F5F5;
   overflow: scroll;
+  position: fixed;
 }
 
 .profile_container{
@@ -291,8 +292,8 @@ textarea {
 }
 
 .contacts_container {
-  height: 100%;
-  width: 15%;
+  height: 10%;
+  width: 100%;
   background-color: rgba(0,0,51,1);
   float: left;
 }
@@ -300,30 +301,52 @@ textarea {
 .conversation_container {
   float: right;
   height: 100%;
-  width: 85%;
+  width: 100%;
 }
 
 .messages_content {
   height: 75%;
   width: 100%;
+  overflow: scroll;
 }
 
 .messages_text {
-  height: 25%;
+  height: 15%;
   width: 100%;
   border-bottom: none;
   border-right: none;
   border-left: none;
 }
 
+.new_conversation {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
 .messages_text textarea{
-  height: 131px;
-  width: 631px;
+  height: 80px;
+  width: 88.5%;
   resize: none;
+  margin: 0 0 0 0;
+  outline: none;
 }
 
-
-
+.msg-submit{
+  width: 10%;
+  height: 85px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: px;
+  font-size: 12pt;
+  font-weight: lighter;
+  outline: none;
+  border: 1px solid black;
+  font-family: "Roboto", helvetica, sans-serif;
+  background-color: rgba(0,0,51,1);
+  color: white;
+  vertical-align: top;
+}
 
 
 
