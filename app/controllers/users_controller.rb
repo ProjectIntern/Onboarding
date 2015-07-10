@@ -18,6 +18,18 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @conversation = Conversation.new
     @conversations = Conversation.all
+    @contacts = []
+    @users = []
+    Conversation.all.each do |n|
+      if n.sender == current_user.email
+        if !@contacts.include?(n.receiver_id)
+          @contacts.push(n.receiver_id)
+        end
+      end
+    end
+    @contacts.each do |i|
+      @users.push(User.find(i))
+    end
   end
 
   def update
@@ -35,7 +47,6 @@ class UsersController < ApplicationController
 
   def create
     code = "gapinc"
-    @conversation = @user.conversations.new(conversation_params)
     @user = User.new(user_params)
     if h = User.find{ |h| h['email'] == @user.email.to_str or @user.code.to_str != code}
       redirect_to '/exists'
@@ -45,5 +56,10 @@ class UsersController < ApplicationController
     else
       redirect_to '/signup'
     end
+  end
+  
+  private
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
   end
 end

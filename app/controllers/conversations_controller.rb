@@ -15,7 +15,7 @@ def create
 
   private
     def conversation_params
-      params.require(:conversation).permit(:sender, :receiver, :comment)
+      params.require(:conversation).permit(:sender, :comment, :receiver_email, :receiver_name, :receiver_image, :receiver_id)
     end
 
   end

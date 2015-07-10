@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 20150709213907) do
   create_table "conversations", force: :cascade do |t|
     t.string   "comment"
     t.string   "sender"
-    t.string   "receiver"
-    t.string   "conversing", default: "--- []\n"
+    t.string   "receiver_email"
+    t.string   "receiver_name"
+    t.string   "receiver_image"
+    t.string   "receiver_id"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
