@@ -21,9 +21,14 @@ class UsersController < ApplicationController
     @contacts = []
     @users = []
     Conversation.all.each do |n|
-      if n.sender == current_user.email
+      if n.sender_email == current_user.email
         if !@contacts.include?(n.receiver_id)
           @contacts.push(n.receiver_id)
+        end
+      end
+       if n.receiver_email == current_user.email
+        if !@contacts.include?(n.sender_id)
+          @contacts.push(n.sender_id)
         end
       end
     end

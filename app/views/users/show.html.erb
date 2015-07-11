@@ -49,29 +49,22 @@
         </div>
 
         <div class="conversation_container">
-          <div class="messages_content">
-            <% @conversations.each do |f| %>
-              <% if (f.sender == current_user.email and f.receiver_email == @user.email) or (f.sender == @user.email and f.receiver_email == current_user.email) %>
-                <% if f.sender == current_user.email %>
-                  <div class="push-left"><%= f.comment%><br><%= "-" + "#{current_user.first_name}" + " " + "#{current_user.last_name}"%><br><br></div>
-                  <% elsif f.sender == @user.email %>
-                  <div class="push-right"><%= f.comment%><br><%= f.receiver_name %><br><br></div>
-                <% end %>
-              <% end %>
-            <% end %>
-
-          </div>
+          
+        <%= render "conversations/show" %>
 
           <div class="messages_text">
             <%= form_for(@conversation) do |f| %>
               <%= f.text_area :comment, :placeholder => "Leave a message." %>
               <%= f.text_field :receiver_email, :value => "#{@user.email}", class: "hidden" %>
               <%= f.text_field :receiver_name, :value => "#{@user.first_name}" + " " + "#{@user.last_name}", class: "hidden" %>
-              <%= f.text_field :receiver_image, :value => "#{@user.image}", class: "hidden" %>
               <%= f.text_field :receiver_id, :value => "#{@user.id}", class: "hidden" %>
+              <%= f.text_field :sender_email, :value => "#{@current_user.email}", class: "hidden" %>
+              <%= f.text_field :sender_name, :value => "#{@current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
+              <%= f.text_field :sender_id, :value => "#{@current_user.id}", class: "hidden" %>
               <%= f.submit "Submit", class: "msg-submit" %>
             <%end%>
           </div>
+
         </div>
       </div>
     </div>

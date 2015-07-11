@@ -1,13 +1,11 @@
 class ConversationsController < ApplicationController
 
-def new
-  @conversation = Conversation.new
-end
+  def new
+    @conversation = Conversation.new
+  end
 
-def create
+  def create
     @conversation = Conversation.new(conversation_params)
-    @conversation.sender = current_user.email 
-    @conversation.user_id = current_user.id
     if @conversation.save
       redirect_to(:back)
     end
@@ -15,7 +13,6 @@ def create
 
   private
     def conversation_params
-      params.require(:conversation).permit(:sender, :comment, :receiver_email, :receiver_name, :receiver_image, :receiver_id)
+      params.require(:conversation).permit(:sender_email, :comment, :receiver_email, :receiver_name, :receiver_id, :sender_name, :sender_id)
     end
-
-  end
+end

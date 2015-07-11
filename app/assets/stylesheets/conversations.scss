@@ -19,7 +19,9 @@
 .contact_pic {
   width: 40px;
   height: 50px;
-  border-radius: 150px;
   margin-left: 17px;
   margin-top: 10px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }

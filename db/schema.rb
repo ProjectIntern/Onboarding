@@ -15,10 +15,11 @@ ActiveRecord::Schema.define(version: 20150709213907) do
 
   create_table "conversations", force: :cascade do |t|
     t.string   "comment"
-    t.string   "sender"
+    t.string   "sender_email"
+    t.string   "sender_name"
+    t.string   "sender_id"
     t.string   "receiver_email"
     t.string   "receiver_name"
-    t.string   "receiver_image"
     t.string   "receiver_id"
     t.integer  "user_id"
     t.datetime "created_at"
