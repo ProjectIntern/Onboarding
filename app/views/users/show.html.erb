@@ -42,11 +42,7 @@
 
       <div class="message_container">
         
-        <div class="contacts_container">
-          <% for i in @users %>
-            <%= link_to image_tag(i.image, :class => "contact_pic"), user_path(i), method: "get", action: "show" %>
-          <% end %>
-        </div>
+        <%= render "conversations/contacts" %>
 
         <div class="conversation_container">
           

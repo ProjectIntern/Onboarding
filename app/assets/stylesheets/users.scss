@@ -336,20 +336,20 @@ textarea {
 .msg-submit{
   width: 10%;
   height: 85px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: px;
   font-size: 12pt;
-  font-weight: lighter;
   outline: none;
-  border: 1px solid black;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,51,1);
   font-family: "Roboto", helvetica, sans-serif;
   background-color: rgba(0,0,51,1);
   color: white;
   vertical-align: top;
 }
 
+.msg-submit:hover{
+  background: white;
+  color: rgba(0,0,51,1);
+}
 
 
 
