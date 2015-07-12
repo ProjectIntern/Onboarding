@@ -9,11 +9,21 @@
 .push-right {
   text-align: right;
   margin-right: 15px;
+  width: initial;
 }
 
 .push-left {
   text-align: left;
   margin-left: 15px;
+}
+
+#name-font {
+  font-size: 10pt;
+}
+
+#date {
+  font-size: 10pt;
+  text-align: center;
 }
 
 .contact_pic {
