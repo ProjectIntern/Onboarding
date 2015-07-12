@@ -251,32 +251,40 @@ textarea {
 }
 
 .interns_container {
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
+  margin: 30px auto;
+  overflow: hidden;
+  text-align: center;
   width: 100%;
-  margin-top: 25px;
+}
+
+.interns {
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 83%;
 }
 
 .img_container {
   height: 307px;
   width: 200px;
-  text-align: center;
   color: black;
   padding-top: 10px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
   background: white;
+  display: inline-block;
+  margin: 0 15px 15px 15px;
+
 }
 
 .interns img{
   width: 200px;
   height: 267px;
   text-align: center;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 10px;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 /* Styling for the messages container */
@@ -356,42 +364,78 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 384px) and (max-width: 736px) {
-.edit_container {
-  width: 275px;
-  margin-left: 25px;
-  }
-
-.edit_form {
-  width: 275px;
-  padding-left: 10px;
+@media screen and (min-width: 1899px) and (max-width: 1918px) {
+  .interns{
+    width: 79%
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 383px) {
-.edit_container {
-  width: 275px;
-  margin-left: 0px;
+@media screen and (min-width: 1646px) and (max-width: 1898px) {
+  .interns{
+    width: 70%;
   }
+}
 
-.edit_form {
-  width: 275px;
-  padding-left: 5px;
+@media screen and (min-width: 1599px) and (max-width: 1645px) {
+  .interns{
+    width: 80%;
   }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .interns{
+    width:75%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .interns{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 547px) {
+  .interns{
+    width: 52%;
+  }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .edit_container {
+    width: 275px;
+    margin-left: 0px;
+    margin-right: 10px;
+    }
+
+  .edit_form {
+    width: 275px;
+    padding-left: 5px;
+    }
+
+  .interns {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 568px) {
+  .interns {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 384px) and (max-width: 540px) {
+  .edit_container {
+    width: 275px;
+    margin-left: 25px;
+    }
+
+  .edit_form {
+    width: 275px;
+    padding-left: 10px;
+    }
 }
 
 
