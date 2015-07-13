@@ -19,6 +19,5 @@ class ApplicationController < ActionController::Base
     if current_user
       redirect_to '/'
     end
-  end  
-
+  end 
 end

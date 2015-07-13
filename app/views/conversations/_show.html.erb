@@ -1,0 +1,12 @@
+<div class="messages_content">
+    <% @conversations.each do |f|%>
+      <% if (f.sender_email == current_user.email and f.receiver_email == @user.email) or (f.sender_email == @user.email and f.receiver_email == current_user.email) %>
+        <% if f.sender_email == current_user.email %>
+          <div class="push-left"><%= f.comment%><br><div id="name-font"><%= f.sender_name%> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
+        <% elsif f.sender_email == @user.email %>
+          <div class="push-right"><%= f.comment%><br><div id="name-font"><%= f.sender_name %> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
+        <% end %>
+      <% end %>
+    <% end %>
+</div>
+

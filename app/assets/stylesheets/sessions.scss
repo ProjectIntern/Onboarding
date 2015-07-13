@@ -8,10 +8,11 @@
 
 
 .btn-submit {
-  width: 100%;
+  width: 275px;
   font-size: 16pt;
   margin-bottom: 25px;
   cursor: pointer;
+  text-align: center;
 }
 
 #error {
@@ -20,7 +21,7 @@
   top: 70%;
   left: 50%;
   width: 100%;
-  background: rgba(25,25,25, .8);
+  background: rgba(0,0,51, .8);
   text-align: center;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -31,6 +32,8 @@
   font-size: 42pt;
   margin-bottom: 10px;
   color: white;
+  font-family: "Arapey";
+  font-weight: lighter;
 
 }
 
@@ -39,9 +42,12 @@
 } 
 
 .shell {
-  width: 375;
-  height: 539;
-  background-color: rgba(25,25,25,.3);
+  width: 100%;
+  height: inherit;
+  display: table;
+  margin-top: 51px;
+  top: -51px;
+  position: absolute;
 }
 
 

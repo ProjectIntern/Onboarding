@@ -4,11 +4,10 @@
 
 .form {
   text-align: center;
-  margin: 0 0 10px;
+  margin: auto auto;
   padding: 5px 15px 5px 10px;
   width: 250px;
-  background: black;
-  display: block;
+  background: #000033;
 }
 
 input[type=text],
@@ -27,21 +26,22 @@ input[type=email] {
 }
 
 .container {
-  display: block;
+  display: table-cell;
   width: 275px;
-  margin: 10% auto;
+  vertical-align: middle;
   text-align: center;
-
+  background-color: rgba(0,0,51,.5);
 }
 
 #signup {
   font-size: 42pt;
+  font-family: "Arapey";
   color: white;
   margin-bottom: 10px;
 }
 
 .btn-submit{
-  background-color: black;
+  background-color: #000033;
   font-size: 12pt;
   font-weight: lighter;
   text-transform: uppercase;
@@ -54,14 +54,13 @@ input[type=email] {
 
 .btn-submit:hover {
   background-color: #888888;
-  color: white;
 }
 
 #exists {
   position: fixed;
   color: white;
   width: 100%;
-  background: rgba(25,25,25, .8);
+  background: rgba(0,0,51, .8);
   padding: 2.5px 5px;
   top: 85%;
   left: 50%;
@@ -86,10 +85,8 @@ h1 {
 
 .edit_form {
   text-align: left;
-  padding: 5px 15px 5px 10px;
-  width: 250px;
+  padding: 5px 0px 5px 0px;
   display: inline-block;
-  color: #0008B;
   width: 100%;
 }
 
@@ -112,7 +109,8 @@ input[type=email] {
   display: block;
   width: 500px;
   height: 100%;
-  margin: 5% auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   }
 
@@ -138,7 +136,7 @@ input[type=email] {
 }
 
 .btn{
-  background-color: black;
+  background-color: rgba(0,0,51,1);
   font-size: 12pt;
   margin-top: 10px;
   padding: 10px;
@@ -153,28 +151,45 @@ input[type=email] {
   cursor: pointer;
 }
 
+// Content container styling
+
+.content_container{
+  width: 1350px;
+  height: 575px;
+  margin: auto;
+  position: absolute;
+  top: -51px; left: 0; bottom: 0px; right: 0;
+}
+
+
 //Show profile styling
 
 .profile_background{
-  height: 100%;
-  width: 100%;
   background: #F5F5F5;
   overflow: scroll;
+  position: absolute;
+  width: 100%;
+  height: inherit;
 }
 
 .profile_container{
   background: white;
   width: 500px;
   height: 500px;
-  margin: 100px 10%;
-  padding-top: 75px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  margin-left: auto;
 }
 
 .img_container {
-  width: 175px;
+  width: 200px;
   float: left;
   padding: 20px 10px 10px 10px;
-  margin-left: 50px;
+  margin-left: 37.5px;
+  margin-right: 30px;
 }
 
 .img_container li {
@@ -187,14 +202,16 @@ input[type=email] {
 
 .img_container ul{
   padding: 0px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .information_container {
   float: right;
   width: 175px;
-  margin-right: 50px;
-  margin-left: 30px;
-  margin-bottom: 12.5px;
+  margin-right: 37.5px;
+  margin-left: 37.5px;
+  margin-bottom: 35px;
 }
 
 .information_container li {
@@ -224,13 +241,211 @@ textarea {
 .name {
   font-size: 30pt;
   font-weight: 900;
+  margin-bottom: 40px;
 }
 
 .about_container {
-  width: 380px;
+  width: 450px;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 45px;
+  word-wrap: break-word;
 }
+
+//Styling for users index
+
+.interns_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  overflow: scroll;
+}
+
+.interns_container {
+  box-sizing: border-box;
+  margin: 30px auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.interns {
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 83%;
+}
+
+.img_container {
+  height: 307px;
+  width: 200px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: white;
+  display: inline-block;
+  margin: 0 15px 15px 15px;
+
+}
+
+.interns img{
+  width: 200px;
+  height: 267px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Styling for the messages container */
+
+.message_container {
+  width: 750px;
+  height: 575px;
+  background-color: white;
+  float: right;
+}
+
+.contacts_container {
+  height: 10%;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  float: left;
+  overflow-y: scroll;
+}
+
+.conversation_container {
+  float: right;
+  height: 100%;
+  width: 100%;
+}
+
+.messages_content {
+  height: 412px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.messages_text {
+  height: 15%;
+  width: 100%;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.new_conversation {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+.messages_text textarea{
+  height: 80px;
+  width: 88.5%;
+  resize: none;
+  margin: 0 0 0 0;
+  outline: none;
+}
+
+.msg-submit{
+  width: 10%;
+  height: 85px;
+  font-size: 12pt;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,51,1);
+  font-family: "Roboto", helvetica, sans-serif;
+  background-color: rgba(0,0,51,1);
+  color: white;
+  vertical-align: top;
+}
+
+.msg-submit:hover{
+  background: white;
+  color: rgba(0,0,51,1);
+}
+
+
+
+
+
+
+/*  .interns{
+    width: 79%
+  }
+}
+
+@media screen and (min-width: 1646px) and (max-width: 1898px) {
+  .interns{
+    width: 70%;
+  }
+}
+*/
+
+@media screen and (min-width: 1599px) and (max-width: 1645px) {
+  .interns{
+    width: 80%;
+  }
+}
+
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .interns{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 547px) {
+  .interns{
+    width: 52%;
+  }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .edit_container {
+    width: 275px;
+    margin-left: 0px;
+    margin-right: 10px;
+    }
+
+  .edit_form {
+    width: 275px;
+    padding-left: 5px;
+    }
+
+  .interns {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 568px) {
+  .interns {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 384px) and (max-width: 540px) {
+  .edit_container {
+    width: 275px;
+    margin-left: 25px;
+    }
+
+  .edit_form {
+    width: 275px;
+    padding-left: 10px;
+    }
+}
+
+
+
+
+
+
 
 
 
