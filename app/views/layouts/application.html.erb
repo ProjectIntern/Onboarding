@@ -23,11 +23,11 @@
           CLOSE
             </div></li>
         <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
+        <li><i class="fa fa-tags">Brands</i></li>
+        <li><i class="fa fa-users">Global Team</i></li>
         <li><i class="fa fa-comments"><%= link_to "Posts", root_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
-        <li><i class="fa fa-users">People Locator</i></li>
-        <li><a href="#">Benefits</a></li>
         <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
      
       </ul>
