@@ -5285,3 +5285,121 @@ Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab998
 
 
 Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 16:03:35 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:08:38 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 415ms (Views: 407.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:08:39 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 16:08:42 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"YB1sDKa0fGs3B1I1+FJ4LzcoK5h5DrgXMZmMnPHcDalEo+aCbbKK52tvoYZHr5XcFANd0QLg746zQH/hh0RDJQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 315ms (Views: 310.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 16:08:48 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"b438h7Ls4VOVsMui7E/Otj3lwtOuGMBlCAwKzj1oggxLM3YJeeoX38nYOBFTsiNFHs60mtX2l/yK1fmzS/DMgA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 16:08:52 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"Fb8ZrSwYPt1oqP801Yg7QNj8W4gtzbM5K/Su1nepQtExAZMj5x7IUTTADIdqddaz+9ctwVYj5KCpLV2rATEMXQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-13 16:08:55 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"8nxhTwGC1w3z1ckTDFvUq27aAj2UerCY1Rz5J2zEfpbWwuvByoQhga+9OqCzpjlYTfF0dO+U5wFXxQpaGlwwGg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 138ms (Views: 132.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 16:08:58 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"doVuI4e99c/y86oVZuiKEnQiblCVmMhFpkxAadyZ/uNSO+StTLsDQ66bWabZFWfhVwkYGe52n9wklbMUqgGwbw==", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.5ms)
+  Rendered users/show.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 190ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:09:04 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"Gire/Ohy/6MA2bzv8tJa5ErMBdufL60ZqSy2tbIkG0A+lFRyI3QJL1yxT1xNL7cXaedzkuTB+oAr9UXIxLxVzA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 210ms (Views: 205.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 16:09:08 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"NEGoIxtjyt55LSriv+nkbWoq4PG9fDGUka+FgacN3+wQ/yKt0GU8UiVF2VEAFAmeSQGWuMaSZg0Tdnb80ZWRYA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 313ms (Views: 307.5ms | ActiveRecord: 0.0ms)
