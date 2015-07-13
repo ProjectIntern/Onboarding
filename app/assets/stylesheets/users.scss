@@ -182,14 +182,6 @@ input[type=email] {
   margin-left: auto;
 }
 
-.img_container {
-  width: 200px;
-  float: left;
-  padding: 20px 10px 10px 10px;
-  margin-left: 37.5px;
-  margin-right: 30px;
-}
-
 .img_container li {
   display: inline-block;
   list-style-type: none;
@@ -264,18 +256,17 @@ textarea {
   display: block;
   overflow: hidden;
   text-align: center;
-  width: 78.25%;
+  width: 93%;
 }
 
 .img_container {
   height: 307px;
   width: 200px;
   color: black;
-  padding-top: 10px;
-  padding-bottom: 5px;
   background: white;
   text-align: center;
   display: inline-block;
+  padding: 10px 10px 10px 10px;
   margin: 0 15px 15px 15px;
 }
 
@@ -363,38 +354,7 @@ textarea {
 
 
 
-/*  .interns{
-    width: 79%
-  }
-}
 
-@media screen and (min-width: 1646px) and (max-width: 1898px) {
-  .interns{
-    width: 70%;
-  }
-}
-
-
-@media screen and (min-width: 1599px) and (max-width: 1645px) {
-  .interns{
-    width: 80%;
-  }
-}
-
-
-
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  .interns{
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 547px) {
-  .interns{
-    width: 52%;
-  }
-}
 
 
 
@@ -409,17 +369,8 @@ textarea {
     width: 275px;
     padding-left: 5px;
     }
-
-  .interns {
-    width: 75%;
   }
-}
 
-@media screen and (min-width: 481px) and (max-width: 568px) {
-  .interns {
-    width: 90%;
-  }
-}
 
 @media screen and (min-width: 384px) and (max-width: 540px) {
   .edit_container {
@@ -433,7 +384,7 @@ textarea {
     }
 }
 
-*/
+
 
 
 
