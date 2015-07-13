@@ -5403,3 +5403,998 @@ Processing by ContentController#index as HTML
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
   Rendered content/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 313ms (Views: 307.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 16:14:56 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 290ms (Views: 285.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/shuttle.self-1c37fc145cbd904b2d8884b1b64af8d4f19064fa20498290609819ad6245a91d.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:14:56 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:14:59 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"ABCcBSRSX5trmFeEDfoio/nPhJtl2eoL1qjliMReQIgkrhaL71SpFzfwpDeyB89Q2uTy0h43vZJUcRb1ssYOBA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 153ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:16:05 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 253ms (Views: 245.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/shuttle.self-ddfa995b879ce91f9f368478ed8e81d147ac42e878f6f7263713d542d406d847.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:16:05 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:16:57 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 315ms (Views: 310.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/shuttle.self-ded057ed6b7eec44de6011dae457af5b5778cc9d3ee86828b41c66e645b528a6.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:16:58 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:17:14 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 223ms (Views: 215.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/shuttle.self-ded057ed6b7eec44de6011dae457af5b5778cc9d3ee86828b41c66e645b528a6.css?body=1" for ::1 at 2015-07-13 16:17:14 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:17:14 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:17:14 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:17:14 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:17:15 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:17:18 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/shuttle.self-ded057ed6b7eec44de6011dae457af5b5778cc9d3ee86828b41c66e645b528a6.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:17:18 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:17:27 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 213ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/shuttle.self-0ff32abd70cc018c481e522937d62bda65ee3833ff7ebfeac8a56e0910f6e7d2.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:17:27 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:18:54 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 268ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/shuttle.self-5d0af237d090d84cdfaf3d508ba517a323abea67796fd4cf9c2920780c100a41.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:18:54 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:20:16 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 318ms (Views: 312.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/shuttle.self-46a2888c2232b9999c82155f1dfa24492f5f2c519fbf952c627b364e9d0f5296.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:20:17 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:20:46 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 133ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/shuttle.self-46a2888c2232b9999c82155f1dfa24492f5f2c519fbf952c627b364e9d0f5296.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:20:46 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:21:51 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/shuttle.self-46a2888c2232b9999c82155f1dfa24492f5f2c519fbf952c627b364e9d0f5296.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:21:51 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:22:37 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:22:37 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:22:37 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/shuttle.self-46a2888c2232b9999c82155f1dfa24492f5f2c519fbf952c627b364e9d0f5296.css?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:22:38 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:22:55 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 190ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/shuttle.self-5d0af237d090d84cdfaf3d508ba517a323abea67796fd4cf9c2920780c100a41.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:22:55 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:22:56 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:23:12 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 368ms (Views: 357.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shuttle.self-86deb77331315be98dc7f6981e95e1ef120b19064367bd3d4fa62ce91877bd00.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:23:13 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:24:01 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 245ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/shuttle.self-300192d3217329003b34f8532107f0525ceeb0845c13e39796e9c721411e4348.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:24:02 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:24:43 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 150ms (Views: 137.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/shuttle.self-300192d3217329003b34f8532107f0525ceeb0845c13e39796e9c721411e4348.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:24:43 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:25:38 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 358ms (Views: 352.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:25:38 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:25:38 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:25:38 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 16:25:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:25:39 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:26:16 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 215ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:26:16 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 16:27:19 -0700
+Processing by ShuttleController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 135ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/sessions.self-c97415925e699ca73387fc587378df31deae3c76903ca084fc4081786a236a0e.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/users.self-3f83c13352634fb2a0e2e5d2593290aabcee7a91d91642c25955749bf70d4b7c.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/application.self-2403c740a83f77253f94f44021f4f080d11ce943142bd7398c5b1f46f8c45073.css?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 16:27:19 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-13 16:27:19 -0700
