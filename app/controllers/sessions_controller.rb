@@ -16,6 +16,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       redirect_to '/error'
+      flash[:notice] = "Wrong Email or Password"
     end
   end
 

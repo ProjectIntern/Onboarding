@@ -2561,3 +2561,653 @@ Completed 200 OK in 173ms (Views: 167.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/jeans.jpg" for ::1 at 2015-07-07 15:40:13 -0700
+
+
+Started GET "/error" for 127.0.0.1 at 2015-07-08 16:07:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 309ms (Views: 294.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for 127.0.0.1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:07:37 -0700
+
+
+Started GET "/" for ::1 at 2015-07-08 16:07:37 -0700
+Processing by ContentController#index as HTML
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:07:37 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 148ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:07:38 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:07:42 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YdRoUbESI+tiDc96YjQPu4iiqJ/TVIevIyDEZwRgY0hFauLfehTVZz5lPMndyeJIq4ne1qi60Dah+TcacvgtxA==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 165ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-08 16:07:42 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:07:42 -0700
+
+
+Started GET "/posts" for ::1 at 2015-07-08 16:07:48 -0700
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"c+atU6tZXgQ0Yd4ugqydRmQ80FPuNlMD+tSYBgekWsdXWCfdYF+oiGgJLZ09UXC1RxemGpXYBJp4DWt7cTwUSw=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 220ms (Views: 206.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:07:48 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-08 16:10:01 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2vXfUIYvX+aU0ZIWayWNZp+cxZW9TyQofahdF0X7kJD+S1XeTSmpasi5YaXU2GCVvLez3Mahc7H/ca5qM2PeHA=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:10:01 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 123ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:10:01 -0700
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:10:04 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-08 16:10:04 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:10:05 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:10:09 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yqTZ08fgKm3u4hJhGuJjpXgoKhw+Fr44TerPWs+NDSjuGlNdDObc4bKK4dKlH45WWwNcVUX46aHPMzwnuRVDpA==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 97ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:10:09 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:10:09 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:10:25 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VyP47kyTlAJyc4ZXsQLcA3aj81f0qjq7WGlyfwk5ir9znXJgh5Viji4bdeQO/zHwVYiFHo9EbSLasIECf6HEMw==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 91ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:10:25 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 97ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:10:26 -0700
+
+
+Started GET "/" for ::1 at 2015-07-08 16:11:48 -0700
+Processing by ContentController#index as HTML
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:11:48 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:11:49 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:11:53 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ESzHUs/1wEVqRq6aeiHbGEwnr6u1L+fQIOJ3BeQDn6U1kk3cBPM2yTYuXSnF3DbrbwzZ4s7BsEmiO4R4kpvRKQ==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 96ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:11:53 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:11:53 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:12:07 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fSWzGpN7hTHBnOjGL9LKWrUrkZWAZt8E1zjwoKMtgU5ZmzmUWH1zvZ30G3WQLyeplgDn3PuIiJ1V4QPd1bXPwg==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 87ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-08 16:12:07 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:12:07 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-08 16:12:12 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SqBu70SDnU4ncqP5FxlHBud0ttNgkAHf9hf76aDQL4puHuRhj4VrwnsaUEqo5Kr1xF/Amht+VkZ0zgiU1khhBg=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:12:12 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 86ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:12:13 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:12:16 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VLaITA+tgwmlXfbcq8EcUlINmdzrF+8J6JuoB95dIapwCALCxKt1hfk1BW8UPPGhcSbvlZD5uJBqQlt6qMVvJg==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 82ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:12:16 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 87ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:12:16 -0700
+
+
+Started GET "/" for ::1 at 2015-07-08 16:15:49 -0700
+Processing by ContentController#index as HTML
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-08 16:15:49 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 85ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:15:49 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-08 16:15:54 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x7E6FkjwFOZF6ZB2xV7eyz1ZIxLOxVKUPUHrSLPUxtbjD7CYg/biahmBY8V6ozM4HnJVW7UrBQ2/mBg1xUyIWg==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 89ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:15:54 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 91ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:15:54 -0700
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:16:45 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:16:45 -0700
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:16:47 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 212ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:16:47 -0700
+
+
+Started GET "/error" for ::1 at 2015-07-08 16:16:50 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 97ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-08 16:16:51 -0700
+
+
+Started GET "/" for ::1 at 2015-07-10 17:05:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContentController#index as HTML
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-10 17:05:43 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 1003ms (Views: 1000.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-34b054a93bead0905a18fb74fcc16c8dab1f2ffe50dccbbc06ea2cd686acbabf.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/sessions.self-e77019e19bc774f6a8a7ccb320cf8564a87525a7444851116285ffbcee76eba1.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/shuttle.self-8c22e3b4b9a49189a195f729766872b0951e50b468339d1d7831addd02f515af.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/users.self-a0d69a396c51e874fa48760f9a964d580e15692464e9de971b7352f89868628a.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/application.self-ce97dffc794dafbe81dac2a986fa893ed375184e74da89e9d8ea2b495fd499bd.css?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-10 17:05:44 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-10 17:06:11 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KdvaxnsgJySqoLe0vTeFma0eyv9y4Y/kb9FD5JQwpbQNZVBIsCbRqPbIRAcCymhqjjW8tgkP2H3tCLCZ4qjrOA==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 235ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-10 17:06:11 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 95ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-10 17:06:11 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-10 17:06:30 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"HbwUskBFy0iuQx64K3lW8yad5rLmxB3n7hXt41A9gWo5Ap48i0M9xPIr7QuUhLsABbaQ+50qSn5szB6eJqXP5g=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shuttle/index.html within layouts/application (77.5ms)
+Completed 200 OK in 200ms (Views: 197.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-10 17:06:31 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-10 17:06:31 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-07-10 17:07:36 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"S/iLTs9fCQbVXWuqTxThNGEOx01H1shHPSKDuQtGPddvRgHABFn/iok1mBnw6QzHQiWxBDw4n96/+3DEfd5zWw==", "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `image' for #<User:0x9786ea0>):
+     7:   <div class="profile_background">
+     8:     <div class="profile_container">
+     9:       <div class="img_container">
+    10:         <%= image_tag @user.image, :class => "profile_pic"%>
+    11:         <ul>
+    12:           <% if @user.facebook != "a"%>
+    13:           <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+  app/views/users/show.html.erb:10:in `_app_views_users_show_html_erb__308537519_79440924'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.5ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-10 17:07:39 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shuttle/index.html within layouts/application (10.0ms)
+Completed 200 OK in 215ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2015-07-10 17:08:13 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HqvkBxW7RVFgLs+ZKa/sFX/aaldOy1Cq9ANl7J+Cfik6FW6J3r2z3TxGPCqWUgHmXPEcHjUlBzN22paR6RowpQ=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-10 17:08:13 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 185ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-10 17:08:13 -0700
+
+
+Started GET "/signup" for ::1 at 2015-07-10 17:08:17 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"AtxBT0nJL6MvLrheofxqZNrFfA8PO5nb3VHUZX0js6EmYsvBgs/ZL3NGS+0eAYeX+e4KRnTVzkJfiCcYC7v9LQ=="}
+  Rendered users/new.html.erb within layouts/application (130.0ms)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `code' for #<User:0x8c87a60>):
+    14:               <%= f.text_field :last_name, :placeholder => "Last Name" %>
+    15:               <%= f.email_field :email, :placeholder => "Email" %>
+    16:               <%= f.password_field :password, :placeholder => "Password" %>
+    17:               <%= f.text_field :code, :placeholder => "Sign-up Code" %>
+    18:           </div>
+    19:             <%= f.submit "Create Account", class: "btn-submit" %>
+    20:             <%= link_to "Already have an account?", login_path, method: "get"%>
+  app/views/users/new.html.erb:17:in `block in _app_views_users_new_html_erb___225362216_73675788'
+  app/views/users/new.html.erb:12:in `_app_views_users_new_html_erb___225362216_73675788'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.0ms)

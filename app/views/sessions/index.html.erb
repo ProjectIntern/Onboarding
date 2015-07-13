@@ -16,8 +16,11 @@
           <%= f.submit "Log In", class: "btn-submit" %>
           <%= link_to "Don't have an account?", signup_path, method: "get", action: 'create'%>
           <% end %>
+        <% if flash[:notice] %>
+          <div class="notice"><%= flash[:notice] %></div>
+        <% end %>
       </div>
     </div>
-    <div id="error">Invalid Email or Password</div>
+    
   </body>
 </html>
