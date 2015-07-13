@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sign Up</title>
-  </head>
-
-  <body>
-  <div class="interns_wrapper">
-    <div class="interns_container">
-      <div class="interns">
-         <% @users.each do |t| %>
-         <div class="img_container">
-         <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show" %><br>
-         <%= t.first_name %> <%= t.last_name %>
-         </div>
-         <% end %>
-       </div> 
+<div class="interns_wrapper">
+  <div class="interns">
+     <% @users.each do |t| %>
+     <div class="img_container">
+     <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show" %><br>
+     <%= t.first_name %> <%= t.last_name %>
      </div>
-   </div>
-  </body>
-</html>
+     <% end %>
+   </div> 
+ </div>

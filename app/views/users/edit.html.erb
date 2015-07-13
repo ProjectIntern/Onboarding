@@ -1,56 +1,48 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Edit</title>
-  </head>
-  <body>
-    <div class='edit_background'>
-      <div class="edit_container">
-        <div class="edit_form">
-          <h1>Edit Profile</h1>
-          <%= form_for(@user) do |f| %>
-            <div class = "basic_information">
-              <h2>Basic Information</h3>
-              <span>First Name</span>
-              <%= f.text_field :first_name, :placeholder => "First Name" %>
-              <span>Last Name</span>
-              <%= f.text_field :last_name, :placeholder => "Last Name" %>
-              <span>Email</span>
-              <%= f.email_field :email, :placeholder => "Email" %>
-              <span>Position</span>
-              <%= f.text_field :position, :placeholder => "Position" %>
-              <span>Location</span>
-              <%= f.text_field :location, :placeholder => "Office Location" %>
-              <span>University</span>
-              <%= f.text_field :school, :placeholder => "University" %>
-              <span>About Me</span><br>
-              <%= f.text_area :about, :placeholder => "Tell us about yourself!", :maxlength => 500 %>
-              <span>Profile Picture</span><br>
-              <%= image_tag @user.image, :class => "profile_pic"%> 
-              <%= f.file_field :picture, :placeholder => "Picture" %><br>
-              <%= f.submit "Update Profile", :class => "btn" %>
+<div class='edit_background'>
+  <div class="edit_container">
+    <div class="edit_form">
+      <h1>Edit Profile</h1>
+      <%= form_for(@user) do |f| %>
+        <div class = "basic_information">
+          <h2>Basic Information</h3>
+          <span>First Name</span>
+          <%= f.text_field :first_name, :placeholder => "First Name" %>
+          <span>Last Name</span>
+          <%= f.text_field :last_name, :placeholder => "Last Name" %>
+          <span>Email</span>
+          <%= f.email_field :email, :placeholder => "Email" %>
+          <span>Position</span>
+          <%= f.text_field :position, :placeholder => "Position" %>
+          <span>Location</span>
+          <%= f.text_field :location, :placeholder => "Office Location" %>
+          <span>University</span>
+          <%= f.text_field :school, :placeholder => "University" %>
+          <span>About Me</span><br>
+          <%= f.text_area :about, :placeholder => "Tell us about yourself!", :maxlength => 500 %>
+          <span>Profile Picture</span><br>
+          <%= image_tag @user.image, :class => "profile_pic"%> 
+          <%= f.file_field :picture, :placeholder => "Picture" %><br>
+          <%= f.submit "Update Profile", :class => "btn" %>
 
-            </div>
-            <div class = "change_password">
-              <h2>Password</h3>
-              <%= f.password_field :password, :placeholder => "New Password" %>
-              <%= f.submit "Change Password", :class => "btn" %>
-            </div>
-            <div class = "social_media">
-              <h2>Social Media</h2>
-              <span>Facebook</span>
-              <%= f.text_field :facebook, :placeholder => "http://" %>
-              <span>LinkedIn</span>
-              <%= f.text_field :linkedin, :placeholder => "http://" %>
-              <span>Twitter</span>
-              <%= f.text_field :twitter, :placeholder => "http://" %>
-              <span>Instagram</span>
-              <%= f.text_field :instagram, :placeholder => "http://" %>
-              <%= f.submit "Update Social Media", :class => "btn" %>
-            </div>
-          <% end %>
         </div>
-      </div>
+        <div class = "change_password">
+          <h2>Password</h3>
+          <%= f.password_field :password, :placeholder => "New Password" %>
+          <%= f.submit "Change Password", :class => "btn" %>
+        </div>
+        <div class = "social_media">
+          <h2>Social Media</h2>
+          <span>Facebook</span>
+          <%= f.text_field :facebook, :placeholder => "http://" %>
+          <span>LinkedIn</span>
+          <%= f.text_field :linkedin, :placeholder => "http://" %>
+          <span>Twitter</span>
+          <%= f.text_field :twitter, :placeholder => "http://" %>
+          <span>Instagram</span>
+          <%= f.text_field :instagram, :placeholder => "http://" %>
+          <%= f.submit "Update Social Media", :class => "btn" %>
+        </div>
+      <% end %>
     </div>
-  </body>
-</html>
+  </div>
+</div>
