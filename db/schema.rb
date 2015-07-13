@@ -49,4 +49,3 @@ ActiveRecord::Schema.define(version: 20150709213907) do
   end
 
 end
->>>>>>> 608a20b23e9015cedba57621c6e6629fc8c6e3d1

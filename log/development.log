@@ -3211,3 +3211,1662 @@ ActionView::Template::Error (undefined method `code' for #<User:0x8c87a60>):
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateConversations (20150709213907)
+  [1m[35m (0.0ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at C:/Sites/Onboarding/db/migrate/20150709213907_create_conversations.rb:13)
+  [1m[36m (15.6ms)[0m  [1mCREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "sender_email" varchar, "sender_name" varchar, "sender_id" varchar, "receiver_email" varchar, "receiver_name" varchar, "receiver_id" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_conversations_on_user_id" ON "conversations" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150709213907"]]
+  [1m[36m (78.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-13 14:59:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContentController#index as HTML
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-07-13 14:59:14 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 958ms (Views: 957.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for 127.0.0.1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/users.self-940ff0f10f2a79ec68791688898b83767150edee2c35a2b18bcf3834d45258a3.css?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for 127.0.0.1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for 127.0.0.1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 14:59:15 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 14:59:37 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+RjNc8xeZ96+zFN/T3si/nkFHLiAlskTPOpRBsJJ1VLWum7BDePEyaTwv5CwAF42s9iO5nsDL3OKlo5bZFp2Q==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 430ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 14:59:38 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 14:59:38 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 14:59:43 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"/6OhktE65U5fc0OsoWH2+BkReaj21nV5euRJoxZOnF3bHSscGjwTwgMbsB8enBsLOjoP4Y04IuD4PbreYNbS0Q=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 123ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 14:59:43 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 14:59:46 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"uDMx5ngjfO2bjAHZgx3tbVzMZ3tX4h8K+Ezbtr8kuiecjbtosyWKYcfk8mo84ACef+cRMiwMSJN6lSjLybz0qw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 14:59:46 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 14:59:51 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"4CaPxvkldhuWoF6WcldgiKGqou8TqIE3NL5IptTFLkjEmAVIMiOAl8rIrSXNqo17goHUpmhG1q62Z7vbol1gxA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (70.0ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `image' for #<User:0x8f6ecb0>):
+    10:       <div class="interns">
+    11:          <% @users.each do |t| %>
+    12:          <div class="img_container">
+    13:          <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show" %><br>
+    14:          <%= t.first_name %> <%= t.last_name %>
+    15:          </div>
+    16:          <% end %>
+  app/views/users/index.html.erb:13:in `block in _app_views_users_index_html_erb__227043700_75152628'
+  app/views/users/index.html.erb:11:in `_app_views_users_index_html_erb__227043700_75152628'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:00:57 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 160ms (Views: 155.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:01:00 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"euqk7LwGVLezkhsA3Y2Ho6LdD1ixA1C3x4nvMjC1dwpeVC5idwCiO+/66LNicGpQgfZ5EcrtBy5FUBxPRi05hg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shuttle/index.html within layouts/application (27.5ms)
+Completed 200 OK in 165ms (Views: 162.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:01:00 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-07-13 15:01:05 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"nwhKrGKwiUwnvOWxBh05KLBPiDr9WO4Ba4BJcPc7bz+7tsAiqbZ/wHvUFgK54NTbk2T+c4a2uZjpWboNgaMhsw==", "id"=>"1"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 7.5ms)
+
+ActionView::Template::Error (undefined method `image' for #<User:0xb3c8038>):
+     8:   <div class="content_container">
+     9:     <div class="profile_container">
+    10:       <div class="img_container">
+    11:         <%= image_tag @user.image, :class => "profile_pic"%>
+    12:         <ul>
+    13:           <% if @user.facebook != ""%>
+    14:           <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+  app/views/users/show.html.erb:11:in `_app_views_users_show_html_erb___308178327_94610436'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+[0m
+  [1m[36m (78.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (62.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150628015610)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at C:/Sites/Onboarding/db/migrate/20150628015610_create_users.rb:18)
+  [1m[35m (15.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "code" varchar, "image" varchar DEFAULT 'default.jpg', "facebook" varchar DEFAULT '', "linkedin" varchar DEFAULT '', "twitter" varchar DEFAULT '', "instagram" varchar DEFAULT '', "location" varchar, "default" varchar, "position" varchar, "school" varchar, "about" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150628015610"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+Migrating to CreateConversations (20150709213907)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at C:/Sites/Onboarding/db/migrate/20150709213907_create_conversations.rb:13)
+  [1m[35m (0.0ms)[0m  CREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "sender_email" varchar, "sender_name" varchar, "sender_id" varchar, "receiver_email" varchar, "receiver_name" varchar, "receiver_id" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_conversations_on_user_id" ON "conversations" ("user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150709213907"]]
+  [1m[36m (140.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kobe"], ["last_name", "Bryant"], ["email", "kbryant@warriors.com"], ["password_digest", "$2a$10$ceaAN5e49AqhT4EIIiTw1.AY3OGPSbQYmJP2hSIL4WRBYdihA3ltm"], ["code", "gapinc"], ["location", "Los Angeles"], ["school", "Lakers"], ["position", "Small Guard"], ["image", "http://www.trbimg.com/img-5450096b/turbine/la-sp-ln-lakers-byron-scott-kobe-bryant-20141028"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:45.390018"], ["updated_at", "2015-07-13 22:07:45.390018"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Steve"], ["last_name", "Kerr"], ["email", "skerr@warriors.com"], ["password_digest", "$2a$10$QL21l2nCcPZLRmauVosE5uZ7A58PZm50pq4kjaLmp4XtniCiM2apW"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "coach"], ["image", "http://palisadesparade.org/wordpress/wp-content/uploads/2014/06/Steve-Kerr1.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:45.670814"], ["updated_at", "2015-07-13 22:07:45.670814"]]
+  [1m[36m (78.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "facebook", "linkedin", "instagram", "twitter", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Stephen"], ["last_name", "Curry"], ["email", "scurry@warriors.com"], ["password_digest", "$2a$10$li8lvUnAlImVMbI7tWTBkevsa1d.xoMsPfxnzYSR6nCEs8..XUvNm"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "point guard"], ["facebook", "https://www.facebook.com/StephenCurryOfficial"], ["linkedin", "http://linkedin.com"], ["instagram", "https://instagram.com/wardell30/"], ["twitter", "https://twitter.com/stephencurry30"], ["image", "http://www.gannett-cdn.com/-mm-/9b82493af6d6321ddc22c7a31e72b33309d7a36f/c=1275-0-2925-2200&r=537&c=0-0-534-712/local/-/media/2015/02/14/USATODAY/USATODAY/635595490453065957-2015-02-14-Stephen-Curry1.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:45.889211"], ["updated_at", "2015-07-13 22:07:45.889211"]]
+  [1m[35m (62.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Klay"], ["last_name", "Thompson"], ["email", "kthomspon@warriors.com"], ["password_digest", "$2a$10$ZQDD4yO45UHT4Z9g9WNtdeIi9Eyp2ZX5FQY5PnJfAXjIusWf4PR0."], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small guard"], ["image", "http://shandyfiles.s3-us-west-1.amazonaws.com/images/photos/thefumble/klay-thompson-scores-26-in-second-quarter.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:46.092009"], ["updated_at", "2015-07-13 22:07:46.092009"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Andre"], ["last_name", "Iguodala"], ["email", "aiguodala@warriors.com"], ["password_digest", "$2a$10$9WklYmqwZtiIiHETOVcURe0MVkcvvdDRP52hrQJilzPkTV87drCIG"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small guard"], ["image", "http://www4.pictures.zimbio.com/gi/Andre+Iguodala+Spain+v+USA+INUhVbxqhlUl.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:46.326006"], ["updated_at", "2015-07-13 22:07:46.326006"]]
+  [1m[35m (78.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "David"], ["last_name", "Lee"], ["email", "dlee@warriors.com"], ["password_digest", "$2a$10$QGDnhTmfR70vLJ8aqP46tuMZmsKLhsw33fAp/9NVA36Ffi1ldgzT6"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "power forward"], ["image", "http://thesportsquotient.com/media/posts/16774/david%20lee.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:46.575603"], ["updated_at", "2015-07-13 22:07:46.575603"]]
+  [1m[36m (98.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Draymond"], ["last_name", "Green"], ["email", "dgreen@warriors.com"], ["password_digest", "$2a$10$LXBolq68wymbHM190mzJJOChDXlBXYK/eCEmOpviVatTYIZTC0Rc6"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small forward"], ["image", "http://www4.pictures.zimbio.com/gi/Draymond+Green+Chicago+Bulls+v+Golden+State+_NsXbWi0rdNl.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:46.819600"], ["updated_at", "2015-07-13 22:07:46.819600"]]
+  [1m[35m (78.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Andrew"], ["last_name", "Bogut"], ["email", "abogut@warriors.com"], ["password_digest", "$2a$10$o3quKT9wJV1IzumUwUlZ.uRyqC00nqIYfvXCA87iVFlJpeaRkjDNm"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "center"], ["image", "http://warriorsworld.bayareaballllc1.netdna-cdn.com/wp-content/uploads/2014/01/Andrew-Bogut.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:47.037997"], ["updated_at", "2015-07-13 22:07:47.037997"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shaun"], ["last_name", "Livingston"], ["email", "slivingston@warriors.com"], ["password_digest", "$2a$10$sTDXBKdkFCPR7czYqU7kheNc6ASRkB829c4.FJzzJGKOtUlpaKpga"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "point guard"], ["image", "http://i.cdn.turner.com/drp/nba/warriors/sites/default/files/livingston_okc_20141218.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:47.271994"], ["updated_at", "2015-07-13 22:07:47.271994"]]
+  [1m[35m (101.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Harrison"], ["last_name", "Barnes"], ["email", "hbarnes@warriors.com"], ["password_digest", "$2a$10$9keYpBMYdLkRiG34F3E1zOSrOLMjcrAjkgSkfRXExJdma/iRb/y1a"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small forward"], ["image", "http://www1.pictures.zimbio.com/gi/Harrison+Barnes+2012+NBA+Rookie+Photo+Shoot+4OCFXyO64dql.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:47.498592"], ["updated_at", "2015-07-13 22:07:47.498592"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Leandro"], ["last_name", "Barbosa"], ["email", "lbarbosa@warriors.com"], ["password_digest", "$2a$10$4w0O6QkuD0zbidpIBi7bkOT.cFM3InHDsUx1g0UyYbKkjPVL6TwYy"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small guard"], ["image", "http://thumb.usatodaysportsimages.com/image/thumb/650-510nw/8379908.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:47.763788"], ["updated_at", "2015-07-13 22:07:47.763788"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Festus"], ["last_name", "Ezeli"], ["email", "fezeli@warriors.com"], ["password_digest", "$2a$10$mtZunjF5SDRiFKUdZuxM5OAKmdDSaIlc1BGwRAzFKsEpnzXQOE9gO"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "center"], ["image", "http://www2.pictures.zimbio.com/gi/Golden+State+Warriors+v+Los+Angeles+Lakers+K7tzvJTm9zvl.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:47.984685"], ["updated_at", "2015-07-13 22:07:47.984685"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Marreese"], ["last_name", "Speights"], ["email", "mspeights@warriors.com"], ["password_digest", "$2a$10$e7wk02Xan2.9637.YsRmQ.XyrLvMGxvXh.9m71uyI025KPJ2zN3mS"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "center"], ["image", "http://ww1.hdnux.com/photos/33/24/11/7160408/11/920x920.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:48.265482"], ["updated_at", "2015-07-13 22:07:48.265482"]]
+  [1m[35m (78.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Brandon"], ["last_name", "Rush"], ["email", "brush@warriors.com"], ["password_digest", "$2a$10$Ci87NMyCxRwgrJN/5jJ/P.xHoCjdYPnBeP0xE9bwFNi81OVdwvAGS"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small guard"], ["image", "http://l.yimg.com/j/assets/p/sp/getty/ec/fullj.fae835ba328d8c884ab981ca8c80c763/fae835ba328d8c884ab981ca8c80c763-getty-136725986.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:48.515079"], ["updated_at", "2015-07-13 22:07:48.515079"]]
+  [1m[36m (78.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "code", "location", "school", "position", "image", "about", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "James"], ["last_name", "McAdoo"], ["email", "jmcadoo@warriors.com"], ["password_digest", "$2a$10$knHvcQg4lfMUU0LUCi4Ch.Udb8LAJ0dkEkoGqFAT2enQV..DIX6hK"], ["code", "gapinc"], ["location", "Golden State"], ["school", "warriors"], ["position", "small guard"], ["image", "http://thumb.usatodaysportsimages.com/image/thumb/650-510nw/8521826.jpg"], ["about", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2015-07-13 22:07:48.764675"], ["updated_at", "2015-07-13 22:07:48.764675"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2015-07-13 15:08:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 295ms (Views: 248.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:08:19 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-13 15:08:25 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q0PDWVa/ML0t3DB3iqMe82Oo5I1XZoTTu39h+lAfTdeP/UnXnbnGMXG0w8Q1XvMAQIOSxCyI00o5ppKHJocDWw=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:08:25 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:08:25 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 15:08:30 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i/CF0ndEx1mcdZNvcv9awpzGUKXJmMBtkc+dGWhr+WmvTg9cvEIx1cAdYNzNArcxv+0m7LJ2l/QTFm5kHvO35Q==", "session"=>{"email"=>"christie_yeh@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "christie_yeh@yahoo.com"]]
+Redirected to http://localhost:8080/error
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2015-07-13 15:08:30 -0700
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 190ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:08:30 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 15:09:04 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RXMWsonSixfrvOzW60BzJ1NfKxeVsecJgubKk8zBculhzZw8QtR9m7fUH2VUvZ7UcHRdXu5fsJAAPznuulk8ZQ==", "session"=>{"email"=>"scurry@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "scurry@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 195ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:09:04 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 98ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:04 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:09:09 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"yC1mlmdduKwSkkSbw67eO54i3mawE5o4MiZACrcECdfsk+wYrFtOIE76tyh8UzPIvQmoL8v9zaGw/7N3wZxHWw=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:09 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:09:12 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"+cE/0fz4gYQBUE3DxzovdXeCF/vSJXMxduFeNeVvH5Ldf7VfN/53CF04vnB4x8KGVKlhsqnLJKj0OK1Ik/dRHg=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 185ms (Views: 180.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:12 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 15:09:15 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"/y9bUWq52dTQmsP5Uiu7eJ7UmDr5lkGMzJ5jZ/rZNLLbkdHfob8vWIzyMErt1laLvf/uc4J4FhVOR5AajEF6Pg==", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (5.0ms)
+  Rendered users/show.html.erb within layouts/application (152.5ms)
+Completed 200 OK in 298ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-13 15:09:15 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-13 15:09:15 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-13 15:09:15 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-13 15:09:15 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:15 -0700
+
+
+Started POST "/conversations" for ::1 at 2015-07-13 15:09:23 -0700
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PAxislW0YY4SRN00r+olG9t9VUGkgeGcrMotZuYGwwcYsug8nrKXAk4sLocQF8jo+FYjCN9vtgUuE94bkJ6Niw==", "conversation"=>{"comment"=>"Hey bud", "receiver_email"=>"scurry@warriors.com", "receiver_name"=>"Stephen Curry", "receiver_id"=>"3", "sender_email"=>"scurry@warriors.com", "sender_name"=>"Stephen Curry", "sender_id"=>"3"}, "commit"=>"Submit"}
+  [1m[36m (2.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "conversations" ("sender_email", "comment", "receiver_email", "receiver_name", "receiver_id", "sender_name", "sender_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["sender_email", "scurry@warriors.com"], ["comment", "Hey bud"], ["receiver_email", "scurry@warriors.com"], ["receiver_name", "Stephen Curry"], ["receiver_id", "3"], ["sender_name", "Stephen Curry"], ["sender_id", "3"], ["created_at", "2015-07-13 22:09:23.961120"], ["updated_at", "2015-07-13 22:09:23.961120"]]
+  [1m[36m (95.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:8080/users/3
+Completed 302 Found in 123ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 15:09:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (7.5ms)
+  Rendered users/show.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 293ms (Views: 267.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:24 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 15:09:26 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.5ms)
+  Rendered users/show.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 278ms (Views: 277.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/users.self-940ff0f10f2a79ec68791688898b83767150edee2c35a2b18bcf3834d45258a3.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:27 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:09:53 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 253ms (Views: 240.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:09:54 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:09:58 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"g3Nk/6/m30ttlVsOkgg7vbJvZeCcZLBmjmJ+HoEDiVqnze5xZOApxzH9qL0t9dZOkUQTqeeK5/8Mu41j95vH1g=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html within layouts/application (12.5ms)
+Completed 200 OK in 150ms (Views: 145.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:09:58 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:10:50 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"L+B4BUQdsdkK0KlQRSB07qWtSGbFvG2sJjD/GnAm0cwLXvKLjxtHVVa4WuP63ZkdhoY+L75SOjWk6QxnBr6fQA=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html within layouts/application (7.5ms)
+Completed 200 OK in 133ms (Views: 127.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:10:50 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:10:53 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"oje1SeQVICS931YtyKLWuIxDSP5x5G7cP/uyGD7czS2GiT/HLxPWqOG3pZ53XztLr2g+twoKOUW9IkFlSESDoQ=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 293ms (Views: 285.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:10:54 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 15:10:57 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"XkQm8r+B8vpTeejwhkKXKwztY7sgIyf+WL81FJLPOg96+qx8dIcEdg8RG0M5v3rYL8YV8lvNcGfaZsZp5Fd0gw==", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[36mCACHE (2.5ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (10.0ms)
+  Rendered users/show.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 365ms (Views: 345.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:10:58 -0700
+
+
+Started GET "/users/3/edit" for ::1 at 2015-07-13 15:11:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"Mcz6vI3Ykvqf4DmvaYuDgCZPEeFbfa/ys0equ4XukAUVcnAyRt5kdsOIyhzWdm5zBWRnqCCT+GsxnlnG83beiQ==", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/edit.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 245ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:15 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-13 15:11:29 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KIQQTtbWB/2kCJ8mx1ECWh9+mwamvJ3Z3cckbIX+Y7cMOprAHdDxcfhgbJV4rO+pPFXtT91SykBfHtcR82YtOw=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:11:29 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 105ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:29 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 15:11:39 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J6fWOJNsDV8z5l0jt4p8v7ORYlQlXY5YP//xCQlm100DGVy2WGr702+OrpAId5FMkLoUHV6z2cG9JgJ0f/6ZwQ==", "session"=>{"email"=>"scurry@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "scurry@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 183ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:11:40 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 113ms (Views: 110.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:40 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:11:43 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"DqYT4bLvG8FNMuzBBRUcrKz6tK5fj0f4zzUlc1yKTOEqGJlveentTRFaH3K66PFfj9HC5yRhEGFN7NYOKhICbQ=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html within layouts/application (5.0ms)
+Completed 200 OK in 223ms (Views: 220.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:43 -0700
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:11:48 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Redirected to http://localhost:8080/
+Filter chain halted as :user_logged_on rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:48 -0700
+
+
+Started GET "/users/3/edit" for ::1 at 2015-07-13 15:11:49 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 123ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-13 15:11:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (2.5ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (2.5ms)
+  Rendered users/show.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 240ms (Views: 227.5ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2015-07-13 15:11:56 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DqYT4bLvG8FNMuzBBRUcrKz6tK5fj0f4zzUlc1yKTOEqGJlveentTRFaH3K66PFfj9HC5yRhEGFN7NYOKhICbQ=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:11:56 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 155ms (Views: 155.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:11:56 -0700
+
+
+Started GET "/users/3/edit" for ::1 at 2015-07-13 15:14:02 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:8080/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:14:02 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 290ms (Views: 290.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/users.self-94326d13d7b10764aa69a63feb1d59e1a21d40f0083dcf195d95fa7f6bb5876c.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:14:03 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 15:14:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tE2UhLlR/tCDVGHtX77RJuBoykLZcyV6C+NJrgMXRcGQ8x4KclcIXN88kl7gQzzVw0O8C6KdcuOJOrrTdY8LTQ==", "session"=>{"email"=>"skerr@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "skerr@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 123ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:14:15 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 98ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:14:15 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:14:22 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"zPPZCQ9iKJ+a5FBaPtAgRSBahP95SLv8+ufkjTjxwovoTVOHxGTeE8aMo+mBLc22A3HytgKm7GV4PhfwTmmMBw==", "id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:14:22 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:14:35 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 158ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/users.self-940ff0f10f2a79ec68791688898b83767150edee2c35a2b18bcf3834d45258a3.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:14:35 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:14:36 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 228ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/users.self-940ff0f10f2a79ec68791688898b83767150edee2c35a2b18bcf3834d45258a3.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:14:36 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:21:00 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"9dVSXrxcStcTfm3NrznxRJwaXoaYHbyYeH/rZVLhIe7Ra9jQd1q8W08Wnn4QxBy3vzEoz+Pz6wH6phgYJHlvYg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered shuttle/index.html within layouts/application (7.5ms)
+Completed 200 OK in 175ms (Views: 170.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:21:00 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:25:29 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"hYUe4Cp6zSYeNDbI/f1WS86dXg4eFpYF5V6GSYLUwE6hO5Ru4Xw7qkJcxXtCALu47bYoR2X4wZxnh3U09EyOwg==", "id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 245ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-9fe684f2e8bf2cfb5d5d8c4f6e235b9a7d410d59a58dddd70e14b51b85b7c565.css?body=1" for ::1 at 2015-07-13 15:25:29 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:25:29 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:25:52 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 248ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/users.self-94326d13d7b10764aa69a63feb1d59e1a21d40f0083dcf195d95fa7f6bb5876c.css?body=1" for ::1 at 2015-07-13 15:25:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:25:53 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:26:37 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 218ms (Views: 202.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/users.self-9fe684f2e8bf2cfb5d5d8c4f6e235b9a7d410d59a58dddd70e14b51b85b7c565.css?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:26:37 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:26:40 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 205ms (Views: 195.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/users.self-9fe684f2e8bf2cfb5d5d8c4f6e235b9a7d410d59a58dddd70e14b51b85b7c565.css?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:26:40 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:26:49 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 135ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/users.self-94326d13d7b10764aa69a63feb1d59e1a21d40f0083dcf195d95fa7f6bb5876c.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:26:49 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:27:38 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 260ms (Views: 252.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/users.self-066c1a0e95693859c2073b4f4f0812a2f48b990f1b6f74ef8254a34d5d01f7f9.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:27:38 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:27:40 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 218ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/application.self-4414571182e31f65e99ed8dff57978189cd23835d64ae5faaddc5bb91d7b74e7.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/users.self-066c1a0e95693859c2073b4f4f0812a2f48b990f1b6f74ef8254a34d5d01f7f9.css?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:27:41 -0700
+
+
+Started GET "/users/2" for ::1 at 2015-07-13 15:27:47 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"jdjeyk6P9IFuiGYD+CVyT933LzWxcL29JYWIt1i55tCpZlREhYkCDTLglbBH2J+8/txZfMqe6iSnXHvKLiGoXA==", "id"=>"2"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mConversation Load (2.5ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (5.0ms)
+  Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 295ms (Views: 282.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:27:47 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:27:53 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"q3LY9OM8SBJtKKx1jNgXKOTZwTe2ULQNDXUCAc/VLKqPzFJ6KDq+njFAX8YzJfrbx/K3fs2+45SPrPF8uU1iJg==", "id"=>"2"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 173ms (Views: 145.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:27:53 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:28:21 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"L64Y2jx0Wlrl1WAS7s3EEoGqh6TMYnktcprI0qQ8cmQLEJJU93Ks1rm9k6FRMCnhooHx7beMLrTwQzuv0qQ86A=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 135.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:28:21 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:29:06 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 315ms (Views: 310.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/shuttle.self-b77f01231f53adf48d3f9203a17583592079311d983b12a0fdd144881d8155e9.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/users.self-94326d13d7b10764aa69a63feb1d59e1a21d40f0083dcf195d95fa7f6bb5876c.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/application.self-acae5e0d6725a99d80a0a4034e6d8cbb131820d63c7137348fcb5c18675af797.css?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:07 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:29:12 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"T6v6cVuJB2uIOIVcCjdBtWfUph8eQyUABI5gWJdma9BrFXD/kI/x59RQdu+1yqxGRP/QVmWtcpmGV5Ml4f4lXA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:12 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:29:17 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"G1H+LG+s46vbhVeBafqaOUJ8M6bA+DTFcxDl4w0SFk4/73SipKoVJ4ftpDLWB3fKYVdF77sWY1zxyRaee4pYwg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 118ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:17 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:29:21 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"6jVGLTye3+0FF1cx1Z+jIciDo73d5jcaNoVz1eodxujOi8yj95gpYVl/pIJqYk7S66jV9KYIYIO0XIConIWIZA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 135ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:21 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:29:27 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"/Z1FpqE+MxrBnFhfwIQnyYyE7BORTCaKQ9DteLlxzz3ZI88oajjFlp30q+x/eco6r6+aWuqicRPBCR4Fz+mBsQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered shuttle/index.html within layouts/application (7.5ms)
+Completed 200 OK in 163ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:28 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:29:36 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"HyjAW3viKXEr6zUfJ4MfDIxrmTdoOsONZ5afPRu8hIk7lkrVsOTf/XeDxqyYfvL/r0DvfhPUlBTlT2xAbSTKBQ=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 273ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:29:36 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:30:42 -0700
+Processing by ContentController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 220ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/users.self-94326d13d7b10764aa69a63feb1d59e1a21d40f0083dcf195d95fa7f6bb5876c.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/application.self-acae5e0d6725a99d80a0a4034e6d8cbb131820d63c7137348fcb5c18675af797.css?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:30:42 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:30:45 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"sm/f4LrtPKhJvl0jX9eWnBjevdMHwCBxGFSnU9r/kE6W0VVucevKJBXWrpDgKntvO/XLmnwud+iajVQurGfewg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 163ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:30:45 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:30:51 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"E5NPBlMGbVxYMHnQOMjd79QW8PrPbGwk/iBbPkFnZXE3LcWImACb0ARYimOHNTAc9z2Gs7SCO718+ahDN/8r/Q=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:30:51 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:30:54 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"mb/ZWAvO3GPYlbydYum9XinnKDepG7o0Ku3+iXPRBD69AVPWwMgq74T9Ty7dFFCtCsxeftL17a2oNA30BUlKsg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 153ms (Views: 147.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:30:54 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:31:54 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 438ms (Views: 435.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/content.self-de80822b086786c82bdd8bea9870a3dcf7ee1b123f2940483f832d3ea9104401.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/sessions.self-2479597b5f165ee56500143e8a4ba4239d742d9fb86e0692322b2e88385e3593.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/conversations.self-f06b612279164b49e0382d162b039329adfec005ecdb40eeb389f8e737e033cf.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/shuttle.self-7a01a34125876500d914548be19d699f6a82def54e44067b2f3b2c5f307d5d50.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/users.self-090e52c33b501f90c7e420994323906f925d94da5b7389837849b7c62f29af57.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/application.self-acae5e0d6725a99d80a0a4034e6d8cbb131820d63c7137348fcb5c18675af797.css?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/content.self-9c6533436024db7872548d52174d66a4e82920867deed57f093cf10109e1e4d7.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/sessions.self-f9937d4ea33fa432286f2b10f9fd596624b296a6814a472a980becc8a551f11f.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/users.self-3ab08376969616018adfdbd220a69dabe0579025d296e310bcc5a4ac77b7e983.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/application.self-bcaf4684fb5e506812efa04443c3f5d5d18490f2a6e07810fed4d17a8657b584.js?body=1" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:31:55 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:31:58 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"4t0PvE6l9zxlI3E+iADTx4sU7YUKA3YvcGQnO2jwi/rGY4UyhaMBsDlLgo03/T40qD+bzHHtIbbyvdRGHmjFdg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 120ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:31:58 -0700
+
+
+Started GET "/" for ::1 at 2015-07-13 15:32:01 -0700
+Processing by ContentController#index as HTML
+  Parameters: {"authenticity_token"=>"mYrZfI3qyq3eTugs7phEMap6mJLiH/4a6f+8rfKv21a9NFPyRuw8IYImG59RZanCiVHu25nxqYNrJk/QhDeV2g=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:01 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:32:05 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"Grb7SB+1PVTCLFBdaaXrIN7JwPhzD8FHEgRGGX1hIRw+CHHG1LPL2J5Eo+7WWAbT/eK2sQjhlt6Q3bVkC/lvkA=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 120ms (Views: 112.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:06 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-13 15:32:11 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"UXZqFN48+c0XZwI1yXoqGp13HKU2nBOrB7hJsL1uZRN1yOCaFToPQUsP8YZ2h8fpvlxq7E1yRDKFYbrNy/Yrnw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered shuttle/index.html within layouts/application (5.0ms)
+Completed 200 OK in 133ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:12 -0700
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-13 15:32:23 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"ER/Erv+kbzRQPyw2NikegTWOtypccomcERy0b7DD9iA1oU4gNKKZuAxX34WJ1PNyFqXBYyec3gWTxUcSxlu4rA==", "id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 195ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:23 -0700
+
+
+Started GET "/users/2" for ::1 at 2015-07-13 15:32:31 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"DTOznovhMnxoVraN9+78kRb1XhaOWqO9aIbYMHplWQMpjTkQQOfE8DQ+RT5IExFiNd4oX/W09CTqXytNDP0Xjw==", "id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (5.0ms)
+  Rendered users/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 215ms (Views: 207.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:31 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-13 15:32:42 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7pCJzdIPfsqv1Dlc2oxQ7pT6z6D0W2MELEao1t+x6g7KLgNDGQmIRvO8yu9lcb0dt9G56Y+1NJ2un1urqSmkgg=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-13 15:32:42 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 203ms (Views: 200.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:42 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-13 15:32:53 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ovRk7Lw5XVOReHIjl2pzkrtIB7cfqLMw9DWBbFOniiCGSu5idz+r380QgZAol55hmGNx/mRG5Kl27HIRJT/ErA==", "session"=>{"email"=>"scurry@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "scurry@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 208ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 15:32:53 -0700
+Processing by ContentController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered content/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 145ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:53 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-13 15:32:57 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"XMOVsIbvtwl7k/aLnbn3JQTl9w1o8D7gXpGTLZiNEJR4fR8+TelBhSf7BTgiRBrWJ86BRBMeaXncSGBQ7hVeGA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 135ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-13 15:32:58 -0700
