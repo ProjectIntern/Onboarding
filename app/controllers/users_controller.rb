@@ -16,6 +16,25 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @conversation = Conversation.new
+    @conversations = Conversation.all
+    @contacts = []
+    @users = []
+    Conversation.all.each do |n|
+      if n.sender_email == current_user.email
+        if !@contacts.include?(n.receiver_id)
+          @contacts.push(n.receiver_id)
+        end
+      end
+       if n.receiver_email == current_user.email
+        if !@contacts.include?(n.sender_id)
+          @contacts.push(n.sender_id)
+        end
+      end
+    end
+    @contacts.each do |i|
+      @users.push(User.find(i))
+    end
   end
 
   def update
@@ -38,15 +57,14 @@ class UsersController < ApplicationController
       redirect_to '/exists'
     elsif @user.save
       session[:id] = @user.id
-      @user[:image] = "http://skolafund.com/img/sponsorskolafund-picture.jpg"
       redirect_to '/'
     else
       redirect_to '/signup'
     end
   end
-
+  
   private
-    def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
-    end
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
+  end
 end

@@ -18,7 +18,7 @@ html {
   height: 100%;
   width: 100%;
   overflow: scroll;
-  background-image: url('jeans.jpg');
+  background-image: url('jeans_color.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,9 +31,15 @@ body{
   margin: 0;
 }
 
+.application_container{
+  width: 100%;
+  height: 100%;
+  margin-top: 51px;
+}
+
 /* Initial menu */
 .menu {
-  background: rgba(25,25,25, .5);
+  background: rgba(0,0,51, .5);
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -62,8 +68,8 @@ body{
 }
 
 .menu li:first-child{
-  color: black;
-  background: black;
+  color: #000033;
+  background: #000033;
 }
 
 .menu i::before{
@@ -107,11 +113,13 @@ i.fa.fa-home::before {
 }
 
 .nav-bar {
-  background-color: black;
+  background-color: #000033;
   position: fixed;
   width: 100%;
+  height: 51px;
   top: 0;
   left: 0;
+  z-index: 50;
 }
 
 .nav-bar li {
@@ -124,7 +132,14 @@ i.fa.fa-home::before {
 }
 
 .nav-bar ul li:last-child{
-  float: right;
+  right: 0;
+  position: absolute;
+  padding-left: 20px;
+}
+
+.nav-bar ul li:first-child{
+  left: 0;
+  position: absolute;
   padding-left: 20px;
 }
 
@@ -159,7 +174,7 @@ i#icon-menu.fa.fa-bars:hover {
 }
 
 .onclick-menu-content {
-  background-color: rgba(25,25,25, .3);;
+  background-color: rgba(0,0,51, .5);;
   padding: 0px;
   display: none;
 }
@@ -208,18 +223,14 @@ a:active {
 }
 
 .profile_pic{
-  height: 160px;
-  width: 150px;
+  height: 267px;
+  width: 200px;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 736px) {
+@media screen and (min-width: 320px) and (max-width: 383px) {
   .nav-bar ul li:last-child{
-  float: right;
-  margin-right: 10px;
-  padding-left: 20px;
+    width: 50px;
 }
-
 }
 
 

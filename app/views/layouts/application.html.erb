@@ -7,6 +7,7 @@
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rufina' rel='stylesheet' type='text/css'>
     
   </head>
   
@@ -22,8 +23,7 @@
           CLOSE
             </div></li>
         <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
-        <li><i class="fa fa-globe"><%= link_to "About/History", about_path, method: "get", action: "index" %></i></li>
-        <li><i class="fa fa-comments"><%= link_to "Posts", posts_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-comments"><%= link_to "Posts", root_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users">People Locator</i></li>
@@ -51,9 +51,11 @@
     </div>
 
   <% end %>
+  <div class ="application_container">
 
   <%= yield %>
 
+  </div>
   </body>
 
 </html>

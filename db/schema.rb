@@ -11,21 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702195157) do
+ActiveRecord::Schema.define(version: 20150709213907) do
 
-  create_table "posts", force: :cascade do |t|
-    t.text     "comment"
+  create_table "conversations", force: :cascade do |t|
+    t.string   "comment"
+    t.string   "sender_email"
+    t.string   "sender_name"
+    t.string   "sender_id"
+    t.string   "receiver_email"
+    t.string   "receiver_name"
+    t.string   "receiver_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "conversations", ["user_id"], name: "index_conversations_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "code"
+    t.string   "image",           default: "default.jpg"
+    t.string   "facebook",        default: ""
+    t.string   "linkedin",        default: ""
+    t.string   "twitter",         default: ""
+    t.string   "instagram",       default: ""
+    t.string   "location"
+    t.string   "default"
+    t.string   "position"
+    t.string   "school"
+    t.string   "about"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
 end
+>>>>>>> 608a20b23e9015cedba57621c6e6629fc8c6e3d1

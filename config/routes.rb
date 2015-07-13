@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'about' => 'about#index'
   get 'map' => 'map#index'
   resources :users
+  resources :conversations
   get 'signup' => 'users#new'
   get '/exists' => 'users#exists'
   
@@ -16,7 +17,6 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   resources :posts
-  get '/posts' => 'posts#index'
   get '/shuttle' => 'shuttle#index' 
   get '/users/:id' => 'users#show', as: :profile
   get '/users/:id/edit' => 'users#edit', as: :edit_profile
