@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Log In</title>
-  </head>
-
-  <body>
-    <div class="shell">
-      <div class="container">
-        <div class="title">Gap Inc.</div>
-        <div class="form">
-          <%= form_for(:session, url: login_path) do |f| %>
-          <%= f.email_field :email, :placeholder => "Email" %>
-          <%= f.password_field :password, :placeholder => "Password" %>
-        </div>
-          <%= f.submit "Log In", class: "btn-submit" %><br>
-          <%= link_to "Don't have an account?", signup_path, method: "get", action: 'create'%>
-          <% end %>
-      </div>
+<div class="shell">
+  <div class="container">
+    <div class="title">Gap Inc.</div>
+    <div class="form">
+      <%= form_for(:session, url: login_path) do |f| %>
+      <%= f.email_field :email, :placeholder => "Email" %>
+      <%= f.password_field :password, :placeholder => "Password" %>
     </div>
-  </body>
-</html>
+      <%= f.submit "Log In", class: "btn-submit" %><br>
+      <%= link_to "Don't have an account?", signup_path, method: "get", action: 'create'%>
+      <% end %>
+  </div>
+</div>
+
 
 
