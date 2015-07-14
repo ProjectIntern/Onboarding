@@ -2,8 +2,8 @@
   <div class="edit_container">
     <div class="edit_form">
       <h1>Edit Profile</h1>
-      <%= render 'shared/error_messages', :target => @user %>
       <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages', :target => @user%>
         <div class = "basic_information">
           <h2>Basic Information</h3>
           <span>First Name</span>
@@ -29,6 +29,7 @@
         <div class = "change_password">
           <h2>Password</h3>
           <%= f.password_field :password, :placeholder => "New Password" %>
+          <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
           <%= f.submit "Change Password", :class => "btn" %>
         </div>
         <div class = "social_media">

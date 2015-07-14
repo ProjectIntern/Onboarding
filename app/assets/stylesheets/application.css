@@ -231,11 +231,12 @@ a:active {
 /* Error message styling. */
 
 #error_explanation {
-  color: white;
+  color: inherit;
 }
 
 #error_explanation ul{
-  color: white;
+  color: inherit;
+  text-align: left;
 }
 
 /* Media styling. */
