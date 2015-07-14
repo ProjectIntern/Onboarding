@@ -173,13 +173,23 @@ input[type=email] {
 .profile_container{
   background: white;
   width: 500px;
-  height: 500px;
-  padding-top: 50px;
+  height: 525px;
+  padding-top: 25px;
   padding-bottom: 25px;
-  padding-right: 20px;
   padding-left: 20px;
   float: left;
   margin-left: auto;
+}
+
+.img_container {
+  height: 307px;
+  width: 200px;
+  color: black;
+  background: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 15px 15px 15px;
 }
 
 .img_container li {
@@ -197,18 +207,17 @@ input[type=email] {
 }
 
 .information_container {
-  float: right;
   width: 175px;
-  margin-right: 37.5px;
-  margin-left: 37.5px;
-  margin-bottom: 35px;
+  height: 307px;
+  margin: 25px 30px 25px 30px;
+  float: right;
 }
 
 .information_container li {
   list-style-type: none;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .information_container ul{
@@ -230,18 +239,24 @@ textarea {
 
 .name {
   font-size: 30pt;
+  display: block;
+  position: relative;
+  top: -20px;
   font-weight: 900;
-  margin-bottom: 40px;
 }
 
 .about_container {
   width: 450px;
   text-align: left;
-  margin-left: 45px;
+  margin-left: 30px;
   word-wrap: break-word;
 }
 
 //Styling for users index
+
+.interns_container {
+  height: inherit;
+}
 
 .interns_wrapper {
   width: 100%;
@@ -252,22 +267,12 @@ textarea {
 
 .interns {
   box-sizing: border-box;
-  margin: 30px auto;
+  margin: 50px auto;
   display: block;
   overflow: hidden;
   text-align: center;
   width: 93%;
-}
-
-.img_container {
-  height: 307px;
-  width: 200px;
-  color: black;
-  background: white;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 0 15px 15px 15px;
+  height: inherit;
 }
 
 
