@@ -31,7 +31,7 @@ body{
   margin-top: 51px;
 }
 
-/* Initial menu */
+/* Hidden menu styling */
 .menu {
   background: rgba(0,0,51, .5);
   left: -285px;  /* start off behind the scenes */
@@ -42,7 +42,7 @@ body{
   z-index: 100;
 }
 
-/* Basic styling */
+/* Basic menu styling */
 .menu ul {
   list-style: none;
   margin: 0;
@@ -107,6 +107,7 @@ i.fa.fa-home::before {
   display: none;
 }
 
+/* Navigation bar styling */
 .nav-bar {
   background-color: #000033;
   position: fixed;
@@ -154,6 +155,7 @@ i#icon-menu.fa.fa-bars:hover {
   color: #888888;
 }
 
+/* Elipsis menu bar styling */
 .onclick-menu ul{
   list-style: none;
   position: fixed;
@@ -201,6 +203,11 @@ i#icon-menu.fa.fa-bars:hover {
   display: none;
 }
 
+.profile_pic{
+  height: 267px;
+  width: 200px;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -217,9 +224,14 @@ a:active {
     text-decoration: none;
 }
 
-.profile_pic{
-  height: 267px;
-  width: 200px;
+/* Error message styling */
+
+#error_explanation {
+  color: white;
+}
+
+#error_explanation ul{
+  color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 383px) {

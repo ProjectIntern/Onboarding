@@ -2,6 +2,7 @@
   <div class="edit_container">
     <div class="edit_form">
       <h1>Edit Profile</h1>
+      <%= render 'shared/error_messages' %>
       <%= form_for(@user) do |f| %>
         <div class = "basic_information">
           <h2>Basic Information</h3>

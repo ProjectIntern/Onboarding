@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'content#index'
   resources :users
+  resources :sessions
   resources :conversations
   get 'signup' => 'users#new'
   get '/exists' => 'users#exists'

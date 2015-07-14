@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def index
+  def index 
     @users = User.all
   end
 
@@ -51,20 +51,18 @@ class UsersController < ApplicationController
   end
 
   def create
-    code = "gapinc"
     @user = User.new(user_params)
-    if h = User.find{ |h| h['email'] == @user.email.to_str or @user.code.to_str != code}
-      redirect_to '/exists'
-    elsif @user.save
+    if @user.save
+      flash[:success] = "Welcome to Gap Inc.!"
       session[:id] = @user.id
       redirect_to '/'
     else
-      redirect_to '/signup'
+      render 'new'
     end
   end
   
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
   end
 end

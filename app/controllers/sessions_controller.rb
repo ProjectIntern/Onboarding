@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       session[:id] = @user.id 
       redirect_to '/'
     else
-      redirect_to '/error'
+      render 'new'
     end
   end
 
