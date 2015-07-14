@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-/* Initial body */
+/* Initial body. */
 html {
   height: 100%;
   width: 100%;
@@ -31,7 +31,7 @@ body{
   margin-top: 51px;
 }
 
-/* Hidden menu styling */
+/* Hidden menu styling. */
 .menu {
   background: rgba(0,0,51, .5);
   left: -285px;  /* start off behind the scenes */
@@ -42,7 +42,7 @@ body{
   z-index: 100;
 }
 
-/* Basic menu styling */
+/* Basic menu styling. */
 .menu ul {
   list-style: none;
   margin: 0;
@@ -95,6 +95,9 @@ i.fa.fa-home::before {
   margin-right: 5px;
 }
 
+/* This black opaque mask fades in when you click on the menu, add to application.js if needed
+(currently using invisible mask). */
+
 #masks {
   background: #000;
   position: fixed;
@@ -107,7 +110,7 @@ i.fa.fa-home::before {
   display: none;
 }
 
-/* Navigation bar styling */
+/* Navigation bar styling. */
 .nav-bar {
   background-color: #000033;
   position: fixed;
@@ -155,7 +158,7 @@ i#icon-menu.fa.fa-bars:hover {
   color: #888888;
 }
 
-/* Elipsis menu bar styling */
+/* Elipsis menu bar styling. */
 .onclick-menu ul{
   list-style: none;
   position: fixed;
@@ -194,6 +197,7 @@ i#icon-menu.fa.fa-bars:hover {
   text-align: center;
 }
 
+/* Need an invisible mask to trigger html click to close the menu. */
 #invisible-mask{
   position: fixed;
   left: 0;
@@ -224,7 +228,7 @@ a:active {
     text-decoration: none;
 }
 
-/* Error message styling */
+/* Error message styling. */
 
 #error_explanation {
   color: white;
@@ -233,6 +237,8 @@ a:active {
 #error_explanation ul{
   color: white;
 }
+
+/* Media styling. */
 
 @media screen and (min-width: 320px) and (max-width: 383px) {
   .nav-bar ul li:last-child{

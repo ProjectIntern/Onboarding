@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Styling for the user index page, edit page, and profile page. */
+
 .form {
   text-align: center;
   margin: auto auto;
@@ -50,27 +52,17 @@ input[type=email] {
   border: 0;
   font-family: "Roboto", helvetica, sans-serif;
   color: white;
+  width: 275px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .btn-submit:hover {
   background-color: #888888;
 }
 
-#exists {
-  position: fixed;
-  color: white;
-  width: 100%;
-  background: rgba(0,0,51, .8);
-  padding: 2.5px 5px;
-  top: 85%;
-  left: 50%;
-  text-align: center;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-//Edit profile styling
+/*Edit profile styling. */
 
 h1 {
   margin-left: 5px;
@@ -354,6 +346,10 @@ textarea {
   color: rgba(0,0,51,1);
 }
 
+/*Styling for the flash error message. */
+.alert-error {
+  color: white;
+}
 
 
 
