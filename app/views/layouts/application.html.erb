@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Onboarding</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -19,18 +19,17 @@
 
     <ul>
         <li><div class="icon-close">
-          <i class="fa fa-times"></i>
-          Close
-          </div></li>
+          <i class="fa fa-bars"></i>
+          CLOSE
+            </div></li>
         <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
+        <li><i class="fa fa-tags">Brands</i></li>
+        <li><i class="fa fa-users">Global Team</i></li>
         <li><i class="fa fa-comments"><%= link_to "Posts", root_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
-
         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
-
         <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
      
-
       </ul>
     </div>
 

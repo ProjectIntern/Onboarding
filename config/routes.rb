@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
   root 'content#index'
+  get 'signup' => 'users#new'
+  get 'home' => 'home#index'
+  get 'about' => 'about#index'
+  get 'map' => 'map#index'
   resources :users
   resources :conversations
   get 'signup' => 'users#new'
@@ -17,6 +22,7 @@ Rails.application.routes.draw do
   get '/users/:id/edit' => 'users#edit', as: :edit_profile
   get '/users' => 'users#index'
   patch '/users/:id' => 'users#update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
