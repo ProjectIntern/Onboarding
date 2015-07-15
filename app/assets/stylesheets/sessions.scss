@@ -2,39 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#submit {
-  padding: 10px 50px;
-}
-
-
-.btn-submit {
-  width: 275px;
-  font-size: 16pt;
-  margin-bottom: 25px;
-  cursor: pointer;
-  text-align: center;
-}
-
-#error {
-  position: fixed;
-  color: white;
-  top: 70%;
-  left: 50%;
-  width: 100%;
-  background: rgba(0,0,51, .8);
-  text-align: center;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
+/* Styling for the log in page. */
 
 .title {
   font-size: 42pt;
   margin-bottom: 10px;
   color: white;
   font-family: "Arapey";
-  font-weight: lighter;
-
 }
 
 .container a {

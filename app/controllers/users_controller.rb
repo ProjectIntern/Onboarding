@@ -1,16 +1,12 @@
 class UsersController < ApplicationController
-  before_action :user_logged_on, only:[:new, :create, :exists] 
+  before_action :user_logged_on, only:[:new, :create] 
   before_action :require_user, only:[:index, :show, :update, :edit]
   
   def new
     @user = User.new
   end
 
-  def exists
-    @user = User.new
-  end
-
-  def index
+  def index 
     @users = User.all
   end
 
@@ -53,18 +49,16 @@ class UsersController < ApplicationController
   def create
     code = "gapinc"
     @user = User.new(user_params)
-    if h = User.find{ |h| h['email'] == @user.email.to_str or @user.code.to_str != code}
-      redirect_to '/exists'
-    elsif @user.save
+    if @user.save
       session[:id] = @user.id
       redirect_to '/'
     else
-      redirect_to '/signup'
+      render 'new'
     end
   end
   
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
   end
 end
