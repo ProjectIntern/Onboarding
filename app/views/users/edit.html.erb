@@ -23,14 +23,12 @@
           <span>Profile Picture</span><br>
           <%= image_tag @user.image, :class => "profile_pic"%> 
           <%= f.file_field :picture, :placeholder => "Picture" %><br>
-          <%= f.submit "Update Profile", :class => "btn" %>
 
         </div>
         <div class = "change_password">
           <h2>Password</h3>
           <%= f.password_field :password, :placeholder => "New Password" %>
           <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
-          <%= f.submit "Change Password", :class => "btn" %>
         </div>
         <div class = "social_media">
           <h2>Social Media</h2>
@@ -42,7 +40,7 @@
           <%= f.text_field :twitter, :placeholder => "http://" %>
           <span>Instagram</span>
           <%= f.text_field :instagram, :placeholder => "http://" %>
-          <%= f.submit "Update Social Media", :class => "btn" %>
+          <%= f.submit "Update profile", :class => "btn" %>
         </div>
       <% end %>
     </div>

@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
 
 
   def create
-    @flash = {}
     @user = User.find_by_email(params[:session][:email])
     if authenticated
       session[:id] = @user.id 
@@ -18,8 +17,7 @@ class SessionsController < ApplicationController
     else
       flash[:error] = "Invalid email or password"
       render 'new'
-      redirect_to '/error'
-      flash[:notice] = "Wrong Email or Password"
+      flash.delete(:error)
     end
   end
 

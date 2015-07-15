@@ -47,6 +47,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    code = "gapinc"
     @user = User.new(user_params)
     if @user.save
       session[:id] = @user.id

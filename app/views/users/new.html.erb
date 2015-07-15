@@ -12,7 +12,7 @@
           <%= f.text_field :code, :placeholder => "Sign-up Code" %>
       </div>
         <%= f.submit "Create Account", class: "btn-submit" %><br>
-        <%= link_to "Already have an account?", login_path, method: "get"%>
+        <%= link_to "Already have an account?", login_path, method: "get", action: "new"%>
       <% end %>
   </div>
 </div>

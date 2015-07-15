@@ -72,11 +72,19 @@ body{
 }
 
 i.fa.fa-comments::before {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 i.fa.fa-users::before {
-  margin-right: 7px;
+  margin-right: 9px;
+}
+
+i.fa.fa-globe::before {
+  margin-right: 8px;
+}
+
+i.fa.fa-tags::before {
+  margin-right: 6px;
 }
 
 i.fa.fa-bus::before {
