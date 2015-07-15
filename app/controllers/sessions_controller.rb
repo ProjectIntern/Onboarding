@@ -18,6 +18,8 @@ class SessionsController < ApplicationController
     else
       flash[:error] = "Invalid email or password"
       render 'new'
+      redirect_to '/error'
+      flash[:notice] = "Wrong Email or Password"
     end
   end
 

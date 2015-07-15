@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Onboarding</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -14,6 +14,42 @@
   <body>
 
   <%= render "shared/navbar" %>
+    <!-- Menu -->
+
+    <ul>
+        <li><div class="icon-close">
+          <i class="fa fa-bars"></i>
+          CLOSE
+            </div></li>
+        <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
+        <li><i class="fa fa-tags">Brands</i></li>
+        <li><i class="fa fa-users">Global Team</i></li>
+        <li><i class="fa fa-comments"><%= link_to "Posts", root_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-users"><%= link_to "Interns", users_path, method: "get", action: "users#index"%></i></li>
+        <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
+     
+      </ul>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <ul>
+        <li><i class="fa fa-bars" id="icon-menu">MENU</i></li>
+        <li><i class="fa fa-ellipsis-v" id="logout-menu"></i></li>
+       </ul>
+    </div>
+
+    <!--Elipsis menu -->
+    <div class ="onclick-menu">
+      <ul class ="onclick-menu-content">
+        <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
+        <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
+        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
+      </ul>
+    </div>
+
+  <% end %>
   
   <div class ="application_container">
 

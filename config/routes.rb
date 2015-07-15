@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
   root 'content#index'
+  get 'signup' => 'users#new'
+  get 'home' => 'home#index'
+  get 'about' => 'about#index'
+  get 'map' => 'map#index'
   resources :users
   resources :sessions
   resources :conversations
@@ -9,7 +14,15 @@ Rails.application.routes.draw do
   get '/logout' => "sessions#new"
   delete 'logout' => 'sessions#destroy'
   get '/shuttle' => 'shuttle#index' 
+<<<<<<< HEAD
   
+=======
+  get '/users/:id' => 'users#show', as: :profile
+  get '/users/:id/edit' => 'users#edit', as: :edit_profile
+  get '/users' => 'users#index'
+  patch '/users/:id' => 'users#update'
+
+>>>>>>> cc0ea2e29e0294752ddd29882099f3f77b48ca78
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
