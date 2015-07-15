@@ -174,6 +174,45 @@ input[type=email] {
   margin-left: auto;
 }
 
+.title_container {
+  height: 75px;
+  width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 40pt;
+  font: 'Roboto';
+}
+
+.profile_title {
+  height: inherit;
+  width: 520px;
+  background: rgba(0,0,51,1);
+  color: white;
+  display: block;
+  text-align: center;
+  float: left;
+  margin-top: 5px;
+}
+
+.message_title {
+  height: inherit;
+  width: 750px;
+  background: rgba(0,0,51,1);
+  color: white;
+  display: block;
+  text-align: center;
+  float: right;
+}
+
+i.title.fa.fa-user{
+  margin-right: 10px;
+}
+
+.fa.fa-weixin{
+  margin-right: 10px;
+}
+
 .img_container {
   height: 307px;
   width: 200px;
@@ -248,13 +287,14 @@ textarea {
 //Styling for users index
 
 .interns_container {
-  height: inherit;
+  height: 100%;
 }
 
 .interns_wrapper {
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
+  backgroung-cover: stretch;
 }
 
 
@@ -262,7 +302,6 @@ textarea {
   box-sizing: border-box;
   margin: 50px auto;
   display: block;
-  overflow: hidden;
   text-align: center;
   width: 93%;
   height: inherit;
