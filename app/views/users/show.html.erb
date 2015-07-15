@@ -1,7 +1,7 @@
-
 <div class="profile_background">
   <div class="content_container">
     <div class="profile_container">
+      
       <div class="img_container">
         <%= image_tag @user.image, :class => "profile_pic"%>
         <ul>
@@ -30,33 +30,17 @@
         </ul>
       </div>
 
-
-        <div class="about_container">
-          <span> <%= @user.about %> </span>
-        </div>
+      <div class="about_container">
+        <span> <%= @user.about %> </span>
       </div>
+    
+    </div>
 
-        <div class="message_container">
-          
-          <%= render "conversations/contacts" %>
-
-          <div class="conversation_container">
-            
-          <%= render "conversations/show" %>
-
-            <div class="messages_text">
-              <%= form_for(@conversation) do |f| %>
-                <%= f.text_area :comment, :placeholder => "Leave a message." %>
-                <%= f.text_field :receiver_email, :value => "#{@user.email}", class: "hidden" %>
-                <%= f.text_field :receiver_name, :value => "#{@user.first_name}" + " " + "#{@user.last_name}", class: "hidden" %>
-                <%= f.text_field :receiver_id, :value => "#{@user.id}", class: "hidden" %>
-                <%= f.text_field :sender_email, :value => "#{@current_user.email}", class: "hidden" %>
-                <%= f.text_field :sender_name, :value => "#{@current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
-                <%= f.text_field :sender_id, :value => "#{@current_user.id}", class: "hidden" %>
-                <%= f.submit "Submit", class: "msg-submit" %>
-              <%end%>
-            </div>
-
+    <div class="message_container">
+      <%= render "conversations/contacts" %>
+      <div class="conversation_container">
+        <%= render "conversations/show" %>
+        <%= render "conversations/message_form" %>
       </div>
     </div>
   </div>

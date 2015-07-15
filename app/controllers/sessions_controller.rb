@@ -15,8 +15,9 @@ class SessionsController < ApplicationController
       session[:id] = @user.id 
       redirect_to '/'
     else
-      redirect_to '/error'
-      flash[:notice] = "Wrong Email or Password"
+      flash[:error] = "Invalid email or password"
+      render 'new'
+      flash.delete(:error)
     end
   end
 

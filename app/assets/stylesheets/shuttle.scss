@@ -1,15 +1,17 @@
 // Place all the styles related to the Shuttle controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Styling for the shuttle page */
+
 .shuttle {
   text-align: center;
-  display: block;
+  background: #888888;
 }
 
 .shuttle_background {
-  height: 100%;
-  width: 100%;
   background: #888888;
+  height: 100%;
 }
 
 

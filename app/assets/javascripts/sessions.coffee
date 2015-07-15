@@ -2,7 +2,3 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).ready ->
-  $('#error').hide().fadeIn(1000)
-  $('#error').fadeOut(4000)
-  return

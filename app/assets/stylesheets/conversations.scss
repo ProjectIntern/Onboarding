@@ -6,12 +6,14 @@
   display: none;
 }
 
+/* Pushes incoming messages to the right. */
 .push-right {
   text-align: right;
   margin-right: 15px;
   width: initial;
 }
 
+/* Pushes outgoing messages to the left. */
 .push-left {
   text-align: left;
   margin-left: 15px;
@@ -26,6 +28,7 @@
   text-align: center;
 }
 
+/* Styling for the contact heads. */
 .contact_pic {
   width: 40px;
   height: 50px;
