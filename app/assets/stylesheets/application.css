@@ -17,13 +17,13 @@
 html {
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
 
 body{
   font-family: 'Roboto', helvetica, sans-serif;
   margin: 0;
-  min-height: calc(100% - 51px);
-  min-width: 100%;
+  min-height: 100%;
 }
 
 .application_container{
@@ -210,6 +210,7 @@ i#icon-menu.fa.fa-bars:hover {
   text-align: center;
   cursor: pointer;
   margin-right: 10px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Need an invisible mask to trigger html click to close the menu. */

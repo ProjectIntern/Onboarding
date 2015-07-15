@@ -1,8 +1,9 @@
 <div class="profile_background">
-  <%= flash[:success].html_safe unless flash[:success].blank? %>
   <div class="content_container">
+    <%= flash[:success].html_safe unless flash[:success].blank? %>
+
     <div class="profile_container">
-      
+
       <div class="img_container">
         <%= image_tag @user.image, :class => "profile_pic"%>
         <ul>
