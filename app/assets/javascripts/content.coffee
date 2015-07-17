@@ -21,7 +21,3 @@ $(document).ready ->
 $(document).ready ->
   $('.video_wrapper').hide().delay(2000).fadeIn(1000)
   return    
-
-$(document).ready ->
-  $('#welcome_video').localScroll duration: 750
-  return

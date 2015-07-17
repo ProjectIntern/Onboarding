@@ -31,6 +31,16 @@ var main = function() {
     $('#invisible-mask').fadeIn(150);
   });
 
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $( $(this).attr('href') );
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 500);
+    }
+});
+
   /* Then push them back */
 $(document).on('click', '#invisible-mask, .icon-close', function() {
     $('#invisible-mask').remove();
