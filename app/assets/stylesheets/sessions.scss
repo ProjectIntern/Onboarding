@@ -17,15 +17,17 @@
 
 .shell {
   width: 100%;
-  height: 100%;
+  height: calc(100% + 52px);
   background-image: url('jeans_color.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
-  height: inherit;
+  background-size: cover;
   display: table;
-  margin-top: 51px;
-  top: -51px;
   position: absolute;
+  -webkit-transform: translateY(-51px);
+  -moz-transform: translateY(-51px);
+  -ms-transform: translateY(-51px);
+  -o-transform: translateY(-51px);  
+  transform: translateY(-51px);
 }
 
 

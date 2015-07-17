@@ -31,6 +31,11 @@ class UsersController < ApplicationController
     @contacts.each do |i|
       @users.push(User.find(i))
     end
+    if @user.email == current_user.email
+      flash[:success] = "<div class='title_container'><div class='profile_title'><span><i class='title fa fa-user'></i>Profile</span></div><div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div></div>"
+      render 'show'
+      flash.delete(:success)
+    end
   end
 
   def update
@@ -47,7 +52,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    code = "gapinc"
     @user = User.new(user_params)
     if @user.save
       session[:id] = @user.id
