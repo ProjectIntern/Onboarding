@@ -144,7 +144,7 @@ input[type=email] {
   height: 575px;
   margin: auto;
   position: absolute;
-  top: -55px; left: 0; bottom: 0px; right: 0;
+  top: -100px; left: 0; bottom: 0px; right: 0;
 }
 
 
@@ -154,7 +154,8 @@ input[type=email] {
   background: #F5F5F5;
   position: absolute;
   width: 100%;
-  height: inherit;
+  background-size: cover;
+  height: calc(100% + 52px);
 }
 
 .profile_container{
