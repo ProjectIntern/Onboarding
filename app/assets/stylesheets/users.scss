@@ -77,9 +77,12 @@ h1 {
 
 .edit_form {
   text-align: left;
-  padding: 5px 0px 5px 0px;
-  display: inline-block;
-  width: 100%;
+  padding: 2.5px 35px 10px 0px;
+  display: block; 
+  height: 100%;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type=text],
@@ -97,34 +100,25 @@ input[type=email] {
   font-family: "Roboto", helvetica, sans-serif;
 }
 
-.edit_container {
-  display: block;
-  width: 500px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  }
-
 .basic_information {
-  background: white;
   width: 100%;
-  padding: 2.5px 20px 10px 15px;
   margin-bottom: 20px;
+  background-color: white;
+  padding: 2.5px 20px 10px 15px;
 }
 
 .change_password {
   background: white;
   width: 100%;
-  padding: 2.5px 20px 10px 15px;
   margin-bottom: 20px;
+  padding: 2.5px 20px 10px 15px;
 }
 
 .social_media {
   background: white;
   width: 100%;
-  padding: 2.5px 20px 10px 15px;
   margin-bottom: 20px;
+  padding: 2.5px 20px 10px 15px;
 }
 
 .btn{
@@ -150,7 +144,7 @@ input[type=email] {
   height: 575px;
   margin: auto;
   position: absolute;
-  top: -51px; left: 0; bottom: 0px; right: 0;
+  top: -100px; left: 0; bottom: 0px; right: 0;
 }
 
 
@@ -160,7 +154,8 @@ input[type=email] {
   background: #F5F5F5;
   position: absolute;
   width: 100%;
-  height: inherit;
+  background-size: cover;
+  height: calc(100% + 52px);
 }
 
 .profile_container{
@@ -172,6 +167,53 @@ input[type=email] {
   padding-left: 20px;
   float: left;
   margin-left: auto;
+}
+
+.title_container {
+  height: 75px;
+  width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35pt;
+  font: 'Roboto';
+}
+
+.profile_title span{
+  display: block;
+  margin-top: 7.25px;
+  margin-bottom: 7.25px;
+}
+
+.profile_title {
+  height: inherit;
+  width: 520px;
+  background: rgba(0,0,51,1);
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+.message_title {
+  height: inherit;
+  width: 750px;
+  background: rgba(0,0,51,1);
+  color: white;
+  text-align: center;
+  float: right;
+}
+
+.message_title span{
+  display: block;
+  margin-top: 7.25px;
+  margin-bottom: 7.25px;
+}
+
+i.title.fa.fa-user{
+  margin-right: 10px;
+}
+
+.fa.fa-weixin{
+  margin-right: 10px;
 }
 
 .img_container {
@@ -248,13 +290,14 @@ textarea {
 //Styling for users index
 
 .interns_container {
-  height: inherit;
+  height: 100%;
 }
 
 .interns_wrapper {
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
+  backgroung-cover: stretch;
 }
 
 
@@ -262,7 +305,6 @@ textarea {
   box-sizing: border-box;
   margin: 50px auto;
   display: block;
-  overflow: hidden;
   text-align: center;
   width: 93%;
   height: inherit;
@@ -361,13 +403,10 @@ textarea {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .edit_container {
     width: 275px;
-    margin-left: 0px;
-    margin-right: 10px;
     }
 
   .edit_form {
     width: 275px;
-    padding-left: 5px;
     }
   }
 
@@ -375,12 +414,10 @@ textarea {
 @media screen and (min-width: 384px) and (max-width: 540px) {
   .edit_container {
     width: 275px;
-    margin-left: 25px;
     }
 
   .edit_form {
     width: 275px;
-    padding-left: 10px;
     }
 }
 

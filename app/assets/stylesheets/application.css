@@ -17,17 +17,19 @@
 html {
   height: 100%;
   width: 100%;
-  overflow: auto;
+  margin: 0;
 }
 
 body{
   font-family: 'Roboto', helvetica, sans-serif;
+  min-height: 100%;
   margin: 0;
 }
 
 .application_container{
   width: 100%;
-  height: 100%;
+  height: calc(100% - 51px);
+  display: block;
   margin-top: 51px;
 }
 
@@ -142,6 +144,8 @@ i.fa.fa-home::before {
   right: 0;
   position: absolute;
   padding-left: 20px;
+  width: 50px;
+  text-align: center;
 }
 
 .nav-bar ul li:first-child{
@@ -195,6 +199,10 @@ i#icon-menu.fa.fa-bars:hover {
   margin-right: 5px;
 }
 
+.fa.fa-ellipsis-v{
+  margin-left: 5px;
+}
+
 .onclick-menu a {
   color: white;
   text-decoration: none;
@@ -203,6 +211,9 @@ i#icon-menu.fa.fa-bars:hover {
 #logout-menu {
   width: 50px;
   text-align: center;
+  cursor: pointer;
+  margin-right: 10px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Need an invisible mask to trigger html click to close the menu. */
@@ -249,10 +260,17 @@ a:active {
 
 /* Media styling. */
 
-@media screen and (min-width: 320px) and (max-width: 383px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
   .nav-bar ul li:last-child{
-    width: 50px;
-}
-}
+    width: 30px;
+  }
 
+  .menu {
+    background: rgba(0,0,51, .8);
+  }
+
+  .onclick-menu-content {
+  background-color: rgba(0,0,51, .8);;
+  }
+}
 

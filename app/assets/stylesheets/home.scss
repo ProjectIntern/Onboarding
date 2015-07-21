@@ -2,14 +2,230 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Default message that fades in on welcome screen */
-#message {
-  color: black;
-  font-size: 42pt;
-  height: 150px;
-  width: 550px;
-  margin: auto;
-  text-align: center;
+/* Styling for home screen. */
+
+.home_shell{
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('jeans.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Default message that fades in on welcome screen */
+
+.welcome_background{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+}
+
+.welcome_container {
+  width: 100%;
+  text-align: center;
+  }
+
+#message {
+  color: white;
+  font-size: 42pt;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+i#quote {
+  font-size: 25pt;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.word_list {
+  color: white;
+  margin-top: 75px;
+}
+
+
+.word_list ul{
+  list-style-type: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.word_list li{
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 24pt;
+}
+
+.word_list li + li:before{
+    content: "\00b7";
+    padding: 0 10px;
+}
+
+.fa.fa-arrow-down {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.fa.fa-arrow-down:hover{
+  color: #888888;
+}
+
+#welcome_video {
+  position:relative;
+}
+
+#welcome_video .ratio {
+  display:block;
+  width:100%;
+  height:auto;
+  opacity: 0;
+}
+
+#welcome_video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.video_wrapper{
+  width: 100%;
+  margin: 0, auto;
+  background-color: white;
+}
+
+.brand_stores {
+  background-color: rgba(0,0,51,1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand_stores img {
+  height: 250px;
+  width: 260px;
+  border-radius: 300px;
+}
+
+.brand_stores ul{
+  text-align: center;
+  padding-left: 0px;
+}
+
+.brand_stores li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+
+  .brand_stores img{
+    height: 200px;
+    width: 205px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+
+  .brand_stores img{
+    height: 175px;
+    width: 177.5px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+
+  .brand_stores img{
+    height: 150px;
+    width: 150.5px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+
+  .brand_stores img{
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+
+  .brand_stores img{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px) {
+
+  .brand_stores img{
+    height: 85px;
+    width: 85px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 550px) {
+
+  .brand_stores img{
+    height: 80px;
+    width: 80px;
+  }
+
+  .brand_stores li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
+  .brand_stores img{
+    height: 65px;
+    width: 65px;
+  }
+
+  .brand_stores li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+  #message {
+    font-size: 20pt;
+  }
+
+  i#quote { 
+    font-size: 12pt;
+  }
+
+  .word_list li{
+    font-size: 10pt;
+  }
+
+  .fa.fa-arrow-down {
+    font-size: 25pt;
+
+  }
 }
