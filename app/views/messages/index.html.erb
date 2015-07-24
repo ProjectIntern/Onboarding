@@ -1,0 +1,17 @@
+<h1>Message Boards</h1>
+
+<div class="interns_wrapper">
+  <div class="interns_container">
+  <h2>GapTech Interns</h2>
+    <div class="interns">
+    <% @messages.each do |message| %>
+		<h2><%= message.description %></h2>
+		<%= link_to "Edit", edit_message_path(message), class: "btn btn-default" %>
+		<%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
+    <% end %>
+</div>
+<div>
+    <%# <%= render 'new' %>	
+    <%= link_to "New Message", new_message_path %>
+</div>
+</div>

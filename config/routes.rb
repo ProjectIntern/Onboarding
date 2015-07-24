@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   get '/logout' => "sessions#new"
   delete 'logout' => 'sessions#destroy'
-  get '/shuttle' => 'shuttle#index'   
+  get '/shuttle' => 'shuttle#index'
+
+  resources :messages   
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
