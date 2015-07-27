@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150724162828) do
+ActiveRecord::Schema.define(version: 20150727205824) do
 
   create_table "conversations", force: :cascade do |t|
     t.string   "comment"
@@ -28,12 +28,28 @@ ActiveRecord::Schema.define(version: 20150724162828) do
 
   add_index "conversations", ["user_id"], name: "index_conversations_on_user_id"
 
+  create_table "globals", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "image"
+    t.string   "position"
+    t.string   "about"
+  end
+
+  create_table "hire_types", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "messages", force: :cascade do |t|
     t.text     "description"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "type"
+    t.string   "hire_type"
   end
 
   create_table "users", force: :cascade do |t|

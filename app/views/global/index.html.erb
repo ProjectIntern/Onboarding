@@ -1,0 +1,12 @@
+<div class="interns_wrapper">
+  <div class="interns_container">
+    <div class="interns">
+      <% @globals.each do |t| %>
+      <div class="img_container">
+        <%= link_to image_tag(t.image), global_path(t), method: "get", action: "show" %><br>
+        <%= t.first_name %> <%= t.last_name %>
+      </div>
+      <% end %>
+    </div> 
+  </div>
+</div>
