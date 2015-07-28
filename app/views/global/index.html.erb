@@ -3,8 +3,19 @@
     <div class="interns">
       <% @globals.each do |t| %>
       <div class="img_container">
-        <%= link_to image_tag(t.image), global_path(t), method: "get", action: "show" %><br>
-        <%= t.first_name %> <%= t.last_name %>
+      <div class="global_pic">
+        <%#<img onmouseover="showAbout(this)" onmouseout="removeAbout(this)" src=@global.image> %>
+        <%= link_to image_tag(t.image), global_path(t), method: "get", action: "show"%><br>
+        <div class="show_about">
+          <b><%= t.first_name %> <%= t.last_name%> </b><br>
+          <p> <%= t.about %> </p>
+
+        </div>
+        <div class="hide_about">
+          <%= t.first_name %> <%= t.last_name %>
+        </div>
+        
+      </div>
       </div>
       <% end %>
     </div> 

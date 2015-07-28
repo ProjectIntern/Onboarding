@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   resources :messages   
 
   get '/hire_type' => 'hire_type#index'
-  get '/global' => 'global#index'
+  get '/global' => 'global#index', as: :globals
+  get '/global/:id' => 'global#show', as: :global
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

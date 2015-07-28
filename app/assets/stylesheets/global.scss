@@ -1,3 +1,23 @@
 // Place all the styles related to the Global controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.global_pic{
+	height: 307px;
+	width: 200px;
+	color: black;
+	background: white;
+	text-align: center;
+}
+
+.show_about {
+	display: none;
+}
+
+.global_pic:hover .show_about{
+	display: block;
+}
+
+.global_pic:hover .hide_about{
+	display: none;
+}
