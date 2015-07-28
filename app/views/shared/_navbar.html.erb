@@ -4,17 +4,23 @@
     <!-- Menu -->
 
     <ul>
-        <li><div class="icon-close">
-          <i class="fa fa-times"></i>
-          Close
-          </div></li>
+        <li><%=link_to image_tag(current_user.image), user_path(session[:id]), method: "get", action: "show"%>
+        <div class="menu_name">
+        <%=current_user.first_name%> <%=current_user.last_name%></div>
+        </li>
         <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
-        <li><i class="fa fa-tags">Brands</i></li>
+        <li><i class="fa fa-tags"><%= link_to "Brands", brands_path, method: "get", action: "brands#show" %></i></li>
         <li><i class="fa fa-globe">Global Team</i></li>
         <li><i class="fa fa-comments"><%= link_to "Forum", root_path, method: "get", action: "index"%></i></li>
         <li><i class="fa fa-users"><%= link_to "Team", users_path, method: "get", action: "users#index"%></i></li>
 
         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+
+        <li><span>- - - - - - - - - - - - - - - - - - -</span></li>
+
+        <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
+
+        <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
 
         <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
      
@@ -26,17 +32,24 @@
     <div class="nav-bar">
       <ul>
         <li><i class="fa fa-bars" id="icon-menu">MENU</i></li>
-        <li><font face="FontAwesome" weight= "900" id="logout-menu"><i class="fa fa-ellipsis-v"></i></font></li>
-       </ul>
-    </div>
 
-    <!--Elipsis menu -->
-    <div class ="onclick-menu">
-      <ul class ="onclick-menu-content">
-        <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
-        <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
-        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
-      </ul>
+        <li>
+        <div class="search_bar">
+        <%= form_tag users_path,:method => 'get' do %>
+          <%= text_field_tag :search, nil, placeholder: "Search for a user by first name, last name, or email..." %>
+        <% end %>
+        </div>
+        </li>
+
+        <li> 
+        <div class="gap_logo">
+        <%=image_tag('gap_logo.png', size: "56x51") %>
+        </div>
+        </li>
+
+        <li><i class="fa fa-search" id="search"></i></li>
+
+       </ul>
     </div>
 
   <% end %>
