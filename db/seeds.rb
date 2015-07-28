@@ -22,36 +22,41 @@ u13 = User.create(first_name: "Marreese", last_name: "Speights", email: "mspeigh
 u14 = User.create(first_name: "Brandon", last_name: "Rush", email: "brush@warriors.com", password: "pa55w0rd", password_confirmation: "pa55w0rd", code: "gapinc", location: "Golden State", school: "warriors", position: "small guard", image:"http://l.yimg.com/j/assets/p/sp/getty/ec/fullj.fae835ba328d8c884ab981ca8c80c763/fae835ba328d8c884ab981ca8c80c763-getty-136725986.jpg", about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 u15 = User.create(first_name: "James", last_name: "McAdoo", email: "jmcadoo@warriors.com", password: "pa55w0rd", password_confirmation: "pa55w0rd", code: "gapinc", location: "Golden State", school: "warriors", position: "small guard", image:"http://thumb.usatodaysportsimages.com/image/thumb/650-510nw/8521826.jpg", about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 
-b1 = Brand.create(name: "Gap", description: "
+b1 = Brand.create(name: "Gap", banner: "gap_banner.png", logo: "gap_logo.png", description: "
 
-Clean. Classic. American design. These words described Gap four decades ago and still hold true today.
+<p>Clean. Classic. American design. These words described Gap four decades ago and still hold true today. </p>
 
-At our best, we inspire customers with individual style and make classics relevant for today through our use of bold color, emotional details and great fits.
+<p>At our best, we inspire customers with individual style and make classics relevant for today through our use of bold color, emotional details and great fits.
+With a clear brand vision and effortlessly cool product, Gap is re-connecting with its target customer—men and women ages 25 to 35 looking to express their unique, personal style. </p>
 
-With a clear brand vision and effortlessly cool product, Gap is re-connecting with its target customer—men and women ages 25 to 35 looking to express their unique, personal style.
+<p>Across each Gap sub-brand, we continue to evolve our assortments with a focus on what we’ve always been famous for: the best of casual style.</p>
 
-Across each Gap sub-brand, we continue to evolve our assortments with a focus on what we’ve always been famous for: the best of casual style.
+<p>More than anything, though, Gap has been known for its connection to pop culture. In 2008, Gap launched innovative and relevant campaigns such as the Artist Edition T-shirts, showcasing designs by distinguished artists, and our non-partisan VOTE campaign, timed to coincide with the historic U.S. presidential election. </p>
 
-More than anything, though, Gap has been known for its connection to pop culture. In 2008, Gap launched innovative and relevant campaigns such as the Artist Edition T-shirts, showcasing designs by distinguished artists, and our non-partisan VOTE campaign, timed to coincide with the historic U.S. presidential election.
+<p>Innovation extends to our GapKids and babyGap businesses, as well. The launch of babyGap home products and the popular Junk Food graphic T-shirts helped bring fresh choices to our customers. And, we added GapBody collections to more than 500 stores.</p>
 
-Innovation extends to our GapKids and babyGap businesses, as well. The launch of babyGap home products and the popular Junk Food graphic T-shirts helped bring fresh choices to our customers. And, we added GapBody collections to more than 500 stores.
+<p>As we celebrate our 40-year heritage, Gap is committed to staying relevant by continuing to give our customers Gap classics, invented and re-invented for right now. </p>")
 
-As we celebrate our 40-year heritage, Gap is committed to staying relevant by continuing to give our customers Gap classics, invented and re-invented for right now.", banner: "http://media.bizj.us/view/img/4432161/gap*1200xx4000-2250-0-209.jpg")
+b2 = Brand.create(name: "Old Navy", banner: "on_banner.png", logo: "gap_logo.png", description: "
 
-b2 = Brand.create(name: "Old Navy", description: "Brand Platform 
-Imagine a place where you can find all of your wardrobe 'must-have's' at prices you can’t believe. Everything from your favorite t-shirts and jeans to your seasonal fashion faves. A place where every family member is invited no matter what their size. Where everything has great style and quality and the shopping experience is actually fun, not a chore. That place is Old Navy. Making current American fashion essentials accessible to every family.
+<h2>Brand Platform</h2>
+<p>Imagine a place where you can find all of your wardrobe 'must-have's' at prices you can’t believe. Everything from your favorite t-shirts and jeans to your seasonal fashion faves. A place where every family member is invited no matter what their size. Where everything has great style and quality and the shopping experience is actually fun, not a chore. That place is Old Navy. Making current American fashion essentials accessible to every family.</p>
 
-Founded: 1994 (named after a bar in Paris)
-Retail record: In 1997, became first retailer to reach $1 billion in annual sales in less than four years of operation.
+<p><b>Founded:</b> 1994 (named after a bar in Paris)<p>
+<p><b>Retail record:</b> In 1997, became first retailer to reach $1 billion in annual sales in less than four years of operation.</p>
 
-What to Expect Your First Couple Days
+<h2>What to Expect Your First Couple Days</h2>
 
-To get to know Gap Inc and Old Navy, you will experience two days of on-boarding. The first day will be about Gap Inc and all its brands, and the second day will be specific to Old Navy. If you are part of Design, Merchandising, Inventory Management or Production, and are attending the Product Team On boarding:
+<p>To get to know Gap Inc and Old Navy, you will experience two days of on-boarding. The first day will be about Gap Inc and all its brands, and the second day will be specific to Old Navy. If you are part of Design, Merchandising, Inventory Management or Production, and are attending the Product Team On boarding:<p>
 
-Monday: You’ll meet and mingle with other Gap Inc employees at 2 Folsom for an all day experience.
-Tuesday: In the morning you’ll participate in a cross-brand Product Team on-boarding. Then… on to the bus to Mission Bay for lunch followed by an afternoon of discovery about Old Navy and who our target customers are -- Jennie, Mike and the Kids. Meet us at 2pm in front of the “Jennie, Mike and the Kids” poster to begin your deep dive into Old Navy.
+<ul>
+<li><b>Monday:</b> You’ll meet and mingle with other Gap Inc employees at 2 Folsom for an all day experience.</li>
+<li><b>Tuesday:</b> In the morning you’ll participate in a cross-brand Product Team on-boarding. Then… on to the bus to Mission Bay for lunch followed by an afternoon of discovery about Old Navy and who our target customers are -- Jennie, Mike and the Kids. Meet us at 2pm in front of the “Jennie, Mike and the Kids” poster to begin your deep dive into Old Navy.</li>
+</ul>
 
-If you are not part of Design, Merchandising, Inventory Management or Production:
+<p>If you are not part of Design, Merchandising, Inventory Management or Production:</p>
 
-Monday: You’ll meet and mingle with other Gap Inc employees at 2 Folsom for an all day experience.
-Tuesday: Your manager will let you know what time and where to show up on Tuesday morning. If you haven’t heard from your hiring manager yet, reach out to them directly for these details. In the afternoon you’ll have an afternoon of discovery about Old Navy and who our target customers are -- Jennie, Mike and the Kids. Meet us at 2pm in front of the “Jennie, Mike and the Kids” poster to begin your deep dive into Old Navy.")
+<ul>
+<li><b>Monday:</b> You’ll meet and mingle with other Gap Inc employees at 2 Folsom for an all day experience.</li>
+<li><b>Tuesday:</b> Your manager will let you know what time and where to show up on Tuesday morning. If you haven’t heard from your hiring manager yet, reach out to them directly for these details. In the afternoon you’ll have an afternoon of discovery about Old Navy and who our target customers are -- Jennie, Mike and the Kids. Meet us at 2pm in front of the “Jennie, Mike and the Kids” poster to begin your deep dive into Old Navy.</li>
+</ul>")
