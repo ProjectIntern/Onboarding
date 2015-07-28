@@ -1,0 +1,30 @@
+// Place all the styles related to the Global controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Styling for the what to expect page */
+
+.expect {
+  text-align: center;
+  background: #888888;
+}
+
+.expect_background {
+  background: #888888;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 569px) and (max-width: 736px) {
+  .expect img{
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .expect img{
+    width: 375px;
+    height: auto;
+  }
+}
