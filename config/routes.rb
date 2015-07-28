@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   resources :conversations
+  resources :brands
   get 'signup' => 'users#new'
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'

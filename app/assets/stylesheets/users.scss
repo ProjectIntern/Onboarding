@@ -2,68 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Styling for the user index page, edit page, and profile page. */
+/**********************************************/
+/* Styling for the users index page, edit page,*/ 
+/* profile page, login page, and signup page.       */
+/**********************************************/
 
-.form {
-  text-align: center;
-  margin: auto auto;
-  padding: 10px 20px 10px 15px;
-  width: 250px;
-  background: #000033;
-  color: white;
-}
-
-input[type=text],
-input[type=password],
-input[type=email] {
-  color: black;
-  width: 100%;
-  border: 3px, solid, white;
-  border-radius: 0px;
-  height: 30px;
-  margin: 7px auto;
-  text-indent: 10px;
-  font-size: 12pt;
-  font-weight: lighter;
-  font-family: "Roboto", helvetica, sans-serif;
-}
-
-.container {
-  display: table-cell;
-  width: 275px;
-  vertical-align: middle;
-  text-align: center;
-  background-color: rgba(0,0,51,.5);
-}
-
-#signup {
-  font-size: 42pt;
-  font-family: "Arapey";
-  color: white;
-  margin-bottom: 10px;
-}
-
-.btn-submit{
-  background-color: #000033;
-  font-size: 12pt;
-  font-weight: lighter;
-  text-transform: uppercase;
-  margin-top: 10px;
-  padding: 10px;
-  border: 0;
-  font-family: "Roboto", helvetica, sans-serif;
-  color: white;
-  width: 282px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-submit:hover {
-  background-color: #888888;
-}
-
-/*Edit profile styling. */
+/**************************************/
+/* Styling for the edit profile page. */
+/**************************************/
 
 h1 {
   margin-left: 5px;
@@ -83,21 +29,6 @@ h1 {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-}
-
-input[type=text],
-input[type=password],
-input[type=email] {
-  color: black;
-  width: 100%;
-  border: 3px, solid, white;
-  border-radius: 0px;
-  height: 30px;
-  margin: 7px auto;
-  text-indent: 5px;
-  font-size: 12pt;
-  font-weight: lighter;
-  font-family: "Roboto", helvetica, sans-serif;
 }
 
 .basic_information {
@@ -121,25 +52,38 @@ input[type=email] {
   padding: 2.5px 20px 10px 15px;
 }
 
-.btn{
-  background-color: rgba(0,0,51,1);
+.update_btn {
+  border: 1px solid #FF6347;
+  background-color: #FF6347;
   font-size: 12pt;
   margin-top: 10px;
   padding: 10px;
-  border: 0;
-  font-family: "Roboto", helvetica, sans-serif;
   color: white;
+  outline: none;
 }
 
-.btn:hover {
-  background-color: #888888;
-  color: white;
+.update_btn:hover {
+  background-color: white;
+  color: #FF6347;
   cursor: pointer;
 }
 
-// Content container styling
+textarea {
+  color: rgb(115,123,128);
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  border-radius: 0px;
+  margin: 7px auto;
+  text-indent: 5px;
+  font-size: 12pt;
+}
 
-.content_container{
+/**************************************/
+/* Styling for the content container. */
+/**************************************/
+
+.content_container {
   width: 1350px;
   height: 575px;
   margin: auto;
@@ -148,86 +92,51 @@ input[type=email] {
 }
 
 
-//Show profile styling
+/*********************************/
+/* Styling for the profile page. */
+/*********************************/
 
-.profile_background{
+.profile_background {
   background: #F5F5F5;
   position: absolute;
   width: 100%;
   background-size: cover;
-  height: calc(100% + 52px);
+  height: 100%;
 }
 
-.profile_container{
+/**************************************/
+/* Styling for the profile container. */
+/**************************************/
+
+.profile_container {
   background: white;
   width: 500px;
-  height: 525px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  height: 600px;
   float: left;
   margin-left: auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
 }
 
-.title_container {
-  height: 75px;
-  width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 35pt;
-  font: 'Roboto';
-}
-
-.profile_title span{
-  display: block;
-  margin-top: 7.25px;
-  margin-bottom: 7.25px;
-}
-
-.profile_title {
-  height: inherit;
-  width: 520px;
-  background: rgba(0,0,51,1);
-  color: white;
-  text-align: center;
-  float: left;
-}
-
-.message_title {
-  height: inherit;
-  width: 750px;
-  background: rgba(0,0,51,1);
-  color: white;
-  text-align: center;
-  float: right;
-}
-
-.message_title span{
-  display: block;
-  margin-top: 7.25px;
-  margin-bottom: 7.25px;
-}
-
-i.title.fa.fa-user{
-  margin-right: 10px;
-}
-
-.fa.fa-weixin{
-  margin-right: 10px;
-}
-
-.img_container {
+.profile_picture {
   height: 307px;
   width: 200px;
-  color: black;
+  color: rgb(115,123,128);
   background: white;
   text-align: center;
   display: inline-block;
   padding: 10px 10px 10px 10px;
-  margin: 15px 15px 15px 15px;
+  margin: 15px 15px 15px 25px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
 }
 
-.img_container li {
+.profile_pic {
+  height: 267px;
+  width: 200px;
+}
+
+.profile_picture li {
   display: inline-block;
   list-style-type: none;
   text-align: center;
@@ -235,10 +144,32 @@ i.title.fa.fa-user{
   margin-left: 5px;
 }
 
-.img_container ul{
+.profile_picture ul {
   padding: 0px;
   margin-bottom: 0;
+  margin-top: 10px;
   text-align: center;
+}
+
+.profile_title span {
+  display: block;
+  margin-top: 7.25px;
+  margin-bottom: 7.25px;
+}
+
+.profile_title {
+  height: 75px;
+  width: 100%;
+  font-size: 35pt;
+  background: #FF6347;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  float: left;
+}
+
+i.title.fa.fa-user {
+  margin-right: 10px;
 }
 
 .information_container {
@@ -255,39 +186,32 @@ i.title.fa.fa-user{
   margin-bottom: 15px;
 }
 
-.information_container ul{
+.information_container ul {
   padding: 0px;
 }
 
-textarea {
-  color: black;
-  width: 100%;
-  max-width: 100%;
-  height: 150px;
-  border-radius: 0px;
-  margin: 7px auto;
-  text-indent: 5px;
-  font-size: 12pt;
-  font-weight: lighter;
-  font-family: "Roboto", helvetica, sans-serif;
-  }
-
 .name {
   font-size: 30pt;
+  font-weight: 200;
   display: block;
   position: relative;
   top: -20px;
-  font-weight: 900;
-}
+  }
 
 .about_container {
   width: 450px;
+  height: 170px;
   text-align: left;
   margin-left: 30px;
   word-wrap: break-word;
+  color: #888888;
+  line-height: 23px;
+  overflow: scroll;  
 }
 
-//Styling for users index
+/*************************************/
+/* Styling for the users index page. */
+/*************************************/
 
 .interns_container {
   height: 100%;
@@ -300,7 +224,6 @@ textarea {
   backgroung-cover: stretch;
 }
 
-
 .interns {
   box-sizing: border-box;
   margin: 50px auto;
@@ -310,116 +233,41 @@ textarea {
   height: inherit;
 }
 
+.img_container {
+  height: 307px;
+  width: 200px;
+  color: rgb(115,123,128);
+  background: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 15px 15px 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
+}
 
-.interns img{
+.interns img {
   width: 200px;
   height: 267px;
   text-align: center;
   display: inline-block;
   margin-bottom: 10px;
-
 }
 
-/* Styling for the messages container */
-
-.message_container {
-  width: 750px;
-  height: 575px;
-  background-color: white;
-  float: right;
-}
-
-.contacts_container {
-  height: 10%;
-  width: 100%;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  float: left;
-}
-
-.conversation_container {
-  float: right;
-  height: 100%;
-  width: 100%;
-}
-
-.messages_content {
-  height: 412px;
-  width: 100%;
-}
-
-.messages_text {
-  height: 15%;
-  width: 100%;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-}
-
-.new_conversation {
-  height: 100%;
-  width: 100%;
-  outline: none;
-}
-.messages_text textarea{
-  height: 80px;
-  width: 88.5%;
-  resize: none;
-  margin: 0 0 0 0;
-  outline: none;
-}
-
-.msg-submit{
-  width: 10%;
-  height: 85px;
-  font-size: 12pt;
-  outline: none;
-  cursor: pointer;
-  border: 1px solid rgba(0,0,51,1);
-  font-family: "Roboto", helvetica, sans-serif;
-  background-color: rgba(0,0,51,1);
-  color: white;
-  vertical-align: top;
-}
-
-.msg-submit:hover{
-  background: white;
-  color: rgba(0,0,51,1);
-}
-
-/*Styling for the flash error message. */
-.alert-error {
-  color: white;
-}
-
-
-
-
-
-
-
-
+/***********************************************/
+/* Styling for media screens, phones, tablets. */
+/***********************************************/
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .edit_container {
     width: 275px;
-    }
-
-  .edit_form {
-    width: 275px;
-    }
   }
 
-
-@media screen and (min-width: 384px) and (max-width: 540px) {
-  .edit_container {
-    width: 275px;
-    }
-
   .edit_form {
     width: 275px;
-    }
+  }
 }
+
 
 
 

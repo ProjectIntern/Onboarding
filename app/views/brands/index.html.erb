@@ -1,0 +1,8 @@
+<div class= "brands_background">
+  <br><center><h1>Brands</h1></center>
+    <% @brands.each do |brand| %>
+      <div class= "brand_banner">
+        <%= link_to image_tag(brand.banner), brand_path(brand), method: "get", action: "show" %><br>
+      </div>
+    <% end %>
+</div>
