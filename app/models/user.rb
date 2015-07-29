@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   validates_presence_of :first_name, :last_name
   validate :invalidCode
 
+  has_many :messages
 def invalidCode
   errors.add(:code, "is invalid") if self.code != "gapinc"
 end
