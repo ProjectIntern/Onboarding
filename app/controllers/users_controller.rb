@@ -6,8 +6,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def index 
-    @users = User.all
+  def index
+    if params[:search]
+      @users = User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE?" , "#{params[:search]}", "#{params[:search]}", "#{params[:search]}")  
+    else
+      @users = User.all
+    end
   end
 
   def show
@@ -30,11 +34,6 @@ class UsersController < ApplicationController
     end
     @contacts.each do |i|
       @users.push(User.find(i))
-    end
-    if @user.email == current_user.email
-      flash[:success] = "<div class='title_container'><div class='profile_title'><span><i class='title fa fa-user'></i>Profile</span></div><div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div></div>"
-      render 'show'
-      flash.delete(:success)
     end
   end
 

@@ -1,10 +1,10 @@
 <div class="profile_background">
   <div class="content_container">
-    <%= flash[:success].html_safe unless flash[:success].blank? %>
-
     <div class="profile_container">
-
-      <div class="img_container">
+      <div class='profile_title'>
+        <span><i class='title fa fa-user'></i>Profile</span>
+      </div>
+      <div class="profile_picture">
         <%= image_tag @user.image, :class => "profile_pic"%>
         <ul>
           <% if @user.facebook != ""%>
@@ -24,7 +24,7 @@
 
       <div class="information_container">
         <ul>
-          <li> <div class="name"><%=@user.first_name%>  <%=@user.last_name%></div></li>
+          <li> <div class="name"><%=@user.first_name%><br>  <%=@user.last_name%></div></li>
           <li> <%= @user.position %> </li>
           <li> <%= @user.location %> </li>
           <li> <%= @user.school %> </li>
@@ -39,6 +39,7 @@
     </div>
 
     <div class="message_container">
+      <div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div>
       <%= render "conversations/contacts" %>
       <div class="conversation_container">
         <%= render "conversations/show" %>

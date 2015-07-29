@@ -73,6 +73,18 @@
 	display: none;
 }
 
+#masks {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  display: none;
+}
+
 body {
         padding:                     20px;
     }

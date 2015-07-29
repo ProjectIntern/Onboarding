@@ -27,8 +27,8 @@ var main = function() {
     }, 300);
 
 
-    $('body').append('<div id="invisible-mask"></div>');
-    $('#invisible-mask').fadeIn(150);
+    $('body').append('<div id="masks"></div>');
+    $('#masks').fadeIn(150);
   });
 
   $('a[href^="#"]').on('click', function(event) {
@@ -42,8 +42,8 @@ var main = function() {
 });
 
   /* Then push them back */
-$(document).on('click', '#invisible-mask, .icon-close', function() {
-    $('#invisible-mask').remove();
+$(document).on('click', '#masks, .icon-close', function() {
+    $('#masks').remove();
     $('.menu').animate({
       left: "-285px"
     }, 300);
@@ -55,18 +55,9 @@ $(document).on('click', '#invisible-mask, .icon-close', function() {
 };
 
 $(document).ready(function() {
-    $('#logout-menu').click(function() {
-      $('.onclick-menu-content').toggleClass('visible');
-      $('body').append('<div id="invisible-mask"></div>');
-      $('#invisible-mask').fadeIn(50);
-
-    });
-  });
-
-$(document).ready(function() {
-    $(document).on('click', '#invisible-mask', function() {
-      $('#invisible-mask').remove();
-      $('.onclick-menu-content').removeClass('visible');
+    $('#search.fa.fa-search').click(function() {
+      $('.search_bar').fadeToggle("slow", "linear")
+      $('.gap_logo').fadeToggle("slow", "linear")
     });
   });
 

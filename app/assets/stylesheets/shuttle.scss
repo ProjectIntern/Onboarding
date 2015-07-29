@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Styling for the shuttle page */
+/*********************************/
+/* Styling for the shuttle page. */
+/*********************************/
 
 .shuttle {
   text-align: center;
@@ -14,18 +16,34 @@
   height: 100%;
 }
 
+.shuttle_background center {
+  font-size: 16pt;
+  color: white;
+}
+
+/***********************************************/
+/* Styling for media screens, phones, tablets. */
+/***********************************************/
 
 @media screen and (min-width: 569px) and (max-width: 736px) {
-  .shuttle img{
+  .shuttle img {
     width: 500px;
     height: auto;
+  }
+
+  .shuttle_background center {
+    font-size: 12pt;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
-  .shuttle img{
+  .shuttle img {
     width: 375px;
     height: auto;
+  }
+
+  .shuttle_background center {
+    font-size: 10pt;
   }
 }
 

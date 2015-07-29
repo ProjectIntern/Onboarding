@@ -5,15 +5,29 @@
 /* Styling for the what to expect page */
 
 .expect {
-  text-align: center;
-  background: #888888;
+  text-align: left;
+  background: #F5F5F5;
 }
 
 .expect_background {
-  background: #888888;
   height: 100%;
 }
 
+.expect_img {
+	float: right;
+	width: 700px;
+	height: 500px;
+	//border-radius: 50%;
+	margin-right: 15px;
+
+	shape-outside: url(gap.jpg); //inset(0px round 100px); //polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 45% 60%, 45% 40%); // //circle(closest-side at 25% 25%); //polygon(nonzero, 102px 77px, 323px 124px, 372px 220px, 0px 370px);
+	background: #009966 url(gap.jpg);
+	//clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 45% 60%, 45% 40%);
+	//mask-image: url(instagram.png);
+	//shape-fill: 1px;
+	//shape-outline: bold;
+	shape-margin: 10px;
+}
 
 @media screen and (min-width: 569px) and (max-width: 736px) {
   .expect img{
