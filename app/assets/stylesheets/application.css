@@ -71,12 +71,12 @@ a:link {
 }
 
 .menu a {
-  color: rgb(115,123,128);
+  color: rgb(101, 101, 101);
   text-decoration: none;
 }
 
 .menu i {
-  color: rgb(115,123,128);
+  color: rgb(0, 0, 0);
 }
 
 .menu li:first-child {

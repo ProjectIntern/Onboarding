@@ -12,7 +12,14 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   get '/logout' => "sessions#new"
   delete 'logout' => 'sessions#destroy'
-  get '/shuttle' => 'shuttle#index'   
+  get '/shuttle' => 'shuttle#index'
+
+  resources :messages   
+
+  get '/hire_type' => 'hire_type#index'
+  get '/global' => 'global#index', as: :globals
+  get '/global/:id' => 'global#show', as: :global
+  get '/expect' => 'expect#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
