@@ -52,13 +52,7 @@ $(document).on('click', '#masks, .icon-close', function() {
       left: "0px"
     }, 300);
   });
-};
 
-$(document).ready(function() {
-    $('#search.fa.fa-search').click(function() {
-      $('.search_bar').fadeToggle("slow", "linear")
-      $('.gap_logo').fadeToggle("slow", "linear")
-    });
-  });
+};
 
 $(document).ready(main);

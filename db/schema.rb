@@ -12,9 +12,8 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150727205824) do
-  #ActiveRecord::Schema.define(version: 20150717234503) do
 
-   create_table "brands", force: :cascade do |t|
+  create_table "brands", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.string   "logo"
@@ -60,6 +59,7 @@ ActiveRecord::Schema.define(version: 20150727205824) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "type"
     t.string   "hire_type"
   end
 
@@ -68,20 +68,21 @@ ActiveRecord::Schema.define(version: 20150727205824) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "password_confirmation"
     t.string   "code"
-    t.string   "image",           default: "default.jpg"
-    t.string   "facebook",        default: ""
-    t.string   "linkedin",        default: ""
-    t.string   "twitter",         default: ""
-    t.string   "instagram",       default: ""
+    t.string   "image",                 default: "default.jpg"
+    t.string   "facebook",              default: ""
+    t.string   "linkedin",              default: ""
+    t.string   "twitter",               default: ""
+    t.string   "instagram",             default: ""
     t.string   "location"
     t.string   "default"
     t.string   "position"
     t.string   "school"
     t.string   "about"
+    t.string   "terms"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
 end
-
