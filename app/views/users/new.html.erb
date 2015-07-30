@@ -11,6 +11,10 @@
           <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
           <%= f.text_field :code, :placeholder => "Sign-up Code" %>
       </div>
+        <div id="checkbox">
+          <%= f.check_box :terms %>I agree to the <a href="#">terms and conditions</a>
+        </div>
+
         <%= f.submit "Create Account", class: "btn-submit" %><br>
         <%= link_to "Already have an account?", login_path, method: "get", action: "new"%>
       <% end %>

@@ -105,7 +105,7 @@ With a clear brand vision and effortlessly cool product, Gap is re-connecting wi
 
 <p>As we celebrate our 40-year heritage, Gap is committed to staying relevant by continuing to give our customers Gap classics, invented and re-invented for right now. </p>")
 
-b2 = Brand.create(name: "Old Navy", banner: "on_banner.png", logo: "gap_logo.png", description: "
+b2 = Brand.create(name: "Old Navy", banner: "on_banner.png", logo: "on_logo.png", description: "
 
 <h2>Brand Platform</h2>
 <p>Imagine a place where you can find all of your wardrobe 'must-have's' at prices you can’t believe. Everything from your favorite t-shirts and jeans to your seasonal fashion faves. A place where every family member is invited no matter what their size. Where everything has great style and quality and the shopping experience is actually fun, not a chore. That place is Old Navy. Making current American fashion essentials accessible to every family.</p>
@@ -128,3 +128,28 @@ b2 = Brand.create(name: "Old Navy", banner: "on_banner.png", logo: "gap_logo.png
 <li><b>Monday:</b> You’ll meet and mingle with other Gap Inc employees at 2 Folsom for an all day experience.</li>
 <li><b>Tuesday:</b> Your manager will let you know what time and where to show up on Tuesday morning. If you haven’t heard from your hiring manager yet, reach out to them directly for these details. In the afternoon you’ll have an afternoon of discovery about Old Navy and who our target customers are -- Jennie, Mike and the Kids. Meet us at 2pm in front of the “Jennie, Mike and the Kids” poster to begin your deep dive into Old Navy.</li>
 </ul>")
+
+b3 = Brand.create(name: "Intermix", banner: "intermix_banner.png", logo: "intermix_logo.png", description: "
+
+<p><b>INTERMIX</b> is a multi-brand fashion retailer with a compelling and unique point-of-view. INTERMIX offers a curated mix of on-trend, irresistible pieces that celebrate each customer’s personal sense of style with an intimate, individualized approach at more than 30 boutiques across the United States and Canada and online at www.intermixonline.com. The assortment focuses on the most exciting fashion trends and the finest mix of emerging and established designers.</p>
+
+<p><b>INTERMIX</b> is regarded for its philosophy of mixing fashionable pieces in unexpected ways, offering the most coveted designers and sought-after styles from the industry’s best brands. In addition to its vast array of seasonal must-haves, INTERMIX sets itself apart by offering a broad array of exclusive designer products. The brand was acquired by Gap Inc. in December 2012.</p>")
+
+b4 = Brand.create(name: "Banana Republic", banner: "br_banner.png", logo: "br_logo.png", description: "
+
+<p>Banana Republic brings a fresh twist on classic apparel to men and women around the world. The company that started as a safari outfitter in San Francisco now outfits a whole new generation of explorers in clothes that walk the line between easy and refined.</p>
+
+<p>Our promise is to be the “True Outfitters of Modern American Style.” And through this, we’ll enable our customers to live their True Style. We believe that True Style is more than what you wear. It reflects how you live, how you choose to navigate your life, and how you show up.</p>")
+
+b5 = Brand.create(name: "Athleta", banner: "athleta_banner.png", logo: "athleta_logo.png", description: "
+
+<p>We have been the premier fitness apparel brand exclusively for women since 1998.</p>
+
+<p>As athletes ourselves, we live a life in motion. That’s why we design versatile and fashionable performance apparel for the gym, studio and everything in between.</p>
+
+<p>A woman athlete is her most powerful self when she’s fully engaged in the moment – when she discovers her strength, her focus, her power. We design products that live up to the challenges those moments bring and make her look as amazing as she feels.</p> 
+
+<p>We understand that fitness is her oxygen and, for her, the joy is always in the doing. Power to the She.</p>")
+
+
+

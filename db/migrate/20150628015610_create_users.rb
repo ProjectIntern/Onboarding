@@ -16,6 +16,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :position, :default
       t.string :school, :default
       t.string :about, :default
+      t.string :terms
       t.timestamps
     end
   end

@@ -52,6 +52,7 @@ $(document).on('click', '#masks, .icon-close', function() {
       left: "0px"
     }, 300);
   });
+
 };
 
 $(document).ready(main);

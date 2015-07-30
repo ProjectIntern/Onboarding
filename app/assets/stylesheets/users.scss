@@ -15,12 +15,6 @@ h1 {
   margin-left: 5px;
 }
 
-.edit_background {
-  width: 100%;
-  height: 100%;
-  background: #F5F5F5;
-}
-
 .edit_form {
   text-align: left;
   padding: 2.5px 35px 10px 0px;
@@ -88,20 +82,7 @@ textarea {
   height: 575px;
   margin: auto;
   position: absolute;
-  top: -100px; left: 0; bottom: 0px; right: 0;
-}
-
-
-/*********************************/
-/* Styling for the profile page. */
-/*********************************/
-
-.profile_background {
-  background: #F5F5F5;
-  position: absolute;
-  width: 100%;
-  background-size: cover;
-  height: 100%;
+  top: 20px; left: 0; bottom: 0px; right: 0;
 }
 
 /**************************************/
@@ -161,8 +142,9 @@ textarea {
   height: 75px;
   width: 100%;
   font-size: 35pt;
-  background: #FF6347;
-  color: white;
+  background: white;
+  border-bottom: 5px solid #F5F5F5;
+  color: rgb(0,40,97);
   font-weight: lighter;
   text-align: center;
   float: left;
@@ -170,6 +152,7 @@ textarea {
 
 i.title.fa.fa-user {
   margin-right: 10px;
+  color: rgb(0,40,97);
 }
 
 .information_container {
@@ -212,16 +195,6 @@ i.title.fa.fa-user {
 /*************************************/
 /* Styling for the users index page. */
 /*************************************/
-
-.interns_container {
-  height: 100%;
-}
-
-.interns_wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: #F5F5F5;
-}
 
 .interns {
   box-sizing: border-box;
