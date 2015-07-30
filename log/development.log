@@ -56991,3 +56991,3210 @@ Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a15
 
 
 Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:44:20 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:48:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (105.5ms)
+  Rendered shared/_navbar.html.erb (6.9ms)
+Completed 200 OK in 358ms (Views: 320.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/expect.self-51fba1db6eef6d3f4d6ace4fea290002b889dc777967b31f622bf7e8c3680082.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:48:40 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:48:41 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:53:11 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/expect.self-51fba1db6eef6d3f4d6ace4fea290002b889dc777967b31f622bf7e8c3680082.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:53:12 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:53:36 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 135ms (Views: 134.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/expect.self-628d861a93ccd75b8559ef520e2cc98125c437ea87a2a855595e10f0d0e7445f.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:53:37 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:53:43 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/expect.self-4c8dbaed839725c3c5e9bece9c3dfebf1cb87b8cdff249aa4a1b8c8c8ea70e07.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:53:43 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:02 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+Completed 200 OK in 132ms (Views: 131.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/expect.self-9a5b232cfc31eb0bd16f2d9daefa4b1d4ac83587664d94d90a56823bc122c89f.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:02 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:10 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/expect.self-0dd9c5c5cc80c9ec614665a195005992a781c6f2b02d1af5541ad30412aa2079.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:10 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:11 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:28 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/expect.self-6fe6d4f6c4caf7ca0dcf57fdbe2fd0ce25c0786804ad2c00a5baca47410c8720.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:28 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:35 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/expect.self-1288ca4bd5c5e15e31d14f8a191b5dea5bbb2d8ea8d4ff43147211a7b5857442.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:36 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:42 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 131ms (Views: 129.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/expect.self-1900c87a2b54dce319d3e5dc6be8d537970044b2eefde5bfcc9d305bdfb9e2d9.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:42 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:54:48 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/expect.self-8a8e63e45e39d92d08b7dbab94a607707d4d2fe84f9da53b6e7b9586b3055390.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:54:48 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:54:49 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:54:49 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:54:49 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:54:49 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:55:04 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 136ms (Views: 135.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/expect.self-dd72d75c1b43ed3eee04c65112798c23b5a81f33f15490232b565563e6a9a5e6.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:55:04 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:55:22 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 133ms (Views: 132.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/expect.self-b65cd837c742981c05aae200b31ecb1fea81c26340432a695a103257d25de461.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:55:22 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:55:32 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/expect.self-3aabd3bd81d3579bf3ee38f4f8b12202a6808e3f9cf3a6b69f5558bb0a3407a5.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:55:32 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:56:16 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (9.8ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/expect.self-77fce439586a4df4df53c57301c7ed80331b8d4e77de979817213bcbd5e543ab.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:56:17 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:57:20 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 131ms (Views: 130.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/expect.self-cdc065348e55c22f475cc13e672aaa9ee70d5bc8b6297c777c7d4a84cf6c793d.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:57:20 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:57:57 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (10.1ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/expect.self-d626fa3ec9656b70ec5e248be729f2a8c0ac9989a5fd84b1ef6cdd1df2033557.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:57:58 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:58:59 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (9.8ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:58:59 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:58:59 -0700
+
+
+Started GET "/assets/expect.self-054420ff27491d84bb43579637cfa96bce839ebe8cbda490c65293a2b90db11f.css?body=1" for ::1 at 2015-07-30 14:58:59 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:58:59 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:59:00 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:59:17 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (10.2ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/expect.self-aa4f162fb9d2d3aa2db815d9fd3fbc366cd5d093355175a6d75f35d30aaeb7cf.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:59:17 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:59:18 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:59:24 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (12.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 142ms (Views: 141.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/expect.self-0f32e9e983ad559155c1be216384cc2992bb76f15a33cbd59ccab2b7e474945d.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:59:24 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:59:43 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (10.2ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/expect.self-e34837e3ec45fd757e0f6b111b115c070e8ded2d9ab7fe6e109232ae736a2129.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:43 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:59:44 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:59:44 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:59:44 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:59:44 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:59:44 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 14:59:54 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (11.8ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/expect.self-0f32e9e983ad559155c1be216384cc2992bb76f15a33cbd59ccab2b7e474945d.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 14:59:54 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:00:08 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 139ms (Views: 138.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/expect.self-d40055f5a77684e79d4bdc9b9f6da68e3807adacf85339c07897822c9cff63e3.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/jeans_color-6685cff1f4ae6a49a90ce2834cbcd442fd21030e180059289c1f93d5856c8187.jpg" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:00:08 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:00:35 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (8.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 85ms (Views: 84.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/expect.self-d40055f5a77684e79d4bdc9b9f6da68e3807adacf85339c07897822c9cff63e3.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:00:35 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/expect-4ee65572e321468cf64afdc0d56333f98f432bcf29dea6b841b05c54bd8841ee.png" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:00:36 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:00:57 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"3hZGPYXhNThrB27hhTvo7UYSeZ9Ewb8/qqRK8ZZs4ombiA8LkW86EDpKYt6F+zBVBYmzWcehWQJBIfc9usw/tg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (8.7ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/expect.self-d40055f5a77684e79d4bdc9b9f6da68e3807adacf85339c07897822c9cff63e3.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:57 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:00:58 -0700
+
+
+Started GET "/users/12" for ::1 at 2015-07-30 15:01:18 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mConversation Load (0.6ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered conversations/_contacts.html.erb (0.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (1.8ms)
+  Rendered conversations/_message_form.html.erb (10.1ms)
+  Rendered users/show.html.erb within layouts/application (17.6ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 123ms (Views: 109.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:01:20 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:02:00 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 143ms (Views: 142.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/expect.self-9bae3f6322c4c905474a32bdc872b3635945de2f73dfd19d76eaee825b09baf1.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:02:01 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:02:14 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 92ms (Views: 91.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/expect.self-d40055f5a77684e79d4bdc9b9f6da68e3807adacf85339c07897822c9cff63e3.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:02:14 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:02:15 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:02:15 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:02:15 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:02:15 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:02:59 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 136ms (Views: 134.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/expect.self-3f83044acd0ac8d6e4fdd0d41b87b3132aed9aa7427421abf225cca6ecf54f6b.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:02:59 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:03:26 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+Completed 200 OK in 143ms (Views: 142.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/expect.self-d7dec96e221b137b81c64e8ebadc3aeba5e1b8fbe69608a4aecaac4ec2bd5610.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:03:26 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:03:51 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 147ms (Views: 146.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/expect.self-1129f267a2f98600def9eaeea0e2b6c30d2427ea18e9f42a09c85ef87da6c629.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:03:51 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:04:10 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/expect.self-d7dec96e221b137b81c64e8ebadc3aeba5e1b8fbe69608a4aecaac4ec2bd5610.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:04:10 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:04:28 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/expect.self-817235f2fdbeccb991c86eb1e1e8ecb5ba9ae75677c803b1d994dc51bcf74000.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:04:28 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:04:58 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 91ms (Views: 90.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/expect.self-817235f2fdbeccb991c86eb1e1e8ecb5ba9ae75677c803b1d994dc51bcf74000.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:04:58 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 15:05:32 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/brands.self-1de84e0b2152cc2eb705e41a9091ad60bfab908fcfbbc1ae62857047a691d42e.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/expect.self-817235f2fdbeccb991c86eb1e1e8ecb5ba9ae75677c803b1d994dc51bcf74000.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/global.self-dfd3b661b3d641318b1f821863fb9e173784a8f5a548b97b72b9bcb34ae95dd1.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/conversations.self-9ffe957fc59594d8e9cef0b536487167fdeff75609cfc88f433ef4e7181b9fdf.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/home.self-1a387c7a45135b94d366562cec3a725972e12268a28c4365ecbdbe8965e6bf43.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/sessions.self-54489359e12b0ef06c9c9de56a88afb37ad329203e411059f5003e7c0fb2d2fd.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/shuttle.self-7b15e8c422383fa25d42325f2ac764f377328aaed7d268453e5de3f5bb140e79.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/users.self-a092a964e2328599f74b6819199c933011814b093b1cdaa07fe320ebc6289d0d.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/application.self-52caa4823fcb01ee8f35b0840a106b7e75b710b9db1f7c57ea3180c27400d639.css?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/golden_gate_bridge-712859617a68e06458ae288108e667bccca85a1534569ad832d07fdf22d84a3f.jpg" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/gap-1e8c086a34b85a686e45aecb272424e57987e116f256001d98cb0683173d224f.jpg" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/assets/new_york-88f7ae15f56845153e01521afd9bf524ef2f277142b61feac2ab875cf83dc911.jpg" for ::1 at 2015-07-30 15:05:32 -0700
+
+
+Started GET "/brands" for ::1 at 2015-07-30 15:05:49 -0700
+Processing by BrandsController#index as HTML
+  Parameters: {"authenticity_token"=>"V1Iu5XngRMnfezY/tA93vsbQtfT31cDLYUhKCG7sPBMSzGfTbW5L4Y42OgC0z68GhUt/MnS1JvaKzffEQkzhLA=="}
+  [1m[36mBrand Load (1.2ms)[0m  [1mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (20.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (4.4ms)
+Completed 200 OK in 118ms (Views: 114.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/on_logo-103318183a51858d1a909aa326551df8a89709c0e7fa2526afd27744464423c2.png" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/intermix_logo-fee985f65e9db261b1c76271101d8105be01bcbfb00758b7d3a27b785cf45ab6.png" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/athleta_logo-751f890ef1e2a4a53d25d4efa566290785cba7abdfd56bdfb81c71dc6026cfb4.png" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/assets/br_logo-89c284601ba06a529c2c0ce2997f8294a44e4f1b0020b381b7dd259b97ff6e98.png" for ::1 at 2015-07-30 15:05:49 -0700
+
+
+Started GET "/brands/1" for ::1 at 2015-07-30 15:05:51 -0700
+Processing by BrandsController#show as HTML
+  Parameters: {"authenticity_token"=>"xcvqcK+IpbHxMC8AlDX0HCV6gYsTiWd/bF+xc5ajeCCAVaNGuwaqmaB9Iz+U9SykZuFLTZDpgUKH2gy/ugOlHw==", "id"=>"1"}
+  [1m[36mBrand Load (0.2ms)[0m  [1mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered brands/show.html.erb within layouts/application (4.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (3.5ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/application.self-97787ac7cae48aeee0c589b7017de2080e917537270a3447041347ea1b9d64aa.js?body=1" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/assets/gap_banner-008d6e24faed36838f1a6dd99a5ade402b29572be30e4bb97139aee5df81db20.png" for ::1 at 2015-07-30 15:05:51 -0700
+
+
+Started GET "/brands" for ::1 at 2015-07-30 15:05:54 -0700
+Processing by BrandsController#index as HTML
+  [1m[36mBrand Load (0.1ms)[0m  [1mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (8.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.2ms)
