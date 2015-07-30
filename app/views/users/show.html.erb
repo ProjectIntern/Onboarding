@@ -1,50 +1,48 @@
-<div class="profile_background">
-  <div class="content_container">
-    <div class="profile_container">
-      <div class='profile_title'>
-        <span><i class='title fa fa-user'></i>Profile</span>
-      </div>
-      <div class="profile_picture">
-        <%= image_tag @user.image, :class => "profile_pic"%>
-        <ul>
-          <% if @user.facebook != ""%>
-          <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
-          <% end %>
-          <% if @user.linkedin != ""%>
-          <li><%= link_to image_tag("linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
-          <% end %>
-          <% if @user.twitter != ""%>          
-          <li><%= link_to image_tag("twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
-          <% end %>
-          <% if @user.instagram != ""%>
-          <li><%= link_to image_tag("instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
-          <% end %>
-        </ul>
-      </div>
-
-      <div class="information_container">
-        <ul>
-          <li> <div class="name"><%=@user.first_name%><br>  <%=@user.last_name%></div></li>
-          <li> <%= @user.position %> </li>
-          <li> <%= @user.location %> </li>
-          <li> <%= @user.school %> </li>
-          <li> <%= @user.email %> </li>
-        </ul>
-      </div>
-
-      <div class="about_container">
-        <span> <%= @user.about %> </span>
-      </div>
-    
+<div class="content_container">
+  <div class="profile_container">
+    <div class='profile_title'>
+      <span><i class='title fa fa-user'></i>Profile</span>
+    </div>
+    <div class="profile_picture">
+      <%= image_tag @user.image, :class => "profile_pic"%>
+      <ul>
+        <% if @user.facebook != ""%>
+        <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+        <% end %>
+        <% if @user.linkedin != ""%>
+        <li><%= link_to image_tag("linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
+        <% end %>
+        <% if @user.twitter != ""%>          
+        <li><%= link_to image_tag("twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
+        <% end %>
+        <% if @user.instagram != ""%>
+        <li><%= link_to image_tag("instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
+        <% end %>
+      </ul>
     </div>
 
-    <div class="message_container">
-      <div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div>
-      <%= render "conversations/contacts" %>
-      <div class="conversation_container">
-        <%= render "conversations/show" %>
-        <%= render "conversations/message_form" %>
-      </div>
+    <div class="information_container">
+      <ul>
+        <li> <div class="name"><%=@user.first_name%><br>  <%=@user.last_name%></div></li>
+        <li> <%= @user.position %> </li>
+        <li> <%= @user.location %> </li>
+        <li> <%= @user.school %> </li>
+        <li> <%= @user.email %> </li>
+      </ul>
+    </div>
+
+    <div class="about_container">
+      <span> <%= @user.about %> </span>
+    </div>
+  
+  </div>
+
+  <div class="message_container">
+    <div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div>
+    <%= render "conversations/contacts" %>
+    <div class="conversation_container">
+      <%= render "conversations/show" %>
+      <%= render "conversations/message_form" %>
     </div>
   </div>
 </div>

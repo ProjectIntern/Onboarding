@@ -32,21 +32,26 @@
       <ul>
         <li><i class="fa fa-bars" id="icon-menu">MENU</i></li>
 
-        <li>
-        <div class="search_bar">
-        <%= form_tag users_path,:method => 'get' do %>
-          <%= text_field_tag :search, nil, placeholder: "Search for a user by first name, last name, or email..." %>
-        <% end %>
-        </div>
-        </li>
-
         <li> 
-        <div class="gap_logo">
-        <%=image_tag('gap_logo.png', size: "56x51") %>
-        </div>
+            <div class="gap_logo">
+                <%=image_tag('gap_logo.png', size: "56x51") %>
+            </div>
         </li>
 
-        <li><i class="fa fa-search" id="search"></i></li>
+        <li>
+            <div class="search_bar">
+                <%= form_tag users_path,:method => 'get' do %>
+                <%= text_field_tag :search, nil, placeholder: "Search for a user by name or email..." %>
+            </div>
+        </li>
+
+        <li>  
+            <button type="submit" class="search_btn">
+                <i class="fa fa-search"></i>
+            </button>
+        <% end %>
+        </li>
+
 
        </ul>
     </div>

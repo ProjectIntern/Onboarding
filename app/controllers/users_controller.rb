@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :user_logged_on, only:[:new, :create] 
   before_action :require_user, only:[:index, :show, :update, :edit]
-  
+
   def new
     @user = User.new
   end
@@ -11,6 +11,12 @@ class UsersController < ApplicationController
       @users = User.where("first_name LIKE ? OR last_name LIKE ? OR email LIKE?" , "#{params[:search]}", "#{params[:search]}", "#{params[:search]}")  
     else
       @users = User.all
+    end
+  end
+
+  def user
+    respond_to do |format|
+      format.js
     end
   end
 
@@ -62,6 +68,6 @@ class UsersController < ApplicationController
   
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :terms, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
   end
 end
