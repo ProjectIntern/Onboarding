@@ -10153,3 +10153,2805 @@ Processing by UsersController#index as HTML
   Rendered users/index.html.erb within layouts/application (10.0ms)
   Rendered shared/_navbar.html.erb (2.5ms)
 Completed 200 OK in 205ms (Views: 202.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global" for ::1 at 2015-07-29 14:40:47 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"i4iXX7o+qT4dHyazmWDwxvp2vtQ7dC7hd1V2kwRFYXKvNh3RcThfskF31QAmnR012V3InUCaeXj1jIXuct0v/g=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGlobal Load (0.0ms)[0m  SELECT "globals".* FROM "globals"
+  Rendered global/index.html.erb within layouts/application (75.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 243ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global/4" for ::1 at 2015-07-29 14:41:01 -0700
+Processing by GlobalController#show as HTML
+  Parameters: {"authenticity_token"=>"yRkyuBB4bPpL0poQKGUx4tINoBrwl9Am8psCAnUR5SDtp7g2236adhe6aaOXmNwR8SbWU4t5h79wQvF/A4mrrA==", "id"=>"4"}
+  [1m[36mGlobal Load (2.5ms)[0m  [1mSELECT  "globals".* FROM "globals" WHERE "globals"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered global/show.html.erb within layouts/application (10.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 163ms (Views: 160.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 14:41:08 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"kHZxOLPstITWvhnDp8UXz6hT3acE1mB7ceEDKmVxRG60yPu2eOpCCIrW6nAYOPo8i3ir7n84N+LzOPBXE+kK4g=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (30.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 175ms (Views: 172.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-29 14:41:08 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-29 14:41:20 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"nHXkmRbFvlVZivyyqeQMYyHEMANBEjHgdjUAIdFqLnq4y24X3cNI2QXiDwEWGeGQAu9GSjr8Znn07PNcp/Jg9g=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 275ms (Views: 270.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/2" for ::1 at 2015-07-29 14:41:23 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"xvvP9yyU83DNf9tNSgoM+e+J4lnrLTz3OrUSakmEBqviRUV555IF/JEXKP719+EKzKKUEJDDa264bOEXPxxIJw==", "id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mConversation Load (2.5ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (5.0ms)
+  Rendered conversations/_message_form.html.erb (32.5ms)
+  Rendered users/show.html.erb within layouts/application (50.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 310ms (Views: 275.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/global" for ::1 at 2015-07-29 14:42:12 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"hXWiPqlgInNel4DoXK2lep24gF/pWvOgz/I44GfLv0WhyyiwYmbU/wL/c1vjUEiJvpP2FpK0pDlNK8udEVPxyQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGlobal Load (2.5ms)[0m  [1mSELECT "globals".* FROM "globals"[0m
+  Rendered global/index.html.erb within layouts/application (152.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 410ms (Views: 400.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/global/1" for ::1 at 2015-07-29 14:42:14 -0700
+Processing by GlobalController#show as HTML
+  Parameters: {"authenticity_token"=>"e6NenVXaowTVnTwGr1ZSXjo5kPtLtpGvg4VuDhrLZ2JfHdQTntxViIn1z7UQq7+tGRLmsjBYxjYBXJ1zbFMp7g==", "id"=>"1"}
+  [1m[35mGlobal Load (0.0ms)[0m  SELECT  "globals".* FROM "globals" WHERE "globals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered global/show.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 183ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global" for ::1 at 2015-07-29 14:42:25 -0700
+Processing by GlobalController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGlobal Load (0.0ms)[0m  [1mSELECT "globals".* FROM "globals"[0m
+  Rendered global/index.html.erb within layouts/application (105.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 358ms (Views: 355.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global/1" for ::1 at 2015-07-29 14:44:09 -0700
+Processing by GlobalController#show as HTML
+  Parameters: {"authenticity_token"=>"91Ss1Z27enUdlu1T/y6eAEEzQx3OjR6XlaRRaYggwY7T6iZbVr2M+UH+HuBA03PzYhg1VLVjSQ4XfaIU/riPAg==", "id"=>"1"}
+  [1m[35mGlobal Load (0.0ms)[0m  SELECT  "globals".* FROM "globals" WHERE "globals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered global/show.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 200 OK in 320ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-29 14:44:57 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"91Ss1Z27enUdlu1T/y6eAEEzQx3OjR6XlaRRaYggwY7T6iZbVr2M+UH+HuBA03PzYhg1VLVjSQ4XfaIU/riPAg=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (17.5ms)
+  Rendered messages/_display.html.erb (27.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (80.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 510ms (Views: 495.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 14:45:32 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"psL96EQhsslNtPiboW05QRpWl2UO2E+Xc4aFQzeJ3TiCfHdmjydERRHcCygekNSyOX3hLHU2GA7xX3Y+QRGTtA=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 280ms (Views: 275.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-29 14:45:33 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"U//RIIduBKQjIuavfM6mwSAyAKNt8IuTjU7cFuFewb93QVuuTGjyKH9KFRzDM0syAxl26hYe3AoPly9rl8aPMw==", "id"=>"3"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.5ms)
+  Rendered conversations/_message_form.html.erb (2.5ms)
+  Rendered users/show.html.erb within layouts/application (107.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 310ms (Views: 300.0ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/conversations" for ::1 at 2015-07-29 14:45:37 -0700
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hTXK/7ygmdi8aA1hwKn0Pam0B9sPpsOQOyPNQd4wAPqhi0Bxd6ZvVOAA/tJ/VBnOip9xknRIlAm5+j48qKhOdg==", "conversation"=>{"comment"=>"hello\r\n", "receiver_email"=>"scurry@warriors.com", "receiver_name"=>"Stephen Curry", "receiver_id"=>"3", "sender_email"=>"scurry@warriors.com", "sender_name"=>"Stephen Curry", "sender_id"=>"3"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "conversations" ("sender_email", "comment", "receiver_email", "receiver_name", "receiver_id", "sender_name", "sender_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["sender_email", "scurry@warriors.com"], ["comment", "hello\r\n"], ["receiver_email", "scurry@warriors.com"], ["receiver_name", "Stephen Curry"], ["receiver_id", "3"], ["sender_name", "Stephen Curry"], ["sender_id", "3"], ["created_at", "2015-07-29 21:45:37.777945"], ["updated_at", "2015-07-29 21:45:37.777945"]]
+  [1m[36m (70.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:8080/users/3
+Completed 302 Found in 98ms (ActiveRecord: 72.5ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-29 14:45:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (7.5ms)
+  Rendered conversations/_message_form.html.erb (5.0ms)
+  Rendered users/show.html.erb within layouts/application (67.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 330ms (Views: 315.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-29 14:46:01 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"mqHkIhKqxSKuYua5Kuow25fCwHwsRLTbl4JKZ3GwB2q+H26s2awzrvIKFQqVF90otOm2NVeq40IVW7kaByhJ5g=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (65.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 400ms (Views: 387.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:05:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (235.3ms)
+  Rendered shared/_navbar.html.erb (25.0ms)
+Completed 200 OK in 1031ms (Views: 971.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:05:42 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (20.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 193ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:05:43 -0700
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:05:43 -0700
+
+
+Started GET "/brands" for ::1 at 2015-07-30 10:05:49 -0700
+Processing by BrandsController#index as HTML
+  Parameters: {"authenticity_token"=>"q9GmdKJ28nyBYnboznsoCy8lAZIj/fCHLWFdk6XbtG6Pbyz6aXAE8N0KhVtxhsX4DA5321gTpx6vuK7u00P64g=="}
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands"
+  Rendered brands/index.html.erb within layouts/application (45.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 293ms (Views: 287.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global" for ::1 at 2015-07-30 10:05:53 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"e6gYXsVb9hs4EfqFPqEmNlyogmqUhl4jBmwTGQ1pyEZfFpLQDl0Al2R5CTaBXMvFf4P0I+9oCbqEteBke/GGyg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGlobal Load (0.0ms)[0m  [1mSELECT "globals".* FROM "globals"[0m
+  Rendered global/index.html.erb within layouts/application (220.3ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 501ms (Views: 493.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 10:05:58 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"LxQN9jVfNBkCDj9Y77G8LFIdd/mW/1nMtjDwuGeIaKQLqod4/lnClV5mzOtQTFHfcTYBsO0RDlU06QPFERAmKA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 260ms (Views: 255.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:05:59 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:05:59 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 10:09:21 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"vKMNXj9B7tIDr0tXKOayhIEqTfvwROz/N6BsEH/NwJ6YHYfQ9EcYXl/HuOSXG193ogE7souqu2a1eZ9tCVWOEg==", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.5ms)
+  Rendered conversations/_message_form.html.erb (30.0ms)
+  Rendered users/show.html.erb within layouts/application (167.6ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 400ms (Views: 325.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-30 10:09:27 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"8r2cIT2ZH/aAm0AOfZGHSCzmbJDOudFH6WUvOTnwNj3WAxav9p/petzzs73CbGq7D80a2bVXht5rvNxET2h4sQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (45.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 410ms (Views: 405.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-30 10:11:21 -0700
+Processing by ShuttleController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 335ms (Views: 330.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/shuttle-d6fd8f8d1d82b2f16f17f5cb0d506d6868bc6aaa112c14ab9986686223399d15.jpg" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 10:11:21 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:13:25 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"QdKnLt5h3H7NKD595hE1359qv183/A5/W6ii6pg4CX9lbC2gFWcq8pFAzc5Z7NgsvEHJFkwSWebZcVGX7qBH8w=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 423ms (Views: 417.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:13:32 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"yq8Mq8IxNnmSIJe/fcJ0uG2KfRxe8szFUnS4beXHsQHuEYYlCTfA9c5IZAzCP5lLTqELVSUcm1zQrUsQk1//jQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (10.0ms)
+  Rendered messages/_display.html.erb (20.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (5.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (55.0ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 388ms (Views: 375.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:14:19 -0700
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (2.5ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (5.0ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 340ms (Views: 332.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 10:14:20 -0700
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:14:45 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6ZWoQphHRKDtXDa/Pku0GAcCxYYgZD9mbCs0jQpePvTNKyLMU0GyLLE0xQyBtlnrJCmzz1uKaP/u8sfwfMZweA==", "message"=>{"user_id"=>"3", "hire_type"=>""}, "commit"=>"Comment"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::AssociationTypeMismatch (HireType(#78918084) expected, got String(#5813124)):
+  app/controllers/messages_controller.rb:16:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (132.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:15:32 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 165ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:15:32 -0700
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:15:35 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"j4gruO5Japj4EYGtHr5ywEkDFlR1mFyvpzrBQqtYTKSrNqE2JU+cFKR5ch6hQ58zaihgHQ52CzYl4zI/3cACKA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (0.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (32.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 338ms (Views: 337.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:15:37 -0700
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (55.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 318ms (Views: 317.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 10:15:37 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 10:15:38 -0700
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:15:39 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/8iGruYqp+bYwl76mjFc3l4ezvXBNgioU+45x+0IldvbdgwgLSxRaoSqrUklzLEtfTW4vLrYXzHRN8q6m5DbVw==", "message"=>{"user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "messages" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 3], ["created_at", "2015-07-30 17:15:39.834148"], ["updated_at", "2015-07-30 17:15:39.834148"]]
+  [1m[36m (125.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 148ms (ActiveRecord: 127.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:15:39 -0700
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (2.5ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/index.html.erb within layouts/application (55.0ms)
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 200 OK in 475ms (Views: 465.1ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:15:47 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Og/ESCIkHnZBDR25Au7PlZAHsJdQx700kzND+y8NrHIesU7G6SLo+h1l7gq9EyJmsyzG3isp6q0R6rCGWZXi/g==", "message"=>{"user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "messages" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 3], ["created_at", "2015-07-30 17:15:47.925979"], ["updated_at", "2015-07-30 17:15:47.925979"]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 165ms (ActiveRecord: 142.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:15:48 -0700
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (15.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (62.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 323ms (Views: 317.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/2/edit" for ::1 at 2015-07-30 10:15:54 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered messages/edit.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 215ms (Views: 209.7ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/messages/2" for ::1 at 2015-07-30 10:15:57 -0700
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6qgFyDoFqriH/HBznvO8/jH4cJoSCJJdgr1C2rQH6xfOFo9G8QNcNNuUg8AhDlENEtMG02nmxcQAZLGnwp+lmw==", "message"=>{"description"=>"hi"}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mUPDATE "messages" SET "description" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["description", "hi"], ["updated_at", "2015-07-30 17:15:57.534222"], ["id", 2]]
+  [1m[35m (130.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 150ms (ActiveRecord: 135.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:15:57 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 263ms (Views: 255.0ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/messages/2" for ::1 at 2015-07-30 10:16:02 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/7aehYgGV4++GBYJ9shnPyLZd6vehFiHBEpiqt7ikmLbCBQLQwChA+Jw5bpJNYrMAfIB4qVqDx6Gk5HXqHrc7g==", "id"=>"2"}
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 2]]
+  [1m[35m (130.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 140ms (ActiveRecord: 132.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:16:02 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (60.0ms)
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 200 OK in 493ms (Views: 485.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:16:25 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (42.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 230ms (Views: 225.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 10:16:26 -0700
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:16:30 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hoa8RZrBSLJhGSrckFiFjDtoL5M1z8CjyiUCqiPdxxaiODbLUce+Pj1x2W8vpWh/GENZ2k4hlzpI/PHXVUWJmg==", "message"=>{"description"=>"hello\r\n", "user_id"=>"3", "hire_type"=>""}, "commit"=>"Comment"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::AssociationTypeMismatch (HireType(#78918084) expected, got String(#5813124)):
+  app/controllers/messages_controller.rb:16:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:16:54 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 170ms (Views: 170.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:16:55 -0700
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:16:57 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"2OycV4LVo81tVr0Tfs+A15Q+TEJhottYGv1wvbaze1z8UhbZSdNVQTE+TqDBMm0ktxU6CxpMjMGYJIPAwCs10A=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (7.5ms)
+  Rendered messages/_display.html.erb (15.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 415ms (Views: 410.1ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/messages/1" for ::1 at 2015-07-30 10:17:02 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9nyWkOKRGcgZ+6gk8L6msjPE2wcOaJNrXO7Zzvhh7D/SwhweKZfvREWTW5dPQ0tBEO+tTnWGxPLeNyqzjvmisw==", "id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 1]]
+  [1m[35m (125.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 140ms (ActiveRecord: 125.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:17:02 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (42.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 218ms (Views: 210.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:17:05 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HZpCGOC9klZzsT+Ef3E4jVlXTA9Bxc7N4y3wDvkWoUM5JMiWK7tk2i/ZzDfAjNV+enw6RjormVRh9ANzj47vzw==", "message"=>{"description"=>"hello", "user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "messages" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "hello"], ["user_id", 3], ["created_at", "2015-07-30 17:17:05.772739"], ["updated_at", "2015-07-30 17:17:05.772739"]]
+  [1m[35m (145.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 160ms (ActiveRecord: 147.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:17:05 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (5.0ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (67.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 415ms (Views: 407.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:17:56 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9vnDXpjqFYM9EtxxBPiDpWGVac91PPAqS+XfC3A1ZAnZW2DsWVe2lCcuMJ77g/9tq0j7kY6pFkr9mQBW1ibHA==", "message"=>{"description"=>"Hi GapTech Interns. Please make sure to fill out all your forms before your first day!", "user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "messages" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Hi GapTech Interns. Please make sure to fill out all your forms before your first day!"], ["user_id", 3], ["created_at", "2015-07-30 17:17:56.153716"], ["updated_at", "2015-07-30 17:17:56.153716"]]
+  [1m[35m (197.5ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 213ms (ActiveRecord: 200.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:17:56 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (40.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 200ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:18:20 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oZiWaZVaSDNY6gx13GGJKO3bOOrGesG9OEZJyh0yZuOFJhznXly+vwSC/8ZjnGTbzvBOo72UliS6n7q3a6oobw==", "message"=>{"description"=>"On the form, is someone have such and such problem?", "user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "messages" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "On the form, is someone have such and such problem?"], ["user_id", 3], ["created_at", "2015-07-30 17:18:20.156092"], ["updated_at", "2015-07-30 17:18:20.156092"]]
+  [1m[35m (161.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 181ms (ActiveRecord: 161.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:18:20 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (2.5ms)
+  Rendered messages/index.html.erb within layouts/application (35.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 243ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:21:28 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"U2iNPlQ0nN2NlXoPooywqjJ4niIQWj/TxJih//oOrAp31gewnzJqUdH9ibwdcV1ZEVPoa2u0aEpGQVKCjJbihg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 390ms (Views: 382.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:21:29 -0700
+
+
+Started GET "/brands" for ::1 at 2015-07-30 10:21:56 -0700
+Processing by BrandsController#index as HTML
+  Parameters: {"authenticity_token"=>"7eBviTtLHEmKbKn2c3uOSOr5DHM5xkRfocmbJI32ROfJXuUH8E3qxdYEWkXMhmO7ydJ6OkIoE8YjEGhZ+24Kaw=="}
+  [1m[35mBrand Load (2.5ms)[0m  SELECT "brands".* FROM "brands"
+  Rendered brands/index.html.erb within layouts/application (32.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (15.0ms)
+Completed 200 OK in 355ms (Views: 352.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 10:22:19 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"aNhc6VecZqmgfHQkDuyQUa2PR9f7kZvsGcklLHZt1mFMZtZnnJqQJfwUh5exEX2ijqQxnoB/zHWbENZRAPWY7Q=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 317ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:22:20 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:22:20 -0700
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:22:23 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"bQ8VrMarWDBmiVrW98R2L8sTc/wP27y12Ie7T1b6ULVJsZ8iDa2uvDrhqWVIOZvc6DgFtXQ16yxaXkgyIGIeOQ=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 285ms (Views: 277.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:29:11 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"6ZTk2cDvMd0UgwozUFlHYYbqKKJ7/64PquQ5zX4n0dXNKm5XC+nHUUjr+YDvpKqSpcFe6wAR+ZYoPcqwCL+fWQ=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (27.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 255ms (Views: 250.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:29:12 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 10:43:17 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"yYcEHVG7BxJx1Lztoa8LWxO2O/Fa+R9lD7GGxF4EZBftOY6Tmr3xni28T14eUuaoMJ1NuCEXSPyNaHW5KJwqmw=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 273ms (Views: 267.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:43:18 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 10:43:18 -0700
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:43:21 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"FAMhz9s+ob+mWMRKWRriRltLcPvqS3WwXIFpedtYPmMwvatBEDhXM/owN/nm5w+1eGAGspGlIineWJoErcBw7w=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 290ms (Views: 285.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 10:43:39 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OMHoWEGhbFf06h1e7ZC/+ZpcI6YZ2bwdBeq+LzMIFvccf2LWiqea26iC7u1SbVIKuXdV72I364SHM01SRZBYew==", "message"=>{"description"=>"Hi anyone looking for housing?", "user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "messages" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Hi anyone looking for housing?"], ["user_id", 3], ["created_at", "2015-07-30 17:43:39.144544"], ["updated_at", "2015-07-30 17:43:39.144544"]]
+  [1m[35m (162.5ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 185ms (ActiveRecord: 167.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:43:39 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (5.0ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (70.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 393ms (Views: 385.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/messages/6" for ::1 at 2015-07-30 10:43:43 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BQYsrJ+/BhMn5mmchfr89nrqPjiN5qc/d86BPWFBqGshuKYiVLnwn3uOmi86BxEFWcFIcfYI8Kb1F3JAF9nm5w==", "id"=>"6"}
+  [1m[36mMessage Load (2.5ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 6]]
+  [1m[35m (70.0ms)[0m  commit transaction
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 85ms (ActiveRecord: 75.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 10:43:44 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (12.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/index.html.erb within layouts/application (72.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 485ms (Views: 475.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-30 10:44:19 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"AQEGB1Hc1vTrcUiwpgDjWhlEENM8kAeHHNVz4gCMaz4lv4yJmtogeLcZuwMZ/Q6pOm9mmkd+UB6eDICfdhQlsg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 325ms (Views: 320.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:46:34 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"WgY+km7sE0XeCWYIv7dPOhgOhELRuv7suRJT48gN4DV+uLQcperlyYJhlbsASqLJOyXyC6pUqXU7y6CevpWuuQ=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (40.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 218ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:46:34 -0700
+
+
+Started GET "/global" for ::1 at 2015-07-30 10:51:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GlobalController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGlobal Load (0.0ms)[0m  [1mSELECT "globals".* FROM "globals"[0m
+  Rendered global/index.html.erb within layouts/application (292.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 600ms (Views: 540.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 10:51:12 -0700
+
+
+Started GET "/assets/StefanLarsson-700fc8a33c60784048d5f08ce5b84a10d988231d98bb3a1ac4d967397ce50244.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/SabrinaSimmons-2a6fc82d30f57cc6fa9a86500ffa93c9c67214dbcda352947b6e6c780dd46138.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/MichelleBanks-65757f6135e22617becc2499b0420b41a7c3f1be1fc0056612111b815be4f220.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/AndiOwen-18e0091db3beb6f8123b49ca50055bfb975e77ee5c1285ef9c5c8bd8c3b9cf31.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/SolGoldfarb-c0ac63a38c72a16692ecdc85763436badfd9069e8535506cad4badfa877caaeb.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/NancyGreen-ba28f4f336d62f1f2f2a5e29b81964d8f8d17e803b6a8f5e357e63f139f13dc5.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/assets/BobbiSilten-719bd62de6f3d032b85adfa970760d1a882da3a1adb4ff740bbd9fb92debd01a.jpg" for ::1 at 2015-07-30 10:51:13 -0700
+
+
+Started GET "/" for ::1 at 2015-07-30 10:52:04 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"C6kbpVMclh0XFtGRVzi5njS8c0H4DrOuxremx08Pv7ovF5ErmBpgkUt+IiLoxVRtF5cFCIPg5DdEblW6OZfxNg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (90.0ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 460ms (Views: 450.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 10:52:04 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-07-30 11:01:24 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XURKGj5qCaa9mQjujnPCv/SXgdWGDsiAzNQT35MvXRp5+sCU9Wz/KuHx+10xji9M17z3nP3gnxlODeCi5bcTlg=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-30 11:01:24 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (57.5ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 408ms (Views: 405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-30 11:01:24 -0700
+
+
+Started GET "/signup" for ::1 at 2015-07-30 11:01:51 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"K0xazHa45ZhymC4p1s8Nn3p6R1Vn66x+U7P7SiH4ElAP8tBCvb4TFC7w3ZppMuBsWVExHBwF++fRagg3V2Bc3A=="}
+  Rendered shared/_error_messages.html.erb (10.0ms)
+  Rendered users/new.html.erb within layouts/application (20.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 340ms (Views: 337.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-07-30 11:04:09 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0xazHa45ZhymC4p1s8Nn3p6R1Vn66x+U7P7SiH4ElAP8tBCvb4TFC7w3ZppMuBsWVExHBwF++fRagg3V2Bc3A==", "session"=>{"email"=>"scurry@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "scurry@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 90ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:04:09 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 193ms (Views: 192.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 11:04:09 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 11:04:39 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"FwVupKZ18vZe85R7+fO2UowdW1Pa+gC87KnStzwiFrIzu+QqbXMEegKbZ8hGDluhrzYtGqEUVyVucCHKSrpYPg==", "id"=>"3"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (2.5ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (5.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (10.0ms)
+  Rendered conversations/_message_form.html.erb (17.5ms)
+  Rendered users/show.html.erb within layouts/application (132.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 425ms (Views: 362.5ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 11:06:13 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"fupuhm4ItlTbvEq9nJ02exewfddkmA0SiHYnPyJjr7JaVOQIpQ5A2IfUuQ4jYNuINJsLnh92WosKr9RCVPvhPg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (2.5ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (17.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (57.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 318ms (Views: 305.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/messages" for ::1 at 2015-07-30 11:06:38 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qiegv4llEwyeSZyUYNHLGL8aaTqhZ4jSE4VxbDzARMVmmSoxQmPlgMIhbyffLCbrnDEfc9qJ30uRXIIRSlgKSQ==", "message"=>{"description"=>"hey looking for housing", "user_id"=>"3"}, "commit"=>"Comment"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "messages" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["description", "hey looking for housing"], ["user_id", 3], ["created_at", "2015-07-30 18:06:38.466028"], ["updated_at", "2015-07-30 18:06:38.466028"]]
+  [1m[36m (62.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:8080/messages
+Completed 302 Found in 158ms (ActiveRecord: 65.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 11:06:38 -0700
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages"  ORDER BY created_at DESC[0m
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (15.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (57.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 245ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-30 11:06:49 -0700
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"MmuLlHzQqMXQ73yGh2+o1QaqhbYzFY9UVXeFxJgEHQIW1QEat9ZeSYyHjzU4kkUmJYHz/0j72M3Xrna57pxTjg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 265ms (Views: 262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shuttle" for ::1 at 2015-07-30 11:41:37 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"VZQCUxgx6/X2YJWG6fUG6f5pfDPJBoYdJ1hDNFCNzAFxKojd0zcdeaoIZjVWCOsa3UIKerLo0YSlgbBJJhWCjQ=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (25.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 418ms (Views: 412.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 11:43:57 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"6ZAjKEkBqIRK1uK0coc7qm2h4yPIlnAf4PMcrC/huELNLqmmggdeCBa+EQfNetZZToqVarN4J4ZiKu/RWXn2zg=="}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (0.0ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (7.5ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/_new.html.erb (0.0ms)
+  Rendered messages/_display.html.erb (5.0ms)
+  Rendered messages/index.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 265ms (Views: 257.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:44:16 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"P64mmQp8nOA5+0zQqcncEWsPt7DrF9lN7mDoKUszIXAbEKwXwXpqbGWTv2MWNDHiSCTB+ZD5jtRsuRtUPatv/A=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (25.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 215ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 11:44:16 -0700
+
+
+Started GET "/shuttle" for ::1 at 2015-07-30 11:44:35 -0700
+Processing by ShuttleController#index as HTML
+  Parameters: {"authenticity_token"=>"NOve+AcqVkRYRerLMTUpG6hV9CFLvH8CTDrhu/mtyJAQVVR2zCygyAQtGXiOyMToi36CaDBSKJvO4xLGjzWGHA=="}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shuttle/index.html.erb within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 375ms (Views: 370.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-07-30 11:44:40 -0700
+Processing by MessagesController#index as HTML
+  Parameters: {"authenticity_token"=>"6vtaurkYIgPhu2CcaXuYk/q+gzaVVSubgoYAofmRxq3ORdA0ch7Uj73Tky/WhnVg2ZX1f+67fAIAX/PcjwmIIQ=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMessage Load (2.5ms)[0m  SELECT "messages".* FROM "messages"  ORDER BY created_at DESC
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (15.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (5.0ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/_new.html.erb (2.5ms)
+  Rendered messages/_display.html.erb (10.0ms)
+  Rendered messages/index.html.erb within layouts/application (75.0ms)
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 200 OK in 555ms (Views: 547.5ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2015-07-30 11:54:24 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tL45p7bp0lZoEwQOQulc17Hnamb/ZXM6vM5Ya+kOIXKQALMpfe8k2jR79739FLEkkswcL4SLJKM+F6sWn5Zv/g=="}
+Redirected to http://localhost:8080/login
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-07-30 11:54:24 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 165ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans_color.jpg" for ::1 at 2015-07-30 11:54:24 -0700
+
+
+Started POST "/login" for ::1 at 2015-07-30 11:55:14 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/nhm/JB5NXIVlX5y/Jtcgb3zsbpPT8yH/ipIPmr40eraxuxyW3/D/kn9jcFDZrFyntjH8zShmx5887tDHGCfZg==", "session"=>{"email"=>"scurry@warriors.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "scurry@warriors.com"]]
+Redirected to http://localhost:8080/
+Completed 302 Found in 120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:55:14 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 160ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 11:55:14 -0700
+
+
+Started GET "/global" for ::1 at 2015-07-30 11:55:17 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"P9YSDqqaxi8+vXfxtiwpxyWHiwbp1JmhOoq/zKIJ8A4baJiAYZwwo2LVhEIJ0cQ0Bqz9T5I6zji4U0yx1JG+gg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGlobal Load (0.0ms)[0m  SELECT "globals".* FROM "globals"
+  Rendered global/index.html.erb within layouts/application (110.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 408ms (Views: 407.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global/9" for ::1 at 2015-07-30 11:55:34 -0700
+Processing by GlobalController#show as HTML
+  Parameters: {"authenticity_token"=>"l/2A81Xa1NNr8roP2bLKdqYq/Z0mltFNQsOP6agcIOOzQwp9ntwiXzeaSbxmTyeFhQGL1F14htTAGnyU3oRubw==", "id"=>"9"}
+  [1m[36mGlobal Load (0.0ms)[0m  [1mSELECT  "globals".* FROM "globals" WHERE "globals"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered global/show.html.erb within layouts/application (12.5ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 335ms (Views: 327.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global" for ::1 at 2015-07-30 11:55:50 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"1gd9pjfNKacgyMTN2aIjdO1HpXT6Jo/FXSSgeYPSKLvyufco/MvfK3ygN35mX86HzmzTPYHI2Fzf/VME9UpmNw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGlobal Load (0.0ms)[0m  SELECT "globals".* FROM "globals"
+  Rendered global/index.html.erb within layouts/application (157.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 418ms (Views: 412.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/global/9" for ::1 at 2015-07-30 11:56:04 -0700
+Processing by GlobalController#show as HTML
+  Parameters: {"authenticity_token"=>"6ViIcOSgLejkOQbNn/sYZdhXZd+44bJ/ieOnVyh/j23N5gL+L6bbZLhR9X4gBvWW+3wTlsMP5eYLOlQqXufB4Q==", "id"=>"9"}
+  [1m[36mGlobal Load (2.5ms)[0m  [1mSELECT  "globals".* FROM "globals" WHERE "globals"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered global/show.html.erb within layouts/application (7.5ms)
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 230ms (Views: 225.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 12:00:54 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"zcz4CY9H4+AQMwpeKR/yw6klWWyBAJxr00iY7qkwqJDpcnKHREEVbExb+e2W4h8wig4vJfruy/JRkWuT36jmHA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/index.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 215ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jeans.jpg" for ::1 at 2015-07-30 12:00:54 -0700
+
+
+Started GET "/brands" for ::1 at 2015-07-30 12:00:58 -0700
+Processing by BrandsController#index as HTML
+  Parameters: {"authenticity_token"=>"UQRk618QGuCEsI4MLZ+8lUuwGME051hiOJac/4AhAzx1uu5llBbsbNjYfb+SYlFmaJtuiE8JD/u6T2+C9rlNsA=="}
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands"
+  Rendered brands/index.html.erb within layouts/application (25.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 198ms (Views: 192.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/global" for ::1 at 2015-07-30 12:01:01 -0700
+Processing by GlobalController#index as HTML
+  Parameters: {"authenticity_token"=>"m2w9sAdCnLWL1KFktzcwm+e666ToXz/93zBa7YnAauC/0rc+zERqOde8UtcIyt1oxJGd7ZOxaGRd6amQ/1gkbA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGlobal Load (0.0ms)[0m  [1mSELECT "globals".* FROM "globals"[0m
+  Rendered global/index.html.erb within layouts/application (90.0ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+Completed 200 OK in 290ms (Views: 282.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 12:01:06 -0700
+Processing by ExpectController#index as HTML
+  Parameters: {"authenticity_token"=>"BWn4Zpnhl/R8isjrDsl/a3XLecPqT1Bk4++ZFwmrhlAh13LoUudheCDiO1ixNJKYVuAPipGhB/1hNmpqfzPI3A=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 418ms (Views: 412.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 12:01:07 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 12:01:07 -0700
+
+
+Started GET "/expect" for ::1 at 2015-07-30 12:09:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (22.5ms)
+Completed 500 Internal Server Error in 930ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form_path' for #<#<Class:0x6755838>:0x6754e90>):
+    15:         <li><i class="fa fa-comments"><%= link_to "Message Board", messages_path, method: "get", action: "index"%></i></li>
+    16:         <li><i class="fa fa-users"><%= link_to "Team", users_path, method: "get", action: "users#index"%></i></li>
+    17:         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+    18:         <li><i class="fa fa-stick-note"><%= link_to "Forms", form_path, method: "get", action: "index"%></i></li>
+    19: 
+    20:         <li><span>- - - - - - - - - - - - - - - - - - -</span></li>
+    21: 
+  app/views/shared/_navbar.html.erb:18:in `_app_views_shared__navbar_html_erb___261031377_81813024'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__456505008_53997672'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.0ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 12:10:07 -0700
+Processing by ExpectController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form_path' for #<#<Class:0xa714ce0>:0xa714578>):
+    15:         <li><i class="fa fa-comments"><%= link_to "Message Board", messages_path, method: "get", action: "index"%></i></li>
+    16:         <li><i class="fa fa-users"><%= link_to "Team", users_path, method: "get", action: "users#index"%></i></li>
+    17:         <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+    18:         <li><i class="fa fa-stick-note"><%= link_to "Forms", form_path, method: "get", action: "index"%></i></li>
+    19: 
+    20:         <li><span>- - - - - - - - - - - - - - - - - - -</span></li>
+    21: 
+  app/views/shared/_navbar.html.erb:18:in `_app_views_shared__navbar_html_erb___261031377_81813024'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__456505008_53997672'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.5ms)
+
+
+Started GET "/expect" for ::1 at 2015-07-30 12:10:50 -0700
+Processing by ExpectController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered expect/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 293ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/assets/gap.jpg" for ::1 at 2015-07-30 12:10:51 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:10:54 -0700
+Processing by FormsController#index as HTML
+  Parameters: {"authenticity_token"=>"UU6KhPh95o7kJWUnhQqKz8Agbb1JClsKRZHDpf6LGi118AAKM3sQArhNlpQ692c84wsb9DLkDJPHSDDYiBNUoQ=="}
+  Rendered forms/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 333ms (Views: 330.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:11:11 -0700
+Processing by FormsController#index as HTML
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 230ms (Views: 225.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:11:11 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:11:42 -0700
+Processing by FormsController#index as HTML
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 215ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:11:42 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:12:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FormsController#index as HTML
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (40.0ms)
+Completed 200 OK in 423ms (Views: 407.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:12:08 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:12:31 -0700
+Processing by FormsController#index as HTML
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (15.0ms)
+Completed 200 OK in 348ms (Views: 345.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:31 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:12:32 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:12:55 -0700
+Processing by FormsController#index as HTML
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_navbar.html.erb (7.5ms)
+Completed 200 OK in 348ms (Views: 347.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 12:12:56 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 12:12:59 -0700
+Processing by FormsController#index as HTML
+  Parameters: {"authenticity_token"=>"pnw/+Y+Jh1f8/olihqfoKf3TOoFkrj9hesHPZnV0xTKCwrV3RI9x26CWetE5WgXa3vhMyB9AaPj4GDwbA+yLvg=="}
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (12.5ms)
+Completed 200 OK in 315ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 13:29:51 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"12saeB93VTtHQi7pP7WsPaQ0xHZlFEmX+sERdLFM2R7z1ZD21HGjtxsq3VqASEHOhx+yPx76Hg54GOIJx9SXkg==", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (4.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (2.0ms)
+  Rendered conversations/_message_form.html.erb (27.0ms)
+  Rendered users/show.html.erb within layouts/application (102.0ms)
+  Rendered shared/_navbar.html.erb (7.0ms)
+Completed 200 OK in 372ms (Views: 342.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 14:01:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (1.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.0ms)
+  Rendered conversations/_message_form.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (26.0ms)
+  Rendered shared/_navbar.html.erb (8.0ms)
+Completed 200 OK in 262ms (Views: 246.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:01:28 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 14:02:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (1.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (1.0ms)
+  Rendered conversations/_message_form.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (47.0ms)
+  Rendered shared/_navbar.html.erb (7.0ms)
+Completed 200 OK in 273ms (Views: 261.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-30 14:02:51 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 14:04:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mConversation Load (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "conversations".* FROM "conversations"[0m
+  Rendered conversations/_show.html.erb (2.0ms)
+  Rendered conversations/_message_form.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (34.0ms)
+  Rendered shared/_navbar.html.erb (7.0ms)
+Completed 200 OK in 262ms (Views: 255.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-30 14:04:13 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 14:04:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (4.0ms)
+  Rendered conversations/_message_form.html.erb (4.0ms)
+  Rendered users/show.html.erb within layouts/application (61.0ms)
+  Rendered shared/_navbar.html.erb (8.0ms)
+Completed 200 OK in 384ms (Views: 370.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-30 14:04:28 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 14:04:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mConversation Load (1.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered conversations/_contacts.html.erb (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "conversations".* FROM "conversations"
+  Rendered conversations/_show.html.erb (2.0ms)
+  Rendered conversations/_message_form.html.erb (22.0ms)
+  Rendered users/show.html.erb within layouts/application (277.0ms)
+  Rendered shared/_navbar.html.erb (10.0ms)
+Completed 200 OK in 820ms (Views: 735.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/brands.self-69786a5d8c7d457bd6515ef9c4043408bb0894baed4d7e6bb7a322f48c6719c4.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/conversations.self-bb8b2399df1a0387ffc78d78257930b1554fe8691497e7ec348eeedaf59d5210.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/expect.self-764b15dff365ae0fde28fb0d60b4c1b55654ae557b2d681da7aaca56030ea123.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/home.self-1c7537f562e8842fa4fbae0afa21e4a50926564ceacb6e94262010830d6f56e2.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/global.self-356fd12017c320720f65a52813d879eaa0b0848de2a334132d3771592aadaa05.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/hire_type.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/sessions.self-f940490fbd2621910794d7dec467a2932073dba7f0703ca2d5821bae87bed11b.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/shuttle.self-9fb3faeabd34269aad667750913e0cdf3dcf2b0e3dd41ec0bb9b5944a458de3c.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/users.self-1e97fce71ba820a0380ac6433073a68ea26ca7675aad6356b0650135441a2e97.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/application.self-62bb21ec0043ead9d4c3b60d4f0a6dc42349d65c30ec208d198ae5a757579b24.css?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/brands.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/content.self-83cc373bef16273ab41e4c13955ca1a29460a13f6ceac5cdcc128c375429fe13.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/global.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/hire_type.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/shuttle.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/application.self-a3d914c1b1d952444eef0f7b93d8ea6ae0efde47defbf78157b54fce6376210c.js?body=1" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/facebook-8b1cbf38e5ff7b6ff639e55011dacbcf3f2a14f757b3b0f45550b118f7d6e9da.png" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/linkedin-735a442c6edef9c40cf9dabbe529eced51f1245b020dafaa3d1bc1eab42577c6.png" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/gap_logo-583d9c0e7ec4033ed17d67afcc2fde9b0c29719dc304913c7591bb37564c99c6.png" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/twitter-e294f2097b2b09ae939bf3a6e48c5288932b42298a48dc098537648fe62ca8b7.png" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/assets/instagram-cb8f0c305fefcbad0283895a70992cc86364ab5f3d52f719bbb7e9fd8bfa02fd.png" for ::1 at 2015-07-30 14:05:00 -0700
+
+
+Started GET "/form" for ::1 at 2015-07-30 14:10:20 -0700
+Processing by FormsController#index as HTML
+  Parameters: {"authenticity_token"=>"NEioayBsxEQhOL2Au3AjsuU1t+lBP69NP7TzB1B9JUAQ9iLl62oyyH1QTjMEjc5Bxh7BoDrR+NS9bQB6JuVrzA=="}
+  Rendered forms/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_navbar.html.erb (8.0ms)
+Completed 200 OK in 218ms (Views: 217.0ms | ActiveRecord: 0.0ms)

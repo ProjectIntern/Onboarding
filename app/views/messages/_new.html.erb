@@ -1,9 +1,9 @@
 <div class="messages_text">
 	<%# <%= form_for @message do |f| %>
 	<%= form_for Message.new do |f| %>
-		<textarea class="text_area"><%= f.text_area :description, :placeholder => "Type Comment Here" %></textarea>
+		<%= f.text_area :description, :placeholder => "Type Comment Here" %>
     	<%= f.text_field :user_id, :value => "#{@current_user.id}", class: "hidden" %>
-    	<%= f.text_field :hire_type, :value => "#{@hire_type}", class: "hidden" %>
+    	<%# <%= f.text_field :hire_type, :value => "#{@hire_type}", class: "hidden" %>
 		<%= f.submit "Comment", class: "msg-submit" %><br>
 	<% end %>
  
