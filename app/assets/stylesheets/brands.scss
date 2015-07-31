@@ -6,48 +6,280 @@
 /* Styling for the brands index page. */
 /**************************************/
 
-.brand_logo img {
-  width: 200px;
-  height: 100px;
+.brands_bar {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: rgb(245,245,245);
+  height: 50px;
+  position: fixed;
+  z-index: 1;
 }
 
-.brand_logo {
-  width: 200px;
-  height: 110px;
-  margin-left: auto;
+.brands_bar ul {
+  color: white;
+  list-style-type: none;
+}
+
+.brands_bar a:link{
+  color: rgb(0,40,97);
+}
+
+.brands_bar li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.brands_bar a:hover{
+  color: #888888;
+}
+/**************************************/
+/* Styling for the gap container. */
+/**************************************/
+
+#gap_container{
+  width: 1250px;
   margin-right: auto;
-}
-
-
-/*************************************/
-/* Styling for the brands show page. */
-/*************************************/
-
-.brand_container {
-  width: 800px;
-  height: 1000px;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
   top: 50px;
   position: relative;
 }
 
-.brand_banner {
-  margin-bottom: 25px;
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-  padding: 5px 5px 1px 5px;
+.gap_description {
+  width: 750px;
+  margin-right: 20px;
+  float: left;
 }
 
-.brand_banner img{
+.gap_par {
+  background-color: white;
+  border-radius: 4px;
+  height: 450px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.gap_banner{
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 100%;
+}
+
+.gap_banner img{
   width: 100%;
   height: 150px;
 }
 
-.brand_description {
-  background-color: white;
+.gap_img img{
+  width: 480px;
+  height: 620px;
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-  padding: 2px 10px 5px 10px;
 }
 
+/***************************************/
+/* Styling for the old navy container. */
+/***************************************/
+
+#on_container{
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.on_description {
+  width: 755px;
+  margin-left: 20px;
+  float: right;
+}
+
+.on_par {
+  background-color: white;
+  border-radius: 4px;
+  height: 300px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.on_banner{
+  border-radius: 4px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 100%;
+}
+
+.on_banner img{
+  width: 100%;
+  height: 150px;
+}
+
+.on_img img{
+  width: 475px;
+  height: 475px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+/**********************************/
+/* Styling for athleta container. */
+/**********************************/
+
+#athleta_container{
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.athleta_description {
+  width: 700px;
+  margin-right: 20px;
+  float: left;
+}
+
+.athleta_par {
+  background-color: white;
+  border-radius: 4px;
+  height: 430px;
+  padding: 0px 10px 10px 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.athleta_banner{
+  border-radius: 4px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.athleta_banner img{
+  height: 150px;
+}
+
+.athleta_img img{
+  width: 530px;
+  height: 610px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+/******************************************/
+/* Styling for banana republic container. */
+/******************************************/
+
+#br_container{
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.br_description {
+  width: 830px;
+  margin-left: 20px;
+  float: right;
+}
+
+.br_par {
+  background-color: white;
+  border-radius: 4px;
+  height: 400px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.br_banner{
+  border-radius: 4px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 100%;
+}
+
+.br_banner img{
+  border-radius: 4px;
+  height: 150px;
+  width: 100%;
+}
+
+.br_img img{
+  width: 400px;
+  height: 570px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+/***********************************/
+/* Styling for intermix container. */
+/***********************************/
+
+#intermix_container{
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.intermix_description {
+  width: 750px;
+  margin-right: 20px;
+  float: left;
+}
+
+.intermix_par {
+  background-color: white;
+  border-radius: 4px;
+  height: 450px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.intermix_banner{
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 100%;
+}
+
+.intermix_banner img{
+  width: 100%;
+  height: 150px;
+}
+
+.intermix_img img{
+  width: 480px;
+  height: 620px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  margin-bottom: 50px; 
+}
+
+/***********************************/
+/* Styling for phones and tablets. */
+/***********************************/
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .brands_bar{
+    font-size: 10pt;
+  }
+}
