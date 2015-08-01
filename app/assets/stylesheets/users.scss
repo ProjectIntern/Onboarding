@@ -47,8 +47,8 @@ h1 {
 }
 
 .update_btn {
-  border: 1px solid #FF6347;
-  background-color: #FF6347;
+  border: 1px solid red;
+  background-color: red;
   font-size: 12pt;
   margin-top: 10px;
   padding: 10px;
@@ -58,7 +58,7 @@ h1 {
 
 .update_btn:hover {
   background-color: white;
-  color: #FF6347;
+  color: red;
   cursor: pointer;
 }
 
@@ -210,7 +210,6 @@ i.title.fa.fa-user {
   width: 200px;
   color: rgb(115,123,128);
   background: white;
-  text-align: center;
   display: inline-block;
   padding: 10px 10px 10px 10px;
   margin: 15px 15px 15px 15px;
@@ -224,26 +223,15 @@ i.title.fa.fa-user {
   text-align: center;
   display: inline-block;
   margin-bottom: 10px;
+  -webkit-transform: translateZ(0);
+  -webkit-filter:grayscale(1);
+  -webkit-filter:saturate(0%);
+  -webkit-transition:2s ease;
 }
 
 .intern_card {
   display: inline-block;
   width: 250px;
-}
-
-.about_card {
-  height: 336px;
-  width: 200px;
-  color: rgb(115,123,128);
-  background-color: #F5F5F5;
-  color: black;
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-  margin: 0px 15px 15px 15px;
-  border-radius: 4px;
-  z-index: 2;
-  font-size: 12pt;
-  display: none;
 }
 
 .intern_card:hover .about_card{
@@ -255,31 +243,92 @@ i.title.fa.fa-user {
   margin-bottom: 3px;
 }
 
-/* Add this for black/white filter. 
+/* Add this for black/white filter. */
 .intern_card:hover img {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
-*/
 
-.about_card li {
-  display: inline-block;
+.about_card {
+  height: 345px;
+  width: 200px;
+  color: rgb(115,123,128);
+  background-color: #F5F5F5;
+  color: black;
+  padding: 10px 10px 0px 10px;
+  margin: 0px 15px 0px 15px;
+  border-radius: 4px;
+  z-index: 2;
+  font-size: 12pt;
+  display: none;
+}
+
+.about_card_social_icons li {
   list-style-type: none;
-  text-align: center;
+  display: inline-block;
+  width: 30px;
+  height: 27.5px;
+  padding-top: 2.5px;
+  line-height: 1.5;
   margin-right: 5px;
   margin-left: 5px;
-  width: 100%;
 }
 
-.about_card ul {
-  padding: 0px;
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-align: center;
+.about_card_social_icons ul {
+  background-color: red;
   font-size: 12pt;
-
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 1; left: 0; right: 0;
 }
 
+.about_card_social_icons i {
+  color: white;
+}
+
+.about_card_info {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.about_card_info li {
+  list-style-type: none;
+  font-size: 10pt;
+  text-align: left;
+}
+
+.about_card_me {
+  text-align: left;
+  font-size: 10pt;
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+  margin-bottom: 5px;
+}
+
+.msg_button {
+  border: 1px solid red;
+  background-color: red;
+  width: 100%;
+  font-size: 10pt;
+  margin-top: 10px;
+  padding: 5px;
+  color: white;
+  outline: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.msg_button:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
 
 /***********************************************/
 /* Styling for media screens, phones, tablets. */

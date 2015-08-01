@@ -14,7 +14,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :instagram, :default => ""
       t.string :location, :default
       t.string :position, :default
-      t.string :school, :default
       t.string :about, :default
       t.string :terms
       t.timestamps

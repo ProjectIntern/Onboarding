@@ -3,14 +3,35 @@
     <span><i class='title fa fa-user'></i>Profile</span>
   </div>
   <div class="profile_picture">
-    <%= image_tag t.image, :class => "profile_pic"%>
-
+    <%= image_tag @user.image, :class => "profile_pic"%>
+    <ul>
+      <% if @user.facebook != ""%>
+      <li><%= link_to image_tag("social_media/facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+      <% end %>
+      <% if @user.linkedin != ""%>
+      <li><%= link_to image_tag("social_media/linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
+      <% end %>
+      <% if @user.twitter != ""%>          
+      <li><%= link_to image_tag("social_media/twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
+      <% end %>
+      <% if @user.instagram != ""%>
+      <li><%= link_to image_tag("social_media/instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
+      <% end %>
+    </ul>
   </div>
 
-
+  <div class="information_container">
+    <ul>
+      <li> <div class="name"><%=@user.first_name%><br>  <%=@user.last_name%></div></li>
+      <li> <%= @user.position %> </li>
+      <li> <%= @user.location %> </li>
+      <li> <%= @user.school %> </li>
+      <li> <%= @user.email %> </li>
+    </ul>
+  </div>
 
   <div class="about_container">
-    <span> <%= t.about %> </span>
+    <span> <%= @user.about %> </span>
   </div>
 
 </div>

@@ -3,16 +3,33 @@
     <% @users.each do |t| %>
     <div class="intern_card">
       <div class="img_container">
-        <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show"%><br>
+        <%= image_tag(t.image)%><br>
         <%= t.first_name %> <%= t.last_name %>
       </div>
       <div class="about_card">             
-        <ul>
+        <div class="about_card_social_icons">
+          <ul>
+            <% if t.facebook != ""%>
+            <li><a href="<%=t.facebook%>"><i class="fa fa-facebook"></i></a></li>
+            <% end %>
+            <% if t.linkedin != ""%>
+            <li><a href="<%=t.linkedin%>"><i class="fa fa-linkedin"></i></a></li>
+            <% end %>
+            <% if t.twitter != ""%>
+            <li><a href="<%=t.twitter%>"><i class="fa fa-twitter"></i></a></li>
+            <% end %>
+            <% if t.instagram != ""%>
+            <li><a href="<%=t.instagram%>"><i class="fa fa-instagram"></i></a></li>
+            <% end %>
+          </ul>
+        </div>
+        <ul class="about_card_info">
           <li> <%= t.position %> </li>
           <li> <%= t.location %> </li>
-          <li> <%= t.school %> </li>
           <li> <%= t.email %> </li>
         </ul>
+        <div class="about_card_me"><%=t.about%></div>
+        <%= button_to "Message", user_path(t), method: "get", action: "show", :class => "msg_button" %>
       </div>
     </div>
     <% end %>
