@@ -1,0 +1,7 @@
+<h1>Message Boards</h1>
+
+<div>
+	<% @hire_types.each do |hire_type| %>
+    	<div> <%= render partial: "display", object: hire_type %> </div>
+	<% end %>
+</div>

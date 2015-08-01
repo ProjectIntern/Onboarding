@@ -2,10 +2,10 @@ class MessagesController < ApplicationController
 	#before_action :user_logged_on, only:[:new, :create] 
   	before_action :require_user, only:[:index, :show, :update, :edit, :new, :create]
 	before_action :find_message, only: [:show, :edit, :update, :destroy]
+	#before_action :get_hire_types, only: [:new, :create]
 
 	def index
 		@messages = Message.all.order("created_at DESC")
-		@hire_types = Array["GapTech Undergrads Interns", "Business Undergrads Interns", "MBA Interns", "Full Time Employees", "Contractors"]
 	end
 
 	def new
@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
 	def create
 		@message = current_user.messages.build(message_params)
 		if @message.save
-			redirect_to messages_path
+			redirect_to hire_type_index_path
 		else
 			render 'new'
 		end	
@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
 	def update
 		if @message.update(message_params)
-			redirect_to messages_path
+			redirect_to hire_type_index_path
 		else
 			render 'edit'
 		end
@@ -35,17 +35,13 @@ class MessagesController < ApplicationController
 
 	def destroy
 		@message.destroy
-		redirect_to messages_path
-	end
-
-	def get_messages_of_type(hire_type)
-		@type_messages = Message.all.where(["hire_type = ?", hire_type]).order("created_at DESC")
+		redirect_to hire_type_index_path
 	end
 
 	private 
 
 		def message_params
-			params.require(:message).permit(:description, :user_id, :hire_type)
+			params.require(:message).permit(:description, :user_id, :hire_type_str)
 		end
 
 		def find_message

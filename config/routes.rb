@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get '/shuttle' => 'shuttle#index'
 
-  resources :messages   
+  resources :messages
+  resources :hire_type   
 
   get '/hire_type' => 'hire_type#index'
   get '/global' => 'global#index', as: :globals

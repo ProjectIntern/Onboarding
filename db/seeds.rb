@@ -88,3 +88,6 @@ She was a founding member of Reimagining Service, a five-year national cross-sec
 
 She serves on the Leadership Council for Opportunity Nation and is also a volunteer mentor to alumni of Summer Search, a national youth leadership program.
 Prior to joining Gap Inc., Silten spent 10 years at Levi Strauss & Co., including five years as President of the U.S. Dockers brand. She started her professional career in advertising and has a bachelor’s degree from the University of California, Berkeley.")
+
+hr1 = HireType.create(name: "GapTech Intern");
+hr2 = HireType.create(name: "Business Intern");

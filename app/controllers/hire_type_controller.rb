@@ -10,13 +10,13 @@ class HireTypeController < ApplicationController
 
 	def create
 		@hire_type = HireType.new(hire_type_params)
-		if @hire_type.save
-		end
 	end
+
+	
 
 	private
 		def hire_type_params
-			params.require(:hire_type).permit()
+			params.require(:hire_type).permit(:name)
 		end
 		
 
