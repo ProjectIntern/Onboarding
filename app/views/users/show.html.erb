@@ -7,16 +7,16 @@
       <%= image_tag @user.image, :class => "profile_pic"%>
       <ul>
         <% if @user.facebook != ""%>
-        <li><%= link_to image_tag("facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
+        <li><%= link_to image_tag("social_media/facebook.png", size: "25x25"), "#{@user.facebook}"%></li>
         <% end %>
         <% if @user.linkedin != ""%>
-        <li><%= link_to image_tag("linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
+        <li><%= link_to image_tag("social_media/linkedin.png", size: "25x25"), "#{@user.linkedin}"%></li>
         <% end %>
         <% if @user.twitter != ""%>          
-        <li><%= link_to image_tag("twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
+        <li><%= link_to image_tag("social_media/twitter.png", size: "25x25"), "#{@user.twitter}"%></li>
         <% end %>
         <% if @user.instagram != ""%>
-        <li><%= link_to image_tag("instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
+        <li><%= link_to image_tag("social_media/instagram.png", size: "25x25"), "#{@user.instagram}"%></li>
         <% end %>
       </ul>
     </div>
@@ -37,12 +37,12 @@
   
   </div>
 
-  <div class="message_container">
-    <div class='message_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div>
-    <%= render "conversations/contacts" %>
-    <div class="conversation_container">
-      <%= render "conversations/show" %>
-      <%= render "conversations/message_form" %>
+  <div class="messages_container">
+    <div class='comments_title'><span><i class='fa fa-weixin'></i>Chatbox</span></div>
+    <%= render "comments/contacts" %>
+    <div class="comments_container">
+      <%= render "comments/comment_content" %>
+      <%= render "comments/comment_form" %>
     </div>
   </div>
 </div>

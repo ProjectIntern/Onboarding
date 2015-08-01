@@ -53,6 +53,18 @@ $(document).on('click', '#masks, .icon-close', function() {
     }, 300);
   });
 
+/*$(document).ready(function(){
+  var selectedId = $(this).parent().find(".img_container").val();
+  $( ".3" ).mouseenter(function() {
+    $(".3").stop(true, true).fadeIn();
+    });
+  $( ".3" ).mouseleave(function() {
+    $(".about_card").stop(true, true).fadeOut();
+    });
+
+  });
+*/
+
 };
 
 $(document).ready(main);

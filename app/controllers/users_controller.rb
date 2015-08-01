@@ -2,6 +2,13 @@ class UsersController < ApplicationController
   before_action :user_logged_on, only:[:new, :create] 
   before_action :require_user, only:[:index, :show, :update, :edit]
 
+  def show_profile
+    respond_to do |format|
+      format.js
+      format.html
+    end
+  end
+
   def new
     @user = User.new
   end
@@ -14,19 +21,13 @@ class UsersController < ApplicationController
     end
   end
 
-  def user
-    respond_to do |format|
-      format.js
-    end
-  end
-
   def show
     @user = User.find(params[:id])
-    @conversation = Conversation.new
-    @conversations = Conversation.all
+    @comment = Comment.new
+    @comments = Comment.all
     @contacts = []
     @users = []
-    Conversation.all.each do |n|
+    Comment.all.each do |n|
       if n.sender_email == current_user.email
         if !@contacts.include?(n.receiver_id)
           @contacts.push(n.receiver_id)

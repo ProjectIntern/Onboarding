@@ -1,5 +1,0 @@
-<div class="contacts_container">
-  <% for i in @users %>
-  <%= link_to image_tag(i.image, :class => "contact_pic"), user_path(i), method: "get", title: "#{i.first_name} #{i.last_name}", action: "show" %>
-  <% end %>
-</div>

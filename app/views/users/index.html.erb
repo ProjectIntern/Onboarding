@@ -1,9 +1,19 @@
 <div class="interns_container">
   <div class="interns">
     <% @users.each do |t| %>
-    <div class="img_container">
-      <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show"%><br>
-      <%= t.first_name %> <%= t.last_name %>
+    <div class="intern_card">
+      <div class="img_container">
+        <%= link_to image_tag(t.image), user_path(t), method: "get", action: "show"%><br>
+        <%= t.first_name %> <%= t.last_name %>
+      </div>
+      <div class="about_card">             
+        <ul>
+          <li> <%= t.position %> </li>
+          <li> <%= t.location %> </li>
+          <li> <%= t.school %> </li>
+          <li> <%= t.email %> </li>
+        </ul>
+      </div>
     </div>
     <% end %>
   </div> 

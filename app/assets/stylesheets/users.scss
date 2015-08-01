@@ -226,6 +226,61 @@ i.title.fa.fa-user {
   margin-bottom: 10px;
 }
 
+.intern_card {
+  display: inline-block;
+  width: 250px;
+}
+
+.about_card {
+  height: 336px;
+  width: 200px;
+  color: rgb(115,123,128);
+  background-color: #F5F5F5;
+  color: black;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 15px 15px 15px;
+  border-radius: 4px;
+  z-index: 2;
+  font-size: 12pt;
+  display: none;
+}
+
+.intern_card:hover .about_card{
+  display: block;
+  position: absolute;
+}
+
+.intern_card:hover .img_container {
+  margin-bottom: 3px;
+}
+
+/* Add this for black/white filter. 
+.intern_card:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+*/
+
+.about_card li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.about_card ul {
+  padding: 0px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12pt;
+
+}
+
+
 /***********************************************/
 /* Styling for media screens, phones, tablets. */
 /***********************************************/
