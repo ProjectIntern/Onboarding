@@ -1,12 +1,27 @@
-<div class="comments_content">
-    <% @comments.each do |f|%>
-      <% if (f.sender_email == current_user.email and f.receiver_email == @user.email) or (f.sender_email == @user.email and f.receiver_email == current_user.email) %>
-        <% if f.sender_email == current_user.email %>
-          <div class="push-left"><%= f.comment%><br><div id="name-font"><%= f.sender_name%> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
-        <% elsif f.sender_email == @user.email %>
-          <div class="push-right"><%= f.comment%><br><div id="name-font"><%= f.sender_name %> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
+<div class="message_container">
+<div class='comments_title'><span><i class='fa fa-weixin'></i>Chat</span></div>
+
+  <div class="comments_content">
+      <% @comments.each do |f|%>
+        <% if (f.sender_email == current_user.email and f.receiver_email == @user.email) or (f.sender_email == @user.email and f.receiver_email == current_user.email) %>
+          <% if f.sender_email == current_user.email %>
+            <div class="push-left"><%= f.comment%><br><div id="name-font"><%= f.sender_name%> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
+          <% elsif f.sender_email == @user.email %>
+            <div class="push-right"><%= f.comment%><br><div id="name-font"><%= f.sender_name %> - <%= f.created_at.strftime("%a %e %l:%M%p")%></div><br></div>
+          <% end %>
         <% end %>
       <% end %>
-    <% end %>
-</div>
+  </div>
 
+    <div class="comments_text" autofocus="autofocus">
+    <%= form_for(@comment) do |f| %>
+      <%= f.text_field :comment, :placeholder => "Leave a message.", :autofocus => true %>
+      <%= f.text_field :receiver_email, :value => "#{@user.email}", class: "hidden" %>
+      <%= f.text_field :receiver_name, :value => "#{@user.first_name}" + " " + "#{@user.last_name}", class: "hidden" %>
+      <%= f.text_field :receiver_id, :value => "#{@user.id}", class: "hidden" %>
+      <%= f.text_field :sender_email, :value => "#{@current_user.email}", class: "hidden" %>
+      <%= f.text_field :sender_name, :value => "#{@current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
+      <%= f.text_field :sender_id, :value => "#{@current_user.id}", class: "hidden" %>
+    <%end%>
+    </div>
+</div>

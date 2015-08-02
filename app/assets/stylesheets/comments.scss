@@ -10,12 +10,19 @@
 /* Styling for the messages container. */
 /***************************************/
 
-.messages_container {
-  width: 750px;
-  height: 600px;
-  background-color: white;
-  float: right;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+.chat_container {
+  height: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+
+.message_container {
+  width: 53.2%;
+  height: 100%;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: fixed;
+  left: 15%;
 }
 
 /*************************************/
@@ -24,14 +31,18 @@
 
 .comments_title {
   height: 75px;
-  width: 100%;
+  width: 53.2%;
   background: white;
   border-bottom: 5px solid #F5F5F5;
   color: rgb(0,40,97);
   text-align: center;
-  float: right;
   font-weight: lighter;
   font-size: 35pt;
+  margin-top: 51px;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: fixed;
+  left: 15%;
 }
 
 .comments_title span {
@@ -49,18 +60,51 @@
 /**********************************/
 
 .contacts_container {
-  height: 10%;
-  width: 100%;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  float: left;
+  background: white;
+  height: 100%;
+  width: 15%;
+  overflow: scroll;
+  position: fixed;
 }
 
 .contact_pic {
   width: 40px;
   height: 50px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+
+.contact_name {
+  width: 50px;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+
+.contacts_container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contacts_container li {
+  height: 50px;
+  width: 150px;
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 0px;
+}
+
+.contacts_container li:first-child{
+  margin-top: 60px;
+}
+
+
+.contact_pic {
+  width: 40px;
+  height: 50px;
   margin-left: 17px;
-  margin-top: 10px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -70,19 +114,13 @@
 /* Styling for the message conversations. */
 /******************************************/
 
-.comments_container {
-  float: right;
-  width: 100%;
-}
 
 .comments_content {
-  height: 355px;
+  height: 77.5%;
   width: 100%;
-}
-
-.comments_text {
-  height: 15%;
-  width: 100%;
+  margin-top: 130px;
+  background-color: white;
+  border-bottom: 5px solid #F5F5F5;
 }
 
 #name-font {
@@ -98,24 +136,32 @@
 /* Styling for the new message text-area. */
 /******************************************/
 
-.comments_text textarea {
-  height: 80px;
-  width: 88.5%;
-  resize: none;
+.comments_text {
+  height: 50px;
+  width: 99.5%;
   margin: 0 0 0 0;
-  border: 1px solid rgb(0, 40, 97);
+  position: absolute;
+  bottom: 0;
+}
+
+input#comment_comment {
+  height: 40px;
   outline: none;
+  margin: 0;
 }
 
 .comments-submit {
-  width: 10%;
-  height: 85px;
+  width: 5%;
+  height: 40px;
   font-size: 12pt;
   cursor: pointer;
   border: 1px solid rgb(0,40,97);
   background-color: rgb(0,40,97);
   color: white;
   vertical-align: top;
+  position: absolute;
+  bottom: 0;
+  left: 500px;
 }
 
 .comments-submit:hover {
@@ -144,4 +190,133 @@
 .push-left {
   text-align: left;
   margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************/
+/* Styling for the profile container. */
+/**************************************/
+
+.profile_container {
+  background: white;
+  width: 31.25%;
+  height: 100%;
+  margin-top: 51px;
+  right: 0;
+  top: 1;
+  position: fixed;
+  overflow: scroll;
+}
+
+.profile_picture {
+  height: 307px;
+  width: 200px;
+  color: rgb(115,123,128);
+  background: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 15px 15px 25px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
+}
+
+.profile_pic {
+  height: 267px;
+  width: 200px;
+}
+
+.profile_picture li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.profile_picture ul {
+  padding: 0px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profile_title span {
+  display: block;
+  margin-top: 7.25px;
+  margin-bottom: 7.25px;
+}
+
+.profile_title {
+  height: 75px;
+  width: 100%;
+  font-size: 35pt;
+  background: white;
+  border-bottom: 5px solid #F5F5F5;
+  color: rgb(0,40,97);
+  font-weight: lighter;
+  text-align: center;
+  float: left;
+}
+
+i.title.fa.fa-user {
+  margin-right: 10px;
+  color: rgb(0,40,97);
+}
+
+.information_container {
+  width: 175px;
+  height: 307px;
+  margin: 25px 30px 25px 30px;
+  float: right;
+}
+
+.information_container li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.information_container ul {
+  padding: 0px;
+}
+
+.name {
+  font-size: 30pt;
+  font-weight: 200;
+  display: block;
+  position: relative;
+  top: -20px;
+  }
+
+.about_container {
+  width: 450px;
+  height: 170px;
+  text-align: left;
+  margin-left: 30px;
+  word-wrap: break-word;
+  color: #888888;
+  line-height: 23px;
+  overflow: scroll;  
 }
