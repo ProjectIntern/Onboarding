@@ -2,13 +2,6 @@ class UsersController < ApplicationController
   before_action :user_logged_on, only:[:new, :create] 
   before_action :require_user, only:[:index, :show, :update, :edit]
 
-  def show_profile
-    respond_to do |format|
-      format.js
-      format.html
-    end
-  end
-
   def new
     @user = User.new
   end

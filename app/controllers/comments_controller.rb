@@ -3,9 +3,10 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
+    @comments = Comment.all
     if @comment.save
       redirect_to :back
-      end
+    end
   end
 
   private

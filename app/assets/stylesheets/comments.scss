@@ -67,14 +67,6 @@
   position: fixed;
 }
 
-.contact_pic {
-  width: 40px;
-  height: 50px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-}
-
 .contact_name {
   width: 50px;
   float: right;
@@ -121,6 +113,7 @@
   margin-top: 130px;
   background-color: white;
   border-bottom: 5px solid #F5F5F5;
+  overflow: scroll;
 }
 
 #name-font {
@@ -180,7 +173,6 @@ input#comment_comment {
 .push-right {
   text-align: right;
   margin-right: 15px;
-  width: initial;
 }
 
 /******************************************/
@@ -190,7 +182,16 @@ input#comment_comment {
 .push-left {
   text-align: left;
   margin-left: 15px;
+  color: rgb(0,40,97);
 }
+
+.push-left img{
+  height: 30px;
+  width: 27px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
 
 
 
@@ -279,6 +280,13 @@ input#comment_comment {
   float: left;
 }
 
+.profile_wrapper {
+  height: 610px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 i.title.fa.fa-user {
   margin-right: 10px;
   color: rgb(0,40,97);
@@ -319,4 +327,29 @@ i.title.fa.fa-user {
   color: #888888;
   line-height: 23px;
   overflow: scroll;  
+}
+
+
+/***********************************************/
+/* Styling for media screens, phones, tablets. */
+/***********************************************/
+
+@media screen and (min-height: 962px) {
+  .comments_content {
+    height: 82.75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profile_container {
+    display: none;
+  }
+
+  .message_container {
+    width: 85%;
+  }
+
+  .comments_title {
+    width: 100%;
+  }
 }

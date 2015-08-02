@@ -164,8 +164,8 @@ textarea {
 }
 
 .about_card_social_icons ul {
-  background-color: red;
-  outline: 1px solid red;
+  background-color: rgb(0,38,99);
+  outline: 1px solid rgb(0,38,99);
   font-size: 12pt;
   text-align: center;
   padding: 0;
@@ -203,8 +203,8 @@ textarea {
 }
 
 .msg_button {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid rgb(0,38,99);
+  background-color: rgb(0,38,99);
   width: 100%;
   font-size: 10pt;
   margin-top: 10px;
@@ -219,7 +219,7 @@ textarea {
 
 .msg_button:hover {
   background-color: white;
-  color: red;
+  color: rgb(0,38,99);
   cursor: pointer;
 }
 
@@ -236,14 +236,3 @@ textarea {
     width: 275px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

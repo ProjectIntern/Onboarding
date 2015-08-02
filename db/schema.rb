@@ -68,7 +68,6 @@ ActiveRecord::Schema.define(version: 20150731210633) do
     t.string   "location"
     t.string   "default"
     t.string   "position"
-    t.string   "school"
     t.string   "about"
     t.string   "terms"
     t.datetime "created_at"
