@@ -1,0 +1,21 @@
+<%= form_for(@hire_type_board) do |f| %>
+  <% if @hire_type_board.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hire_type_board.errors.count, "error") %> prohibited this hire_type_board from being saved:</h2>
+
+      <ul>
+      <% @hire_type_board.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :hire_type_boards
   root 'home#index'
   get 'signup' => 'users#new'
   get 'home' => 'home#index'
@@ -15,9 +16,9 @@ Rails.application.routes.draw do
   get '/shuttle' => 'shuttle#index'
 
   resources :messages
-  resources :hire_type   
+  resources :hire_type_boards  
 
-  get '/hire_type' => 'hire_type#index'
+  get '/message_boards' => 'hire_type_boards#index', as: :message_board
   get '/global' => 'global#index', as: :globals
   get '/global/:id' => 'global#show', as: :global
   get '/expect' => 'expect#index'

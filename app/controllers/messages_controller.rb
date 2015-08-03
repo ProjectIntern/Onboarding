@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
 	#before_action :user_logged_on, only:[:new, :create] 
-  before_action :require_user, only:[:index, :show, :update, :edit, :new, :create]
+  	before_action :require_user, only:[:index, :show, :update, :edit, :new, :create]
 	before_action :find_message, only: [:show, :edit, :update, :destroy]
 	#before_action :get_hire_types, only: [:new, :create]
 
@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
 	def create
 		@message = current_user.messages.build(message_params)
 		if @message.save
-			redirect_to hire_type_index_path
+			redirect_to message_board_path
 		else
 			render 'new'
 		end	
@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
 	def update
 		if @message.update(message_params)
-			redirect_to hire_type_index_path
+			redirect_to message_board_path
 		else
 			render 'edit'
 		end
@@ -35,13 +35,13 @@ class MessagesController < ApplicationController
 
 	def destroy
 		@message.destroy
-		redirect_to hire_type_index_path
+		redirect_to message_board_path
 	end
 
 	private 
 
 		def message_params
-			params.require(:message).permit(:description, :user_id, :hire_type_str)
+			params.require(:message).permit(:description, :user_id, :hire_type)
 		end
 
 		def find_message
