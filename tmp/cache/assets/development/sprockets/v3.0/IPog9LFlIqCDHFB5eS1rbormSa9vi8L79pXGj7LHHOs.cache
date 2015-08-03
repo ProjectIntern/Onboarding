@@ -1,8 +1,0 @@
-I"è(function() {
-  $(document).ready(function() {
-    $('.message').hide().fadeIn(1500);
-    $('.log').hide().fadeIn(3000);
-  });
-
-}).call(this);
-:ET

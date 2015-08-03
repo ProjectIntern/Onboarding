@@ -38,26 +38,14 @@
   box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
 }
 
-.global_pic li {
-  display: inline-block;
-  list-style-type: none;
-  text-align: center;
-  margin-right: 5px;
-  margin-left: 5px;
-}
 
-.global_pic ul{
-  padding: 0px;
-  margin-bottom: 0;
-  text-align: center;
-}
 
 .show_about {
-	display: none;
+	display: block;
 }
 
 .global_pic:hover .show_about{
-	display: block;
+	display: none;
 }
 
 

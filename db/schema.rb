@@ -11,19 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150801040245) do
+ActiveRecord::Schema.define(version: 20150731210633) do
 
-  create_table "brands", force: :cascade do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "logo"
-    t.string   "video"
-    t.string   "banner"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "conversations", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string   "comment"
     t.string   "sender_email"
     t.string   "sender_name"
@@ -36,7 +26,7 @@ ActiveRecord::Schema.define(version: 20150801040245) do
     t.datetime "updated_at"
   end
 
-  add_index "conversations", ["user_id"], name: "index_conversations_on_user_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "globals", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -52,15 +42,15 @@ ActiveRecord::Schema.define(version: 20150801040245) do
   create_table "hire_types", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "name"
   end
 
   create_table "messages", force: :cascade do |t|
     t.text     "description"
     t.integer  "user_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.string   "hire_type_str"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "type"
+    t.string   "hire_type"
   end
 
   create_table "users", force: :cascade do |t|
@@ -68,19 +58,21 @@ ActiveRecord::Schema.define(version: 20150801040245) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "password_confirmation"
     t.string   "code"
-    t.string   "image",           default: "default.jpg"
-    t.string   "facebook",        default: ""
-    t.string   "linkedin",        default: ""
-    t.string   "twitter",         default: ""
-    t.string   "instagram",       default: ""
+    t.string   "image",                 default: "other/default.jpg"
+    t.string   "facebook",              default: ""
+    t.string   "linkedin",              default: ""
+    t.string   "twitter",               default: ""
+    t.string   "instagram",             default: ""
     t.string   "location"
     t.string   "default"
     t.string   "position"
-    t.string   "school"
     t.string   "about"
+    t.string   "terms"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
 end
+>>>>>>> ab07bf40ccb91ed76806b89005a6edec8337be08
