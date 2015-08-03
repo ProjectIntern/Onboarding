@@ -4,14 +4,14 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   helper_method :current_user
-  helper_method :get_hire_types
+  helper_method :get_user
 
   def current_user
     @current_user ||= User.find(session[:id]) if session[:id]
   end
 
-  def get_hire_types
-    @get_hire_types
+  def get_user(user_id)
+    @the_user ||= User.find(user_id)
   end
 
   def require_user
