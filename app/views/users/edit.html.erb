@@ -6,17 +6,17 @@
       <div class = "basic_information">
         <h2>Basic Information</h3>
         <span>First Name</span>
-        <%= f.text_field :first_name, :placeholder => "First Name" %>
+        <%= f.text_field :first_name, :placeholder => "First Name", :autocomplete => :off %>
         <span>Last Name</span>
-        <%= f.text_field :last_name, :placeholder => "Last Name" %>
+        <%= f.text_field :last_name, :placeholder => "Last Name", :autocomplete => :off %>
         <span>Email</span>
-        <%= f.email_field :email, :placeholder => "Email" %>
+        <%= f.email_field :email, :placeholder => "Email", :autocomplete => :off %>
         <span>Position</span>
-        <%= f.text_field :position, :placeholder => "Position" %>
+        <%= f.text_field :position, :placeholder => "Position", :autocomplete => :off %>
         <span>Location</span>
-        <%= f.text_field :location, :placeholder => "Office Location" %>
+        <%= f.text_field :location, :placeholder => "Office Location", :autocomplete => :off %>
         <span>About Me</span><br>
-        <%= f.text_area :about, :placeholder => "Tell us about yourself!", :maxlength => 500 %>
+        <%= f.text_area :about, :placeholder => "Tell us about yourself!", :maxlength => 500, :autocomplete => :off %>
         <span>Profile Picture</span><br>
         <%= image_tag @user.image, :class => "profile_pic"%> 
         <%= f.file_field :picture, :placeholder => "Picture" %><br>
@@ -24,19 +24,19 @@
       </div>
       <div class = "change_password">
         <h2>Password</h3>
-        <%= f.password_field :password, :placeholder => "New Password" %>
-        <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
+        <%= f.password_field :password, :placeholder => "New Password", :autocomplete => :off %>
+        <%= f.password_field :password_confirmation, :placeholder => "Confirm password", :autocomplete => :off %>
       </div>
       <div class = "social_media">
         <h2>Social Media</h2>
         <span>Facebook</span>
-        <%= f.text_field :facebook, :placeholder => "http://" %>
+        <%= f.text_field :facebook, :placeholder => "http://", :autocomplete => :off %>
         <span>LinkedIn</span>
-        <%= f.text_field :linkedin, :placeholder => "http://" %>
+        <%= f.text_field :linkedin, :placeholder => "http://", :autocomplete => :off %>
         <span>Twitter</span>
-        <%= f.text_field :twitter, :placeholder => "http://" %>
+        <%= f.text_field :twitter, :placeholder => "http://", :autocomplete => :off %>
         <span>Instagram</span>
-        <%= f.text_field :instagram, :placeholder => "http://" %>
+        <%= f.text_field :instagram, :placeholder => "http://", :autocomplete => :off %>
         <%= f.submit "Update profile", :class => "update_btn" %>
       </div>
     <% end %>

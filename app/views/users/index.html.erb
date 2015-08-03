@@ -24,8 +24,12 @@
           </ul>
         </div>
         <ul class="about_card_info">
+          <% if t.position %>
           <li> <%= t.position.titleize %> </li>
+          <% end %>
+          <% if t.location %>
           <li> <%= t.location.titleize %> </li>
+          <% end %>
           <li> <%= t.email %> </li>
         </ul>
         <div class="about_card_me"><%=t.about%></div>

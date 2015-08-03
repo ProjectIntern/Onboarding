@@ -1,4 +1,4 @@
-<div class="comments_content">
+<div id="comments_content">
     <% @comments.each do |f|%>
       <% if (f.sender_email == current_user.email and f.receiver_email == @user.email) or (f.sender_email == @user.email and f.receiver_email == current_user.email) %>
         <% if f.sender_email == current_user.email %>
