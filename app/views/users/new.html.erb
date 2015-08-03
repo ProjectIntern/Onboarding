@@ -4,12 +4,12 @@
       <div class="form">
         <%= form_for(@user) do |f| %>
           <%= render 'shared/error_messages', :target => @user %>
-          <%= f.text_field :first_name, :placeholder => "First Name" %>
-          <%= f.text_field :last_name, :placeholder => "Last Name" %>
-          <%= f.email_field :email, :placeholder => "Email" %>
-          <%= f.password_field :password, :placeholder => "Password" %>
-          <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
-          <%= f.text_field :code, :placeholder => "Sign-up Code" %>
+          <%= f.text_field :first_name, :placeholder => "First Name", :autocomplete => :off %>
+          <%= f.text_field :last_name, :placeholder => "Last Name", :autocomplete => :off %>
+          <%= f.email_field :email, :placeholder => "Email", :autocomplete => :off %>
+          <%= f.password_field :password, :placeholder => "Password", :autocomplete => :off %>
+          <%= f.password_field :password_confirmation, :placeholder => "Confirm password", :autocomplete => :off %>
+          <%= f.text_field :code, :placeholder => "Sign-up Code", :autocomplete => :off %>
       </div>
         <div id="checkbox">
           <%= f.check_box :terms %>I agree to the <a href="#">terms and conditions</a>

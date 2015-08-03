@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
 	#before_action :user_logged_on, only:[:new, :create] 
-  	before_action :require_user, only:[:index, :show, :update, :edit, :new, :create]
+  before_action :require_user, only:[:index, :show, :update, :edit, :new, :create]
 	before_action :find_message, only: [:show, :edit, :update, :destroy]
 
 	def index

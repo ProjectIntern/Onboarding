@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'tzinfo-data'
-
 # css3 for styling
 gem 'css3-now', '~> 0.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

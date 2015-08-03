@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'home' => 'home#index'
   resources :users
   resources :sessions
-  resources :conversations
+  resources :comments
   resources :brands
   get 'signup' => 'users#new'
   get '/login' => 'sessions#new'

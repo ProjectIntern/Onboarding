@@ -1,8 +1,0 @@
-I"‰(function() {
-  $(document).ready(function() {
-    $('#error').hide().fadeIn(1000);
-    $('#error').fadeOut(3000);
-  });
-
-}).call(this);
-:ET

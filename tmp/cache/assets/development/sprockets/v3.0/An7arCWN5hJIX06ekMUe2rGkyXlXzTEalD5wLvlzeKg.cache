@@ -1,7 +1,0 @@
-I"q(function() {
-  $(document).ready(function() {
-    $('#message').hide().fadeIn(3000);
-  });
-
-}).call(this);
-:ET

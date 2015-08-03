@@ -14,19 +14,13 @@ class UsersController < ApplicationController
     end
   end
 
-  def user
-    respond_to do |format|
-      format.js
-    end
-  end
-
   def show
     @user = User.find(params[:id])
-    @conversation = Conversation.new
-    @conversations = Conversation.all
+    @comment = Comment.new
+    @comments = Comment.all
     @contacts = []
     @users = []
-    Conversation.all.each do |n|
+    Comment.all.each do |n|
       if n.sender_email == current_user.email
         if !@contacts.include?(n.receiver_id)
           @contacts.push(n.receiver_id)
@@ -68,6 +62,6 @@ class UsersController < ApplicationController
   
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :terms, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :school, :about)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :terms, :code, :image, :facebook, :linkedin, :twitter, :instagram, :location, :position, :about)
   end
 end
