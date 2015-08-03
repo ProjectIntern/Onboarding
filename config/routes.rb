@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :hire_type_boards
+  
   root 'home#index'
   get 'signup' => 'users#new'
   get 'home' => 'home#index'
@@ -15,10 +15,9 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get '/shuttle' => 'shuttle#index'
 
-  resources :messages
-  resources :hire_type_boards  
+  resources :messages 
+  resources :hire_type_boards
 
-  get '/message_boards' => 'hire_type_boards#index', as: :message_board
   get '/global' => 'global#index', as: :globals
   get '/global/:id' => 'global#show', as: :global
   get '/expect' => 'expect#index'

@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
 	def create
 		@message = current_user.messages.build(message_params)
 		if @message.save
-			redirect_to message_board_path
+			redirect_to hire_type_boards_path
 		else
 			render 'new'
 		end	
@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
 	def update
 		if @message.update(message_params)
-			redirect_to message_board_path
+			redirect_to hire_type_boards_path
 		else
 			render 'edit'
 		end
@@ -35,7 +35,7 @@ class MessagesController < ApplicationController
 
 	def destroy
 		@message.destroy
-		redirect_to message_board_path
+		redirect_to hire_type_boards_path
 	end
 
 	private 

@@ -50,7 +50,6 @@ ActiveRecord::Schema.define(version: 20150803170616) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "type"
     t.string   "hire_type"
   end
 

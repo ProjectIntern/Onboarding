@@ -1,9 +1,14 @@
-<p id="notice"><%= notice %></p>
+<h2><%= @hire_type_board.name %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @hire_type_board.name %>
-</p>
+<div>
+    <% get_messages_of_type(@hire_type_board.name).each do |message| %>
+		<h2><%= message.description %></h2>
+		<%= link_to "Edit", edit_message_path(message), class: "btn btn-default" %>
+		<%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
+    <% end %>
+</div>
+<div>
+    <%= render partial: "messages/new", locals: {hire_type_obj: @hire_type_board} %>
+</div>
 
-<%= link_to 'Edit', edit_hire_type_board_path(@hire_type_board) %> |
 <%= link_to 'Back', hire_type_boards_path %>
