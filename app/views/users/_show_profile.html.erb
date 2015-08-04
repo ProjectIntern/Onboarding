@@ -4,7 +4,7 @@
   </div>
   <div class="profile_wrapper">
     <div class="profile_picture">
-      <%= image_tag @user.image, :class => "profile_pic"%>
+      <%= image_tag @user.image.url(:avatar), :class => "profile_pic"%>
       <ul>
         <% if @user.facebook != ""%>
         <li><%= link_to image_tag("social_media/facebook.png", size: "25x25"), "#{@user.facebook}"%></li>

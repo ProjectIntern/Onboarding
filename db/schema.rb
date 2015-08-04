@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150731210633) do
+ActiveRecord::Schema.define(version: 20150803165832) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "comment"
@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 20150731210633) do
     t.string   "password_digest"
     t.string   "password_confirmation"
     t.string   "code"
-    t.string   "image",                 default: "other/default.jpg"
     t.string   "facebook",              default: ""
     t.string   "linkedin",              default: ""
     t.string   "twitter",               default: ""
@@ -72,6 +71,10 @@ ActiveRecord::Schema.define(version: 20150731210633) do
     t.string   "terms"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end

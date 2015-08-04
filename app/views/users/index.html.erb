@@ -3,7 +3,7 @@
     <% @users.each do |t| %>
     <div class="intern_card">
       <div class="img_container">
-        <%= image_tag(t.image)%><br>
+        <%= image_tag(t.image.url(:avatar))%><br>
         <%= t.first_name %> <%= t.last_name %>
       </div>
       <div class="about_card">             

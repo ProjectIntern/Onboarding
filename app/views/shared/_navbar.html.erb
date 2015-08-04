@@ -4,7 +4,7 @@
 <!-- Menu -->
 
   <ul>
-    <li><%=link_to image_tag(current_user.image), user_path(session[:id]), method: "get", action: "show"%>
+    <li><%=link_to image_tag(current_user.image.url(:small)), user_path(session[:id]), method: "get", action: "show"%>
         <div class="menu_name">
             <%=current_user.first_name%> <%=current_user.last_name%>
         </div>

@@ -1,5 +1,8 @@
 source 'http://rubygems.org'
 
+#Paperclip for uploading images
+gem 'paperclip', '~> 4.3.0'
+
 gem 'tzinfo-data'
 # css3 for styling
 gem 'css3-now', '~> 0.1.2'
