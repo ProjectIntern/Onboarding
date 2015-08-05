@@ -41,7 +41,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       if params[:user][:image].blank?
-        redirect_to @user
+        flash.delete(:success)
+        redirect_to :back
+        flash[:success] = "Profile was succesfully updated."
       else
         render :action => 'crop'
       end

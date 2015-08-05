@@ -24,9 +24,7 @@ class User < ActiveRecord::Base
   
   private
   
-  def reprocess_image
-    image.reprocess!
-  end
+
 
   def invalidCode
     errors.add(:code, "is invalid") if self.code != "gapinc"

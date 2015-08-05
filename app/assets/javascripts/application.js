@@ -29,9 +29,10 @@ var main = function() {
 
 
     $('body').append('<div id="masks"></div>');
-    $('#masks').fadeIn(150);
+    $('#masks').fadeIn(100);
   });
 
+  /*Auto scroll document for brands page. */
   $('a[href^="#"]').on('click', function(event) {
     var target = $( $(this).attr('href') );
     if( target.length ) {
@@ -43,24 +44,27 @@ var main = function() {
 });
 
   /* Then push them back */
-$(document).on('click', '#masks, .icon-close', function() {
-    $('#masks').remove();
-    $('.menu').animate({
-      left: "-285px"
-    }, 300);
+  $(document).on('click', '#masks, .icon-close', function() {
+      $('#masks').remove();
+      $('.menu').animate({
+        left: "-285px"
+      }, 300);
 
-    $('body').animate({
-      left: "0px"
-    }, 300);
-  });
+      $('body').animate({
+        left: "0px"
+      }, 300);
+    });
 
-$("input#comment_comment").keypress(function(event) { 
-  if (event.which == 13) { 
-  event.preventDefault(); 
-  $("form").submit(); 
-  } 
-}); 
-
+  /* Submit form by pressing enter key. */
+  $("input#comment").keypress(function(event) { 
+    var value = $("#comment").val(); 
+    if (value != "") {
+      if (event.which == 13) { 
+        event.preventDefault(); 
+        $("form").submit(); 
+      }
+    } 
+  }); 
 };
 
 $(document).ready(main);

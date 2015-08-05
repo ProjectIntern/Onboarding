@@ -30,24 +30,22 @@ function update_crop(coords) {
 </script>
 <% end %>
 
-  <div class="crop_wrapper">
+<div class="crop_wrapper">
   <div class="crop_container">
+    <%= image_tag @user.image.url(:large), :id => "cropbox" %>
 
-<%= image_tag @user.image.url(:large), :id => "cropbox" %>
-
-<div class="preview_container">
-<h4>Preview:</h4>
-<div style="width:200px; height:267px; overflow:hidden">
-  <%= image_tag @user.image.url(:large), :id => "preview" %>
-</div>
-
+  <div class="preview_container">
+    <h4>Preview:</h4>
+    <div style="width:200px; height:267px; overflow:hidden">
+      <%= image_tag @user.image.url(:large), :id => "preview" %>
+    </div>
   <%= form_for @user do |f| %>
     <% for attribute in [:crop_x, :crop_y, :crop_w, :crop_h] %>
       <%= f.hidden_field attribute, :id => attribute %>
     <% end %>
     <p><%= f.submit "Crop", :class => "update_btn" %></p>
   <% end %>
-</div>
+  </div>
   </div>
 </div>
 

@@ -5,7 +5,7 @@
 
     <div class="comments_text" autofocus="autofocus">
     <%= form_for(@comment) do |f| %>
-      <%= f.text_field :comment, :placeholder => "Leave a message.", :autofocus => true, :autocomplete => :off %>
+      <%= f.text_field :comment, :placeholder => "Leave a message.", :autofocus => true, :autocomplete => :off, :id => "comment" %>
       <%= f.text_field :receiver_email, :value => "#{@user.email}", class: "hidden" %>
       <%= f.text_field :receiver_name, :value => "#{@user.first_name}" + " " + "#{@user.last_name}", class: "hidden" %>
       <%= f.text_field :receiver_id, :value => "#{@user.id}", class: "hidden" %>
