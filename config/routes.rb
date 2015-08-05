@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  
   root 'home#index'
   get 'signup' => 'users#new'
   get 'home' => 'home#index'
@@ -14,12 +15,13 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get '/shuttle' => 'shuttle#index'
 
-  resources :messages   
+  resources :messages 
+  resources :hire_type_boards
 
-  get '/hire_type' => 'hire_type#index'
   get '/global' => 'global#index', as: :globals
   get '/global/:id' => 'global#show', as: :global
   get '/expect' => 'expect#index'
+  get '/form' => 'forms#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
