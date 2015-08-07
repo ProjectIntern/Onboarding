@@ -1,7 +1,6 @@
-<h1>Message Boards</h1>
-
-<div>
+<div class="application_container">
   <% @hire_type_boards.each do |hire_type| %>
-      <div> <%= render partial: "display", object: hire_type %> </div>
+    <div class="board_banner">
+      <%= link_to image_tag(hire_type.banner), hire_type_boards_path(hire_type)  %>
   <% end %>
 </div>

@@ -83,7 +83,7 @@
 
 .contacts_container li {
   height: 50px;
-  width: 150px;
+  width: 160px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -97,13 +97,11 @@
 
 
 .contact_pic {
-  width: 40px;
-  height: 50px;
   margin-left: 5px;
   margin-right: 5px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
 }
 
 /******************************************/
@@ -191,7 +189,7 @@ input#comment_comment {
 
 .push-left img{
   height: 30px;
-  width: 27px;
+  width: 30px;
   border-radius: 50px;
   margin-top: 5px;
 }
@@ -246,10 +244,6 @@ input#comment_comment {
   box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
 }
 
-.profile_pic {
-  height: 267px;
-  width: 200px;
-}
 
 .profile_picture li {
   display: inline-block;
@@ -362,10 +356,10 @@ i.title.fa.fa-user {
   }
 
   .message_container {
-    width: 85%;
+    width: 84%;
   }
 
   .comments_title {
-    width: 85%;
+    width: 84%;
   }
 }

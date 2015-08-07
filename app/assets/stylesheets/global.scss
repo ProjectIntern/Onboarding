@@ -2,66 +2,395 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.global_container {
-  height: 100%;
-}
+/**************************************/
+/* Styling for the global index page. */
+/**************************************/
 
-.global {
-  box-sizing: border-box;
-  margin: 50px auto;
+.global_bar {
+  width: 100%;
   display: block;
   text-align: center;
-  width: 93%;
-  height: inherit;
-}
-
-
-.global img{
-  width: 200px;
-  height: 267px;
-  text-align: center;
-  display: inline-block;
-  margin-bottom: 10px;
-
-}
-
-.global_pic {
-  height: 307px;
-  width: 200px;
-  color: rgb(115,123,128);
-  background: white;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 15px 15px 15px 25px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
-}
-
-
-
-.show_about {
-	display: block;
-}
-
-.global_pic:hover .show_about{
-	display: none;
-}
-
-
-
-#masks {
-  background: black;
+  background-color: rgb(245,245,245);
+  height: 50px;
   position: fixed;
-  left: 0;
-  top: 0;
   z-index: 1;
-  width: 100%;
-  height: 100%;
-  opacity: .5;
-  display: none;
 }
 
 
+.global_bar ul {
+  color: white;
+  list-style-type: none;
+}
 
-	
+.global_bar a {
+  color: rgb(0,26,80);
+}
+
+.global_bar li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(0,26,80);
+}
+
+
+/**************************************/
+/* Styling for Art Peck profile. */
+/**************************************/
+
+#apeck_container{
+  width: 1080px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.apeck_img {
+  float: left;
+  margin-right: 10px;
+}
+
+.apeck_img img{
+  width: 380px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.apeck_par {
+  float: right;
+  width: 650px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Sabrina Simmons profile. */
+/**************************************/
+
+#ssimmons_container{
+  width: 1080px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.ssimmons_img {
+  float: right;
+  margin-left: 10px;
+}
+
+.ssimmons_img img{
+  width: 380px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.ssimmons_par {
+  float: left;
+  width: 650px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Andi Owen profile. */
+/**************************************/
+
+#aowen_container{
+  width: 1080px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.aowen_img {
+  float: left;
+  margin-right: 10px;
+}
+
+.aowen_img img{
+  width: 380px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.aowen_par {
+  float: right;
+  width: 650px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Stephan Larsson profile. */
+/**************************************/
+
+#slarsson_container{
+  width: 1080px;
+  height: 550px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.slarsson_img {
+  float: right;
+  margin-left: 10px;
+}
+
+.slarsson_img img{
+  width: 400px;
+  height: 550px;
+  border-radius: 4px;
+}
+
+.slarsson_par {
+  float: left;
+  width: 630px;
+  height: 550px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Nancy Green profile. */
+/**************************************/
+
+#ngreen_container{
+  width: 1080px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.ngreen_img {
+  float: left;
+  margin-right: 10px;
+}
+
+.ngreen_img img{
+  width: 380px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.ngreen_par {
+  float: right;
+  width: 650px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Jyothi Rao profile. */
+/**************************************/
+
+#jrao_container{
+  width: 1080px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.jrao_img {
+  float: right;
+  margin-left: 10px;
+}
+
+.jrao_img img{
+  width: 280px;
+  height: 400px;
+  border-radius: 4px;
+}
+
+.jrao_par {
+  float: left;
+  width: 750px;
+  height: 400px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Sol Goldfarb profile. */
+/**************************************/
+
+#sgoldfarb_container{
+  width: 1080px;
+  height: 530px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.sgoldfarb_img {
+  float: left;
+  margin-right: 10px;
+}
+
+.sgoldfarb_img img{
+  width: 380px;
+  height: 530px;
+  border-radius: 4px;
+}
+
+.sgoldfarb_par {
+  float: right;
+  width: 650px;
+  height: 530px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Michelle Banks profile. */
+/**************************************/
+
+#mbanks_container{
+  width: 1080px;
+  height: 525px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.mbanks_img {
+  float: right;
+  margin-left: 10px;
+}
+
+.mbanks_img img{
+  width: 400px;
+  height: 525px;
+  border-radius: 4px;
+}
+
+.mbanks_par {
+  float: left;
+  width: 630px;
+  height: 525px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Bobbi Silten profile. */
+/**************************************/
+
+#bsilten_container{
+  width: 1080px;
+  height: 525px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.bsilten_img {
+  float: left;
+  margin-right: 10px;
+}
+
+.bsilten_img img{
+  width: 375px;
+  height: 525px;
+  border-radius: 4px;
+}
+
+.bsilten_par {
+  float: right;
+  width: 655px;
+  height: 525px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+
+/**************************************/
+/* Styling for Ray Miolla profile. */
+/**************************************/
+
+#rmiolla_container{
+  width: 1080px;
+  height: 525px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 50px;
+  position: relative;
+}
+
+.rmiolla_img {
+  float: right;
+  margin-left: 10px;
+}
+
+.rmiolla_img img{
+  width: 375px;
+  height: 525px;
+  border-radius: 4px;
+}
+
+.rmiolla_par {
+  float: left;
+  width: 655px;
+  height: 525px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  padding: 0px 20px 0px 20px;
+}
+

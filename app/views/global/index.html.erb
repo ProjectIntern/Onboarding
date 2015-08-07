@@ -1,22 +1,33 @@
 <div class ="application_container">
-  <div class="global_wrapper">
-    <div class="global_container">
-      <div class="global">
-        <% @globals.each do |t| %>
-        <div class="global_pic">
-       
-          <%= link_to image_tag(t.image), global_path(t), method: "get", action: "show"%><br>
-          <%= t.first_name %> <%= t.last_name %>
-
-          <div class="show_about">
-    
-      
-          </div>
-    
-          
-        </div>
-        <% end %>
-      </div> 
-    </div>
+  <div class="global_bar">
+    <ul>
+      <li><a href="#apeck_container">Art Peck<a></li>
+      <li><a href="#ssimmons_container">Sabrina Simmons<a></li>
+      <li><a href="#aowen_container">Andi Owen<a></li>
+      <li><a href="#slarsson_container">Stephen Larsson<a></li>
+      <li><a href="#ngreen_container">Nancy Green<a></li>
+      <li><a href="#jrao_container">Jyothi Rao<a></li>
+      <li><a href="#sgoldfarb_container">Sol Goldfarb<a></li>
+      <li><a href="#mbanks_container">Michelle Banks<a></li>
+      <li><a href="#bsilten_container">Bobbi Silten<a></li>
+      <li><a href="#rmiolla_container">Ray Miolla<a></li>
+    </ul>
   </div>
+
+  <%= render "apeck" %>
+  <%= render "ssimmons" %>
+  <%= render "aowen" %>
+  <%= render "slarsson" %>
+  <%= render "ngreen" %>
+  <%= render "jrao" %>
+  <%= render "sgoldfarb" %>
+  <%= render "mbanks" %>
+  <%= render "bsilten" %>
+  <%= render "rmiolla" %>
+
 </div>
+
+
+
+
+
