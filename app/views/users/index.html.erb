@@ -1,41 +1,39 @@
-<div class="interns_container">
-  <div class="interns">
-    <% @users.each do |t| %>
-    <div class="intern_card">
-      <div class="img_container">
-        <%= image_tag(t.image.url(:avatar))%><br>
-        <%= t.first_name %> <%= t.last_name %>
-      </div>
-      <div class="about_card">             
-        <div class="about_card_social_icons">
-          <ul>
-            <% if t.facebook != ""%>
-            <li><a href="<%=t.facebook%>"><i class="fa fa-facebook"></i></a></li>
-            <% end %>
-            <% if t.linkedin != ""%>
-            <li><a href="<%=t.linkedin%>"><i class="fa fa-linkedin"></i></a></li>
-            <% end %>
-            <% if t.twitter != ""%>
-            <li><a href="<%=t.twitter%>"><i class="fa fa-twitter"></i></a></li>
-            <% end %>
-            <% if t.instagram != ""%>
-            <li><a href="<%=t.instagram%>"><i class="fa fa-instagram"></i></a></li>
-            <% end %>
-          </ul>
-        </div>
-        <ul class="about_card_info">
-          <% if t.position %>
-          <li> <%= t.position.titleize %> </li>
-          <% end %>
-          <% if t.location %>
-          <li> <%= t.location.titleize %> </li>
-          <% end %>
-          <li> <%= t.email %> </li>
-        </ul>
-        <div class="about_card_me"><%=t.about%></div>
-        <%= button_to "Message", user_path(t), method: "get", action: "show", :class => "msg_button" %>
-      </div>
+<div class="interns">
+  <% @users.each do |t| %>
+  <div class="intern_card">
+    <div class="img_container">
+      <%= image_tag(t.image.url(:avatar))%><br>
+      <%= t.first_name %> <%= t.last_name %>
     </div>
-    <% end %>
-  </div> 
-</div>
+    <div class="about_card">             
+      <div class="about_card_social_icons">
+        <ul>
+          <% if t.facebook != ""%>
+          <li><a href="<%=t.facebook%>"><i class="fa fa-facebook"></i></a></li>
+          <% end %>
+          <% if t.linkedin != ""%>
+          <li><a href="<%=t.linkedin%>"><i class="fa fa-linkedin"></i></a></li>
+          <% end %>
+          <% if t.twitter != ""%>
+          <li><a href="<%=t.twitter%>"><i class="fa fa-twitter"></i></a></li>
+          <% end %>
+          <% if t.instagram != ""%>
+          <li><a href="<%=t.instagram%>"><i class="fa fa-instagram"></i></a></li>
+          <% end %>
+        </ul>
+      </div>
+      <ul class="about_card_info">
+        <% if t.position %>
+        <li> <%= t.position.titleize %> </li>
+        <% end %>
+        <% if t.location %>
+        <li> <%= t.location.titleize %> </li>
+        <% end %>
+        <li> <%= t.email %> </li>
+      </ul>
+      <div class="about_card_me"><%=t.about%></div>
+      <%= button_to "Message", user_path(t), method: "get", action: "show", :class => "msg_button" %>
+    </div>
+  </div>
+  <% end %>
+</div> 

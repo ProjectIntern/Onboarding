@@ -35,6 +35,8 @@
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   margin-bottom: 20px;
+  -webkit-transform: translateZ(0);
+  -webkit-filter:grayscale(1);
 }
 
 h1, h3, h4 {
@@ -102,6 +104,8 @@ h1, h3, h4 {
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   margin-bottom: 20px;
+  -webkit-transform: translateZ(0);
+  -webkit-filter:grayscale(1);
 }
 
 /***********************************/

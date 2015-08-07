@@ -47,8 +47,8 @@ h1 {
 }
 
 .update_btn {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid rgb(0,26,80);
+  background-color: rgb(0,26,80);
   font-size: 12pt;
   margin-top: 10px;
   padding: 10px;
@@ -58,7 +58,7 @@ h1 {
 
 .update_btn:hover {
   background-color: white;
-  color: red;
+  color: rgb(0,26,80);
   cursor: pointer;
 }
 
@@ -149,6 +149,7 @@ textarea {
 
 .intern_card:hover .img_container {
   margin-bottom: 3px;
+  color: rgb(0,38,99);
 }
 
 /* Add this for black/white filter. */

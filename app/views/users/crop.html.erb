@@ -2,6 +2,8 @@
 <%= stylesheet_link_tag "jquery.Jcrop.min" %>
 <%= javascript_include_tag "jquery.min" %>
 <%= javascript_include_tag "jquery.Jcrop" %>
+<% end %>
+
 <script type="text/javascript" charset="utf-8">
 $(function() {
   $('#cropbox').Jcrop({
@@ -28,7 +30,6 @@ function update_crop(coords) {
   $("#crop_h").val(Math.round(coords.h * ratio));
 }
 </script>
-<% end %>
 
 <div class="crop_wrapper">
   <div class="crop_container">
