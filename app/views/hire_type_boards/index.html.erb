@@ -1,20 +1,6 @@
-<h1>Message Boards</h1>
-
-<div>
+<div class="application_container">
   <% @hire_type_boards.each do |hire_type| %>
-       <h2><%= link_to hire_type.name, hire_type_board_path(hire_type) %></h2>
-    <div>
-    <% get_messages_of_type(hire_type.name).each do |message| %>
-		<div class="push-left"><%=image_tag(get_user(message.user_id).image)%>
-		<%= message.description %>
-		<% if message.user_id == current_user.id  %>
-			<%= link_to "Edit", edit_message_path(message), class: "btn btn-default" %>
-			<%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
-		<% end -%>
-    <% end %>
-</div>
-<div>
-    <%= render partial: "messages/new", locals: {hire_type_obj: hire_type} %>
-</div>
+    <div class="board_banner">
+      <%= link_to image_tag(hire_type.banner), hire_type_boards_path(hire_type)  %>
   <% end %>
 </div>

@@ -22,6 +22,6 @@ class HireTypeBoardsController < ApplicationController
     end
 
     def hire_type_board_params
-      params.require(:hire_type_board).permit(:name)
+      params.require(:hire_type_board).permit(:name, :banner)
     end
 end
