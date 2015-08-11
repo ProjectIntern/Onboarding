@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 20150803170616) do
 
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
+  create_table "globals", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "image"
+    t.string   "position"
+    t.string   "about"
+  end
+
   create_table "hire_type_boards", force: :cascade do |t|
     t.string   "name"
     t.string   "banner"
