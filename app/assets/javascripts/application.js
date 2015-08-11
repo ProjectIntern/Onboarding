@@ -65,6 +65,17 @@ var main = function() {
       }
     } 
   }); 
+
+  /* Submit form by pressing enter key. */
+  $("input#message_description").keypress(function(event) { 
+    var value = $("#message_description").val(); 
+    if (value != "") {
+      if (event.which == 13) { 
+        event.preventDefault(); 
+        $("form").submit(); 
+      }
+    } 
+  }); 
 };
 
 $(document).ready(main);

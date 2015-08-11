@@ -1,9 +1,10 @@
-<div class="messages_text">
+<div id="new_post">
 	<%= form_for Message.new do |f| %>
-		<%= f.text_area :description, :placeholder => "Type Comment Here" %>
-    	<%#<%= f.text_field :user_id, :value => "#{@current_user.id}", class: "hidden" %>
-    	<%= f.text_field :hire_type, :value => hire_type_obj.name , class: "hidden" %>
-		<%= f.submit "Comment", class: "msg-submit" %><br>
+		<%= f.text_field :description, :placeholder => "Type Comment Here" %>
+    	<%= f.text_field :hire_type, :value => @hire_type.name, class: "hidden" %>
+      <%= f.text_field :user_name, :value => "#{current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
+      <%= f.text_field :user_id, :value => current_user.id,
+      class: "hidden" %>
 	<% end %>
 	</div>
 </div>

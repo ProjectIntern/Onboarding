@@ -15,19 +15,18 @@ class MessagesController < ApplicationController
 	def create
 		@message = current_user.messages.build(message_params)
 		if @message.save
-			redirect_to hire_type_boards_path
+			redirect_to :back
 		else
 			render 'new'
 		end	
 	end
 
 	def edit
-
 	end
 
 	def update
 		if @message.update(message_params)
-			redirect_to hire_type_boards_path
+			redirect_to hire_type_board_path
 		else
 			render 'edit'
 		end
@@ -39,12 +38,12 @@ class MessagesController < ApplicationController
 	end
 
 	private 
+	def message_params
+		params.require(:message).permit(:description, :user_id, :user_name, :hire_type)
+	end
 
-		def message_params
-			params.require(:message).permit(:description, :user_id, :hire_type)
-		end
+	def find_message
+		@message = Message.find(params[:id])
+	end
 
-		def find_message
-			@message = Message.find(params[:id])
-		end
 end

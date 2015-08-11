@@ -1,6 +1,14 @@
 <div class="application_container">
   <% @hire_type_boards.each do |hire_type| %>
     <div class="board_banner">
-      <%= link_to image_tag(hire_type.banner), hire_type_boards_path(hire_type)  %>
+      <% if hire_type.user_id == current_user.id  %>
+      <%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
+    <% end %>
+      <%= link_to hire_type.name, hire_type_board_path(hire_type),  method: "get", action: "show"%>
+  <% end %>
+  <%= form_for(@hire_type_board) do |f| %>
+      <%= f.text_field :name, :placeholder => "Leave a question.", :autofocus => true, :autocomplete => :off %>
+      <%= f.text_field :user_id, :value => current_user.id, class: "hidden" %>
+      <%= f.submit %>
   <% end %>
 </div>
