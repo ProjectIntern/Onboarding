@@ -18,19 +18,21 @@
 
 
 .global_bar ul {
-  color: white;
   list-style-type: none;
 }
 
-.global_bar a {
-  color: rgb(0,26,80);
+.global_bar a:link{
+  color: rgb(0,40,97);
+}
+
+.global_bar a:hover, a:visited{
+  color: #888888;
 }
 
 .global_bar li{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
-  color: rgb(0,26,80);
 }
 
 
@@ -367,7 +369,7 @@
   height: 525px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   margin-top: 30px;
   top: 50px;
   position: relative;

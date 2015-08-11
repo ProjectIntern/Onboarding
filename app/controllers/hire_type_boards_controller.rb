@@ -3,9 +3,11 @@ class HireTypeBoardsController < ApplicationController
 
   def index
     @hire_type_boards = HireTypeBoard.all
+    @hire_type_board = HireTypeBoard.new
   end
 
   def show
+    @hire_type = HireTypeBoard.find(params[:id])
   end
 
   def new
@@ -14,6 +16,14 @@ class HireTypeBoardsController < ApplicationController
 
   def create
     @hire_type_board = HireTypeBoard.new(hire_type_board_params)
+    if @hire_type_board.save
+      redirect_to :back
+    end
+  end
+
+  def destroy
+    @hire_type_board.destroy
+    redirect_to :back
   end
 
   private
@@ -22,6 +32,6 @@ class HireTypeBoardsController < ApplicationController
     end
 
     def hire_type_board_params
-      params.require(:hire_type_board).permit(:name, :banner)
+      params.require(:hire_type_board).permit(:name, :user_id)
     end
 end
