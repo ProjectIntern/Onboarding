@@ -6,11 +6,39 @@
 /* Styling for the what to expect page */
 /***************************************/
 
+.expect_bar {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: rgb(245,245,245);
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+}
+
+.expect_bar ul {
+  list-style-type: none;
+}
+
+.expect_bar a:link, a:visited{
+  color: rgb(0,40,97);
+}
+
+.expect_bar li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.expect_bar a:hover {
+  color: #888888;
+}
+
 /*************************************/
 /* Styling for the expect container. */
 /*************************************/
 
-.expect_container {
+#expect_container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -47,7 +75,7 @@ h1, h3, h4 {
 /* Styling for the New York container. */
 /***************************************/
 
-.ny_container {
+#ny_container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -78,7 +106,7 @@ h1, h3, h4 {
 /* Styling for the San Francisco container. */
 /********************************************/
 
-.sf_container {
+#sf_container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -106,6 +134,46 @@ h1, h3, h4 {
   margin-bottom: 70px;
   -webkit-transform: translateZ(0);
   -webkit-filter:grayscale(1);
+}
+
+/********************************************/
+/* Styling for the benefits container. */
+/********************************************/
+
+#benefits_container {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
+#benefits_container iframe {
+  width: 1000px;
+  height: 925px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/********************************************/
+/* Styling for the forms container. */
+/********************************************/
+
+#forms_container {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
+#forms_container iframe {
+  width: 1000px;
+  height: 925px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 /***********************************/
