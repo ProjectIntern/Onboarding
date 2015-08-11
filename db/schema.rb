@@ -30,13 +30,14 @@ ActiveRecord::Schema.define(version: 20150803170616) do
 
   create_table "hire_type_boards", force: :cascade do |t|
     t.string   "name"
-    t.string   "banner"
+    t.string   "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.text     "description"
+    t.string   "description"
+    t.string   "user_name"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

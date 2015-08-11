@@ -40,9 +40,57 @@ body {
   height: inherit;
 }
 
-a:link {
-    text-decoration: none;
+
+/***********************************/
+/* Styling for the footer. */
+/***********************************/
+
+footer {
+  background-color: white;
+  height: 130px;
 }
+
+footer ul {
+  list-style-type: none;
+}
+
+.political {
+  margin-right: 20px;
+  padding: 20px 0 0 0;
+}
+
+.political ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.political li {
+  display: inline-block;
+  vertical-align:top;
+  font-weight: bold;
+}
+
+.political li:first-child {
+  line-height: bottom;
+}
+
+.forms li:first-child {
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.forms li {
+  display: block;
+  font-weight: lighter;
+}
+
+.forms a:visited {
+  color: black;
+}
+
 
 /***********************************/
 /* Styling for the slide-out menu. */
