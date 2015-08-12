@@ -12,7 +12,6 @@
     <span><%= message.description %></span>
     <div class="configure_buttons">
     <% if message.user_id == current_user.id  %>
-      <%= link_to "Edit", edit_message_path(message), class: "btn btn-default" %>
       <%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
     <% end %>
     </div>
