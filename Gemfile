@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 #Paperclip for uploading images
 gem 'paperclip', '~> 4.3.0'
 #RMagick is an interface between Ruby and ImageMagick.
-gem 'rmagick', '~> 2.15.3'
+git gem 'rmagick', '~> 2.15.3'
 
 gem 'tzinfo-data'
 # css3 for styling
@@ -39,10 +39,15 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   #gem 'web-console', '~> 2.0'
@@ -51,9 +56,5 @@ group :development, :test do
   gem 'spring'
 end
 
-group :production, :staging do
-  gem 'pg'
-  gem 'rails_12factor'
-end
 
 
