@@ -61,6 +61,7 @@ td {
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   text-overflow: ellipsis;
+  margin-top: 51px;
 }
 
 .time_stamp {
@@ -78,14 +79,13 @@ td {
 
 #new_post {
   height: 50px;
-  width: 85%;
-  margin: 0 0 0 0;
-  position: fixed;
+  width: 98.5%;
+  margin: 0 0 10px 0;
+  position: absolute;
   bottom: 0;
 }
 
 .message_board_container {
-  margin-top: 51px;
   padding-top: 10px;
   padding-left: 10px;
   height: 100%;
@@ -101,4 +101,35 @@ td {
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   overflow: scroll;
+}
+
+.message_board_content span {
+  margin-left: 10px;
+}
+
+.existing_faqs {
+  height: 100%;
+  width: 14%;
+  overflow: scroll;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  text-overflow: ellipsis;
+}
+
+.existing_faqs li:first-child {
+  margin-top: 80px;
+}
+
+.existing_faqs li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.existing_faqs ul {
+  list-style-type: none;
+  padding: 0;
 }

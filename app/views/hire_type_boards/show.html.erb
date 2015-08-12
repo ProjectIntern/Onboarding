@@ -9,19 +9,28 @@
     
     <div class="message_board_content">
       <% get_messages_of_type(@hire_type.name).each do |message| %>
-    <%= message.description %>
+    <span><%= message.description %></span>
     <div class="configure_buttons">
     <% if message.user_id == current_user.id  %>
       <%= link_to "Edit", edit_message_path(message), class: "btn btn-default" %>
       <%= link_to "Delete", message, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"}  %>
     <% end %>
     </div>
-    <br>
-    <%=link_to message.user_name, user_path(message.user_id)%><br>
-    <%= message.created_at.strftime("%a %e %l:%M%p")%><br><br>
-  </div>
+    <br><span>
+    <%=link_to message.user_name, user_path(message.user_id)%><span><br>
+    <span><%= message.created_at.strftime("%D %l:%M%p")%></span><br><br>
   <% end %>
-  
+    </div>
+
   <%= render partial: "messages/new", locals: {hire_type_obj: display} %>
+</div>
+
+<div class="existing_faqs">
+    <ul>
+      <% @hire_type_boards.each do |hire_type| %>
+      <li><%= link_to hire_type.name, hire_type_board_path(hire_type),  method: "get", action: "show"%></li>
+      <% end %>
+    </ul>
+
 </div>
 

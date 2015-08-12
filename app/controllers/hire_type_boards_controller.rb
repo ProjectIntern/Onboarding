@@ -8,6 +8,7 @@ class HireTypeBoardsController < ApplicationController
 
   def show
     @hire_type = HireTypeBoard.find(params[:id])
+    @hire_type_boards = HireTypeBoard.all.order("created_at desc")
   end
 
   def new
