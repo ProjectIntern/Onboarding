@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 #Paperclip for uploading images
 gem 'paperclip', '~> 4.3.0'
 #RMagick is an interface between Ruby and ImageMagick.
-git gem 'rmagick', '~> 2.15.3'
+gem 'rmagick', '~> 2.15.3'
 
 gem 'tzinfo-data'
 # css3 for styling
