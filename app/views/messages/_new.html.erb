@@ -1,6 +1,6 @@
 <div id="new_post">
   <%= form_for Message.new do |f| %>
-    <%= f.text_field :description, :placeholder => "Type Comment Here" %>
+    <%= f.text_field :description, :placeholder => "Type Comment Here", :autofocus => true, :autocomplete => :off%>
       <%= f.text_field :hire_type, :value => @hire_type.name, class: "hidden" %>
       <%= f.text_field :user_name, :value => "#{current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
       <%= f.text_field :user_id, :value => current_user.id,

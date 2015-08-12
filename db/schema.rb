@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20150803170616) do
 
   create_table "hire_type_boards", force: :cascade do |t|
     t.string   "name"
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

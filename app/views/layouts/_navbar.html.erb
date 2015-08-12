@@ -16,14 +16,6 @@
     <li><i class="fa fa-comments fa-large"><%= link_to "Faq", hire_type_boards_path, method: "get", action: "index"%></i></li>
     <li><i class="fa fa-users"><%= link_to "Team", users_path, method: "get", action: "users#index"%></i></li>
     <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
-
-    <li><span>- - - - - - - - - - - - - - - - - - -</span></li>
-
-    <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
-
-    <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
-    <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
-
     </ul>
 </div>
 

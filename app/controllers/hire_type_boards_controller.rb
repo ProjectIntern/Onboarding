@@ -4,7 +4,7 @@ class HireTypeBoardsController < ApplicationController
   # GET /hire_type_boards
   # GET /hire_type_boards.json
   def index
-    @hire_type_boards = HireTypeBoard.all
+    @hire_type_boards = HireTypeBoard.all.order("created_at desc")
     @hire_type_board = HireTypeBoard.new
   end
 
@@ -21,6 +21,14 @@ class HireTypeBoardsController < ApplicationController
 
   # GET /hire_type_boards/1/edit
   def edit
+  end
+
+  def update
+    if @hire_type_board.update(hire_type_board_params)
+      redirect_to hire_type_board_path
+    else
+      render 'edit'
+    end
   end
 
   # POST /hire_type_boards

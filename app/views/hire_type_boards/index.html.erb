@@ -1,12 +1,22 @@
 <div class="faq_container">
+  <div class="faq_title"><center><h1>FAQ</h1></center></div>
   <div class="questions_container">
-    <center><h1>FAQ</h1></center>
     <% @hire_type_boards.each do |hire_type| %>
     <table border="1" style="width:100%">
       <tr>
-        <td width="70%"><%= link_to hire_type.name, hire_type_board_path(hire_type),  method: "get", action: "show"%></td>
+        <td width="60%"><%= link_to hire_type.name, hire_type_board_path(hire_type),  method: "get", action: "show"%></td>
         <td width="15%" style="text-align:center"><%=link_to hire_type.user_name, user_path(hire_type.user_id)%></td>
-        <td width="15%" style="text-align:center"><%= hire_type.created_at.strftime("%a %e %l:%M%p") %>
+        <td width="15%" style="text-align:center"><%= hire_type.created_at.strftime("%D %l:%M%p") %>
+        </td>
+        <td width="5%" style="text-align:center">
+        <% if hire_type.user_id == current_user.id %>
+          <%= link_to "Edit", edit_hire_type_board_path(hire_type), class: "btn btn-default" %>
+        <% end %>
+        </td>
+        <td width="5%" style="text-align:center">
+        <% if hire_type.user_id == current_user.id %>
+          <%= link_to "Delete", hire_type, class: "btn btn-default", method: :delete, data: {confirm: "Are you sure?"} %>
+          <% end %>
         </td>
       </tr>
     </table>
