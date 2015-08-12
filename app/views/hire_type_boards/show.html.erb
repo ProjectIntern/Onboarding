@@ -1,10 +1,14 @@
 <div class="message_board_container">
+   
     <div class="message_board_title">
-    <%= @hire_type.name %> </div> 
-  <% get_messages_of_type(@hire_type.name).each do |message| %>
-
-
-  <div class="message_board_content">
+      <span><%= @hire_type.name %></span> 
+      <div class="time_stamp">
+        <%=@hire_type.created_at.strftime("%D %l:%M%p")%>
+      </div>
+    </div> 
+    
+    <div class="message_board_content">
+      <% get_messages_of_type(@hire_type.name).each do |message| %>
     <%= message.description %>
     <div class="configure_buttons">
     <% if message.user_id == current_user.id  %>
@@ -17,6 +21,7 @@
     <%= message.created_at.strftime("%a %e %l:%M%p")%><br><br>
   </div>
   <% end %>
+  
   <%= render partial: "messages/new", locals: {hire_type_obj: display} %>
 </div>
 

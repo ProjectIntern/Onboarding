@@ -20,8 +20,7 @@ Rails.application.routes.draw do
   get '/global' => 'global#index', as: :globals
   get '/global/:id' => 'global#show', as: :global
   get '/expect' => 'expect#index'
-  get '/form' => 'forms#index'
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
