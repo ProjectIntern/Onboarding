@@ -5,7 +5,7 @@
     <table border="1" style="width:100%">
       <tr>
         <td width="60%"><%= link_to hire_type.name, hire_type_board_path(hire_type),  method: "get", action: "show"%></td>
-        <td width="15%" style="text-align:center"><%=link_to hire_type.user_name, user_path(hire_type.user_id)%></td>
+        <td width="15%" style="text-align:center"><%=link_to hire_type.user_name, user_path(hire_type.user_id), method: "get", action: "show"%></td>
         <td width="15%" style="text-align:center"><%= hire_type.created_at.strftime("%D %l:%M%p") %>
         </td>
         <td width="5%" style="text-align:center">
