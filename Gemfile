@@ -2,14 +2,14 @@ source 'http://rubygems.org'
 
 #Paperclip for uploading images
 gem 'paperclip', '~> 4.3.0'
+#RMagick is an interface between Ruby and ImageMagick.
+gem 'rmagick', '~> 2.15.3'
 
 gem 'tzinfo-data'
 # css3 for styling
 gem 'css3-now', '~> 0.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,6 +42,7 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   #gem 'web-console', '~> 2.0'
@@ -49,4 +50,10 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
