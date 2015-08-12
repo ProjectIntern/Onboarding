@@ -10,7 +10,7 @@
         </td>
         <td width="5%" style="text-align:center">
         <% if hire_type.user_id == current_user.id %>
-          <%= link_to "Edit", edit_hire_type_board_path(hire_type), class: "btn btn-default" %>
+          <%= link_to "Edit", edit_hire_type_board_path(hire_type), class: "btn btn-default", method: "get", action: "edit" %>
         <% end %>
         </td>
         <td width="5%" style="text-align:center">

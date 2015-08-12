@@ -1,10 +1,13 @@
-<h1>Edit Message </h1>
-
-  <div class="form">
+  <div class="edit_question_shell">
+    <div class="edit_question_container">
+      <div class="edit_question_form">
     <%= form_for(@hire_type_board) do |f| %>
-      <%= f.text_field :name, :placeholder => "Leave a question.", :autofocus => true, :autocomplete => :off %>
+      <span>EDIT YOUR QUESTION</span>
+      <%= f.text_field :name, :placeholder => "Edit your question.", :autofocus => true, :autocomplete => :off %>
       <%= f.text_field :user_id, :value => current_user.id, class: "hidden" %>
       <%= f.text_field :user_name, :value => "#{current_user.first_name}" + " " + "#{current_user.last_name}", class: "hidden" %>
-      <%= f.submit "Update", class: "btn-submit" %><br>
+      </div>
+      <%= f.submit "Update", class: "question-submit" %><br>
     <% end %>
-  </div>
+</div>
+</div>
