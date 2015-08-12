@@ -55,6 +55,20 @@ var main = function() {
       }, 300);
     });
 
+  /* Logout menu appears when clicked */
+  $( ".logout" ).click(function() {
+    $( ".logout_menu" ).toggle();
+    $('body').append('<div id="masks"></div>');
+    $('#masks').fadeIn(100);
+  });
+
+  /* Logout menu dissapears when mask is clicked */
+  $(document).on('click', '#masks', function() {
+    $('#masks').remove();
+    $( ".logout_menu" ).fadeOut(100);
+  });  
+
+
   /* Submit form by pressing enter key. */
   $("input#comment").keypress(function(event) { 
     var value = $("#comment").val(); 

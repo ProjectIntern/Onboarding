@@ -242,14 +242,6 @@ i.fa.fa-home::before {
   color: #888888;
 }
 
-.nav-bar ul li:nth-child(3) {
-  position:absolute;
-  right:0;
-  top: 0;
-  margin-right:50px;
-  width: 20%;
-}
-
 .nav-bar ul li img {
   position: absolute;
   left: 0;
@@ -259,19 +251,18 @@ i.fa.fa-home::before {
   margin-right:auto;
 }
 
-
 .nav-bar ul li:last-child {  
   position:absolute;
   right:0;
-  top: 0;
+  margin-right: 5px;
 }
 
-.search_btn {
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 12pt;
-  margin-top: 10px;
+.nav-bar ul li:last-child:hover {
+  color: #888888;
+}
+
+i.fa.fa-user::before {
+  margin-right: 10px;
 }
 
 .nav-bar ul li i{
@@ -283,15 +274,50 @@ i#icon-menu.fa.fa-bars::before {
   margin-right: 5px;
 }
 
-/* Media styling. */
+/***********************************/
+/* Styling for the logout menu.    */
+/***********************************/
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
-  .nav-bar ul li:last-child{
-    width: 30px;
-  }
-
-  .onclick-menu-content {
-  background-color: rgba(0,0,51, .8);;
-  }
+.logout_menu {
+  top: 65px;
+  right: 0px;
+  z-index: 2;
+  position: fixed;
+  margin-right: 10px;
+  width: 150px;
+  height: 100px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  display: none;
 }
 
+.logout_menu ul {
+  list-style-type: none;
+  padding: 0 20px 0 20px;
+}
+
+.logout_menu li {
+  margin-bottom: 10px;
+  color: rgb(0,40,97);
+}
+
+.logout_menu a:link {
+  color: rgb(0,40,97);
+}
+
+.logout_menu li:hover {
+  color: #888888;
+}
+
+.logout_menu a:hover {
+  color: #888888;
+}
+
+i.fa.fa-sign-out::before {
+  margin-right: 10px;
+}
+
+i.fa.fa-pencil::before {
+  margin-right: 10px;
+}

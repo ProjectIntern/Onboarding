@@ -75,6 +75,18 @@
   margin-right: 45px;
 }
 
+.search_bar {
+  margin-top: 51px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+  height: 50px;
+}
+
+input#search {
+  width: 99%;
+}
+
 .contacts_container ul {
   list-style-type: none;
   padding: 0;
@@ -92,7 +104,7 @@
 }
 
 .contacts_container li:first-child{
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 

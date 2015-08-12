@@ -1,11 +1,16 @@
 <div class="contacts_container">
-      <ul>
-  <% for i in @users %>
+  <div class="search_bar">
+    <%= form_tag users_path,:method => 'get' do %>
+    <%= text_field_tag :search, nil, placeholder: "Search for a user", :autocomplete => :off %>
+    <% end %>
+  </div>
+    <ul>
+    <% for i in @users %>
       <li><%= link_to image_tag(i.image.url(:small), :class => "contact_pic"), user_path(i), method: "get", title: "#{i.first_name} #{i.last_name}", action: "show" %>
         <div class="contact_name">
             <%=i.first_name%> <%=i.last_name%>
         </div>
       </li>
-  <% end %>
+    <% end %>
     </ul>
 </div>
