@@ -6,9 +6,35 @@
 /* Styling for the hire type board index page. */
 /***********************************************/
 
-.board_banner img {
+.faq_container {
   width: 100%;
-  height: 40%;
+  height: 100%;
+  position: absolute;
+}
+
+.questions_container {
+  width: 100%;
+  height: 88%;
+  margin-top: 51px;
+  overflow: scroll;
+}
+
+.questions_container a:link {
+  color: rgb(0,40,97);
+  margin-left: 10px;
+}
+
+.questions_form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+td {
+  height: 30px;
 }
 
 /***********************************************/

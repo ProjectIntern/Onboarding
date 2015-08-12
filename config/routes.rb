@@ -17,7 +17,6 @@ Rails.application.routes.draw do
 
   resources :messages 
   resources :hire_type_boards
-
   get '/global' => 'global#index', as: :globals
   get '/global/:id' => 'global#show', as: :global
   get '/expect' => 'expect#index'

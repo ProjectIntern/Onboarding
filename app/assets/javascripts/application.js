@@ -70,8 +70,8 @@ var main = function() {
 
 
   /* Submit form by pressing enter key. */
-  $("input#comment").keypress(function(event) { 
-    var value = $("#comment").val(); 
+  $("input#hire_type_board_name").keypress(function(event) { 
+    var value = $("#hire_type_board_name").val(); 
     if (value != "") {
       if (event.which == 13) { 
         event.preventDefault(); 
@@ -90,6 +90,18 @@ var main = function() {
       }
     } 
   }); 
+
+    /* Submit form by pressing enter key. */
+  $("input#comment").keypress(function(event) { 
+    var value = $("#comment").val(); 
+    if (value != "") {
+      if (event.which == 13) { 
+        event.preventDefault(); 
+        $("form").submit(); 
+      }
+    } 
+  }); 
+
 };
 
 $(document).ready(main);
