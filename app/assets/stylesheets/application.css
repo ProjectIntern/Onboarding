@@ -285,8 +285,8 @@ i#icon-menu.fa.fa-bars::before {
   z-index: 2;
   position: fixed;
   margin-right: 10px;
-  width: 135px;
-  height: 90px;
+  width: 137px;
+  height: 100px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
