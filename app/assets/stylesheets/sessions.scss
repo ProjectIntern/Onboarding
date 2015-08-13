@@ -9,8 +9,8 @@
 .form {
   text-align: center;
   margin: auto auto;
-  padding: 10px 20px 10px 15px;
-  width: 250px;
+  padding: 9px 18px 9px 13.5px;
+  width: 225px;
   background: #000033;
   color: white;
 }
@@ -20,44 +20,47 @@ input[type=password],
 input[type=email] {
   color: black;
   width: 100%;
-  border: 3px, solid, white;
+  border: 2.7px, solid, white;
   border-radius: 0px;
-  height: 30px;
-  margin: 7px auto;
-  text-indent: 10px;
-  font-size: 12pt;
+  height: 27px;
+  margin: 6.3px auto;
+  text-indent: 9px;
+  font-size: 10pt;
   font-weight: lighter;
   font-family: helvetica, sans-serif;
 }
 
 .container {
   display: table-cell;
-  width: 275px;
+  width: 247.5px;
   vertical-align: middle;
   text-align: center;
   background-color: rgba(0,0,51,.5);
 }
 
 #signup {
-  font-size: 42pt;
+  font-size: 37.8pt;
   font-family: "Arapey";
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .btn-submit {
   background-color: #000033;
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: lighter;
   text-transform: uppercase;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 9px;
+  padding: 9px;
   border: 0;
   color: white;
-  width: 282px;
-  margin-bottom: 25px;
+  width: 253.8px;
+  margin-bottom: 22.5px;
   cursor: pointer;
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-submit:hover {
@@ -65,8 +68,8 @@ input[type=email] {
 }
 
 .title {
-  font-size: 42pt;
-  margin-bottom: 10px;
+  font-size: 37.8pt;
+  margin-bottom: 9px;
   color: white;
   font-family: "Arapey";
 }
@@ -77,23 +80,23 @@ input[type=email] {
 
 .shell {
   width: 100%;
-  height: calc(100% + 52px);
+  height: calc(100% + 47px);
   background-image: url('backgrounds/jeans_color.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: table;
   position: absolute;
-  -webkit-transform: translateY(-51px);
-  -moz-transform: translateY(-51px);
-  -ms-transform: translateY(-51px);
-  -o-transform: translateY(-51px);  
-  transform: translateY(-51px);
+  -webkit-transform: translateY(-47px);
+  -moz-transform: translateY(-47px);
+  -ms-transform: translateY(-47px);
+  -o-transform: translateY(-47px);  
+  transform: translateY(-47px);
 }
 
 #checkbox {
   color: white;
   display: block;
-  width: 270px;
+  width: 243px;
   margin-left: auto;
   margin-right: auto;  
 }

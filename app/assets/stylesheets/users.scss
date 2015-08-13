@@ -108,21 +108,21 @@ textarea {
 
 .interns {
   box-sizing: border-box;
-  margin: 70px auto;
+  margin: 63px auto;
   display: block;
   text-align: center;
   width: 90%;
-  padding-bottom: 355px;
+  padding-bottom: 320px;
 }
 
 .img_container {
-  height: 307px;
-  width: 200px;
+  height: 276.3px;
+  width: 180px;
   color: rgb(115,123,128);
   background: white;
   display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 15px 15px 15px 15px;
+  padding: 9px 9px 9px 9px;
+  margin: 13.5px 13.5px 13.5px 13.5px;
   border-radius: 4px;
   box-shadow: 0 2px 0 rgba(0,0,0,0.07);
 }
@@ -130,7 +130,7 @@ textarea {
 .interns img {
   text-align: center;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   -webkit-transform: translateZ(0);
   -webkit-filter:grayscale(1);
   -webkit-filter:saturate(0%);
@@ -139,7 +139,7 @@ textarea {
 
 .intern_card {
   display: inline-block;
-  width: 250px;
+  width: 225px;
 }
 
 .intern_card:hover .about_card{
@@ -148,7 +148,7 @@ textarea {
 }
 
 .intern_card:hover .img_container {
-  margin-bottom: 3px;
+  margin-bottom: 2.7px;
   color: rgb(0,38,99);
 }
 
@@ -158,37 +158,35 @@ textarea {
 }
 
 .about_card {
-  height: 345px;
-  width: 200px;
+  height: 310.5px;
+  width: 180px;
   color: rgb(115,123,128);
   background-color: #F5F5F5;
   color: black;
-  padding: 10px 10px 0px 10px;
-  margin: 0px 15px 0px 15px;
+  padding: 9px 9px 0px 9px;
+  margin: 0px 13.5px 0px 13.5px;
   border-radius: 4px;
   z-index: 2;
-  font-size: 12pt;
   display: none;
 }
 
 .about_card_social_icons li {
   list-style-type: none;
   display: inline-block;
-  width: 30px;
-  height: 27.5px;
-  padding-top: 2.5px;
+  width: 27px;
+  height: 24.75px;
+  padding-top: 2.25px;
   line-height: 1.5;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 4.5px;
+  margin-left: 4.5px;
 }
 
 .about_card_social_icons ul {
   background-color: rgb(0,38,99);
   outline: 1px solid rgb(0,38,99);
-  font-size: 12pt;
   text-align: center;
   padding: 0;
-  height: 30px;
+  height: 27px;
   width: 100%;
   margin: 0;
   position: absolute;
@@ -202,23 +200,23 @@ textarea {
 
 .about_card_info {
   padding: 0;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 36px;
+  margin-bottom: 9px;
 }
 
 .about_card_info li {
   list-style-type: none;
-  font-size: 10pt;
+  font-size: 9pt;
   text-align: left;
 }
 
 .about_card_me {
   text-align: left;
-  font-size: 10pt;
+  font-size: 9pt;
   width: 100%;
-  height: 200px;
+  height: 180px;
   overflow: scroll;
-  margin-bottom: 5px;
+  margin-bottom: 4.5px;
 }
 
 .msg_button {
@@ -226,8 +224,8 @@ textarea {
   background-color: rgb(0,38,99);
   width: 100%;
   font-size: 10pt;
-  margin-top: 10px;
-  padding: 5px;
+  margin-top: 9px;
+  padding: 4.5px;
   color: white;
   outline: none;
   bottom: 0;

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   validates_presence_of :first_name, :last_name
   validate :invalidCode
   has_many :messages
-  has_attached_file :image, :styles => { :small => "50x50#", :avatar => "200x267#", :large => "750x750>" }, :processors => [:cropper], :default_url => "other/default_:style.jpg"
+  has_attached_file :image, :styles => { :small => "50x50#", :avatar => "180x240#", :large => "750x750>" }, :processors => [:cropper], :default_url => "other/default_:style.jpg"
   validates_attachment_content_type :image, :content_type => /\Aimage/
   validates_attachment_file_name :image, :matches => [/png\Z/, /jpe?g\Z/]
   do_not_validate_attachment_file_type :image

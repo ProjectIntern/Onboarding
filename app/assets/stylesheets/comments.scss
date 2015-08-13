@@ -19,8 +19,8 @@
 .message_container {
   width: 53.2%;
   height: 100%;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 3.6px;
+  margin-right: 3.6px;
   position: fixed;
   left: 15%;
 }
@@ -30,29 +30,29 @@
 /************************************/
 
 .comments_title {
-  height: 75px;
+  height: 67.5px;
   width: 53.2%;
   background: white;
-  border-bottom: 5px solid #F5F5F5;
+  border-bottom: 4.5px solid #F5F5F5;
   color: rgb(0,40,97);
   text-align: center;
   font-weight: lighter;
-  font-size: 35pt;
-  margin-top: 51px;
-  margin-left: 4px;
-  margin-right: 4px;
+  font-size: 31.5pt;
+  margin-top: 46px;
+  margin-left: 3.6px;
+  margin-right: 3.6px;
   position: fixed;
   left: 15%;
 }
 
 .comments_title span {
   display: block;
-  margin-top: 7.25px;
-  margin-bottom: 7.25px;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
 }
 
 .fa.fa-weixin {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 /**********************************/
@@ -68,19 +68,19 @@
 }
 
 .contact_name {
-  width: 50px;
+  width: 45px;
   float: right;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 45px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+  margin-right: 40.5px;
 }
 
 .search_bar {
-  margin-top: 51px;
+  margin-top: 46px;
   margin-right: auto;
   margin-left: auto;
   width: 95%;
-  height: 50px;
+  height: 45px;
 }
 
 input#search {
@@ -94,9 +94,9 @@ input#search {
 }
 
 .contacts_container li {
-  height: 50px;
-  width: 160px;
-  margin-bottom: 20px;
+  height: 45px;
+  width: 144px;
+  margin-bottom: 18px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -109,11 +109,11 @@ input#search {
 
 
 .contact_pic {
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
+  margin-left: 4.5px;
+  margin-right: 4.5px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
 }
 
 /******************************************/
@@ -124,18 +124,18 @@ input#search {
 #comments_content {
   height: 77.5%;
   width: 100%;
-  margin-top: 130px;
+  margin-top: 117px;
   background-color: white;
-  border-bottom: 5px solid #F5F5F5;
+  border-bottom: 4.5px solid #F5F5F5;
   overflow: scroll;
 }
 
 #name-font {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 #date {
-  font-size: 10pt;
+  font-size: 9pt;
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ input#search {
 /******************************************/
 
 .comments_text {
-  height: 50px;
+  height: 45px;
   width: 99.5%;
   margin: 0 0 0 0;
   position: absolute;
@@ -152,15 +152,15 @@ input#search {
 }
 
 input#comment_comment {
-  height: 40px;
+  height: 46px;
   outline: none;
   margin: 0;
 }
 
 .comments-submit {
   width: 5%;
-  height: 40px;
-  font-size: 12pt;
+  height: 36px;
+  font-size: 10pt;
   cursor: pointer;
   border: 1px solid rgb(0,40,97);
   background-color: rgb(0,40,97);
@@ -168,7 +168,7 @@ input#comment_comment {
   vertical-align: top;
   position: absolute;
   bottom: 0;
-  left: 500px;
+  left: 450px;
 }
 
 .comments-submit:hover {
@@ -186,7 +186,7 @@ input#comment_comment {
 
 .push-right {
   text-align: right;
-  margin-right: 15px;
+  margin-right: 13.5px;
 }
 
 /******************************************/
@@ -195,38 +195,16 @@ input#comment_comment {
 
 .push-left {
   text-align: left;
-  margin-left: 15px;
+  margin-left: 13.5px;
   color: rgb(0,40,97);
 }
 
 .push-left img{
-  height: 30px;
-  width: 30px;
-  border-radius: 50px;
-  margin-top: 5px;
+  height: 27px;
+  width: 27px;
+  border-radius: 45px;
+  margin-top: 4.5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**************************************/
 /* Styling for the profile container. */
@@ -236,22 +214,23 @@ input#comment_comment {
   background: white;
   width: 31.25%;
   height: 100%;
-  margin-top: 51px;
+  margin-top: 46px;
   right: 0;
   top: 1;
   position: fixed;
   overflow: scroll;
+  font-weight: 200;
 }
 
 .profile_picture {
-  height: 307px;
-  width: 200px;
+  height: 276px;
+  width: 180px;
   color: rgb(115,123,128);
   background: white;
   text-align: center;
   display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 15px 15px 15px 25px;
+  padding: 9px 9px 9px 9px;
+  margin: 13.5px 13.5px 13.5px 22.5px;
   border-radius: 4px;
   box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
 }
@@ -261,29 +240,29 @@ input#comment_comment {
   display: inline-block;
   list-style-type: none;
   text-align: center;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 4.5px;
+  margin-left: 4.5px;
 }
 
 .profile_picture ul {
   padding: 0px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 9px;
   text-align: center;
 }
 
 .profile_title span {
   display: block;
-  margin-top: 7.25px;
-  margin-bottom: 7.25px;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
 }
 
 .profile_title {
-  height: 75px;
+  height: 67.5px;
   width: 100%;
-  font-size: 35pt;
+  font-size: 31.5pt;
   background: white;
-  border-bottom: 5px solid #F5F5F5;
+  border-bottom: 4.5px solid #F5F5F5;
   color: rgb(0,40,97);
   font-weight: lighter;
   text-align: center;
@@ -291,29 +270,29 @@ input#comment_comment {
 }
 
 .profile_wrapper {
-  height: 610px;
-  width: 500px;
+  height: 549px;
+  width: 450px;
   margin-right: auto;
   margin-left: auto;
 }
 
 i.title.fa.fa-user {
-  margin-right: 10px;
+  margin-right: 9px;
   color: rgb(0,40,97);
 }
 
 .information_container {
-  width: 175px;
-  height: 307px;
-  margin: 25px 30px 25px 30px;
+  width: 157.5px;
+  height: 276.3px;
+  margin: 22.5px 27px 22.5px 27px;
   float: right;
 }
 
 .information_container li {
   list-style-type: none;
   text-align: left;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 
 .information_container ul {
@@ -321,21 +300,21 @@ i.title.fa.fa-user {
 }
 
 .name {
-  font-size: 30pt;
+  font-size: 27pt;
   font-weight: 200;
   display: block;
   position: relative;
-  top: -20px;
+  top: -18px;
   }
 
 .about_container {
-  width: 450px;
-  height: 170px;
+  width: 405px;
+  height: 153px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 27px;
   word-wrap: break-word;
   color: #888888;
-  line-height: 23px;
+  line-height: 20.7px;
   overflow: scroll;  
 }
 

@@ -15,13 +15,13 @@
 .questions_container {
   width: 100%;
   height: 81%;
-  margin-top: 105px;
+  margin-top: 98px;
   overflow: scroll;
 }
 
 .questions_container a:link {
   color: rgb(0,40,97);
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .questions_form {
@@ -29,19 +29,19 @@
   bottom: 0;
   left: 0;
   width: 99%;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 4.5px;
+  margin-right: 4.5px;
 }
 
 td {
-  height: 30px;
+  height: 27px;
 }
 
 .faq_title {
   position: fixed;
   width: 100%;
-  height: 57px;
-  margin-top: 51px;
+  height: 51.3px;
+  margin-top: 46px;
   line-height: .5;
   background-color: white;
 }
@@ -53,50 +53,50 @@ td {
 
 .message_board_title {
   width: 99.5%;
-  height: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 27px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   background: white;
-  font-size: 24px;
+  font-size: 21.6px;
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   text-overflow: ellipsis;
-  margin-top: 51px;
+  margin-top: 46px;
 }
 
 .time_stamp {
   float: right;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .message_board_title span {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 .configure_buttons {
   float: right;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 #new_post {
-  height: 50px;
+  height: 45px;
   width: 98.5%;
-  margin: 0 0 10px 0;
+  margin: 0 0 9px 0;
   position: absolute;
   bottom: 0;
 }
 
 .message_board_container {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 9px;
+  padding-left: 9px;
   height: 100%;
   width: 85%;
   position: fixed;
 }
 
 .message_board_content {
-  height: 77.5%;
+  height: 78.5%;
   width: 99.5%;
-  margin-top: 10px;
+  margin-top: 9px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
@@ -104,7 +104,7 @@ td {
 }
 
 .message_board_content span {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .existing_faqs {
@@ -118,12 +118,12 @@ td {
 }
 
 .existing_faqs li:first-child {
-  margin-top: 80px;
+  margin-top: 72px;
 }
 
 .existing_faqs li {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -132,6 +132,10 @@ td {
 .existing_faqs ul {
   list-style-type: none;
   padding: 0;
+}
+
+.existing_faqs a:link {
+  color: rgb(0,40,97);
 }
 
 /***************************************/
@@ -154,8 +158,8 @@ td {
 .edit_question_form {
   text-align: center;
   margin: auto auto;
-  padding: 10px 20px 10px 15px;
-  width: 500px;
+  padding: 9px 18px 9px 13.5px;
+  width: 450px;
   background: rgb(0,26,80);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
   border-radius: 4px;
@@ -164,14 +168,13 @@ td {
 
 .question-submit {
   background: rgb(0,26,80);
-  font-size: 12pt;
   text-transform: uppercase;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 9px;
+  padding: 9px;
   border: 1px solid rgb(0,26,80);
   color: white;
-  width: 250px;
-  margin-bottom: 25px;
+  width: 225px;
+  margin-bottom: 22.5px;
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
