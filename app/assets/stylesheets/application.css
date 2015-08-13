@@ -155,24 +155,22 @@ a:link {
   margin-right: 54px;
 }
 
-.menu i::before {
-  margin-right: 9px;
-}
+
 
 i.fa.fa-comments::before {
-  margin-right: 7.2px;
+  margin-right: 7px;
 }
 
 i.fa.fa-users::before {
-  margin-right: 8.1px;
+  margin-right: 7px;
 }
 
 i.fa.fa-globe::before {
-  margin-right: 7.2px;
+  margin-right: 7px;
 }
 
 i.fa.fa-tags::before {
-  margin-right: 5.4px;
+  margin-right: 5px;
 }
 
 i.fa.fa-bus::before {
@@ -180,7 +178,7 @@ i.fa.fa-bus::before {
 }
 
 i.fa.fa-home::before {
-  margin-right: 4.5px;
+  margin-right: 7px;
 }
 
 .icon-close {
@@ -239,6 +237,7 @@ i.fa.fa-home::before {
 
 .nav-bar ul li:first-child:hover {
   color: #888888;
+  cursor: pointer;
 }
 
 .nav-bar ul li img {
@@ -258,24 +257,20 @@ i.fa.fa-home::before {
 
 .nav-bar ul li:last-child:hover {
   color: #888888;
-}
-
-i.fa.fa-user::before {
-  margin-right: 9px;
-}
-
-.nav-bar ul li i{
-  margin-right: 9px;
   cursor: pointer;
 }
 
-i#icon-menu.fa.fa-bars::before {
-  margin-right: 4.5px;
+.nav-bar ul li i{
+  margin-right: 5px;
 }
 
 /***********************************/
 /* Styling for the logout menu.    */
 /***********************************/
+
+.logout {
+  margin-right: 5px;
+}
 
 .logout_menu {
   top: 58.5px;
@@ -313,10 +308,14 @@ i#icon-menu.fa.fa-bars::before {
   color: #888888;
 }
 
+i.fa.fa-user::before {
+  margin-right: 4px;
+}
+
 i.fa.fa-sign-out::before {
-  margin-right: 9px;
+  margin-right: 4px;
 }
 
 i.fa.fa-pencil::before {
-  margin-right: 9px;
+  margin-right: 4px;
 }

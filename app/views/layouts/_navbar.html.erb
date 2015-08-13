@@ -9,20 +9,20 @@
             <%=current_user.first_name%> <%=current_user.last_name%>
         </div>
     </li>
-    <li><i class="fa fa-home"><%= link_to "Home", root_path, method: "get", action: "index" %></i></li>
-    <li><i class="fa fa-tags"><%= link_to "Brands", brands_path, method: "get", action: "brands#show" %></i></li>
-    <li><i class="fa fa-globe"><%= link_to "Global Team", globals_path, method: "get", action: "index"%></i></li>
-    <li><i class="fa fa-home"><%= link_to "What To Expect", expect_path, method: "get", action: "index"%></i></li>
-    <li><i class="fa fa-comments fa-large"><%= link_to "Faq", hire_type_boards_path, method: "get", action: "index"%></i></li>
-    <li><i class="fa fa-users"><%= link_to "Team", users_path, method: "get", action: "users#index"%></i></li>
-    <li><i class="fa fa-bus"><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></i></li>
+    <li><i class="fa fa-home"></i><%= link_to "Home", root_path, method: "get", action: "index" %></li>
+    <li><i class="fa fa-tags"></i><%= link_to "Brands", brands_path, method: "get", action: "brands#show" %></li>
+    <li><i class="fa fa-globe"></i><%= link_to "Global Team", globals_path, method: "get", action: "index"%></li>
+    <li><i class="fa fa-home"></i><%= link_to "What To Expect", expect_path, method: "get", action: "index"%></li>
+    <li><i class="fa fa-comments fa-large"></i><%= link_to "Faq", hire_type_boards_path, method: "get", action: "index"%></li>
+    <li><i class="fa fa-users"></i><%= link_to "Team", users_path, method: "get", action: "users#index"%></li>
+    <li><i class="fa fa-bus"></i><%= link_to "Shuttle Times", shuttle_path, method: "get", action: "index"%></li>
     </ul>
 </div>
 
 <!-- Navigation Bar -->
 <div class="nav-bar">
   <ul>
-    <li><i class="fa fa-bars" id="icon-menu">Menu</i></li>
+    <li id="icon-menu"><i class="fa fa-bars"></i>Menu</li>
 
     <li> 
         <div class="gap_logo">
@@ -32,7 +32,7 @@
 
     <li>
         <div class="logout">
-           <i class="fa fa-user"><%= current_user.first_name%> <%=current_user.last_name%></i>
+           <i class="fa fa-user"></i><%= current_user.first_name%> <%=current_user.last_name%>
         </div>
     </li>
 
@@ -43,9 +43,9 @@
 
 <div class="logout_menu">
     <ul>
-        <li><i class="fa fa-user"><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></i></li>
-        <li><i class="fa fa-pencil"><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></i></li>
-        <li><i class="fa fa-sign-out"><%= link_to "Log Out", logout_path, method: "delete" %></i></li>
+        <li><i class="fa fa-user"></i><%= link_to "View Profile", user_path(session[:id]), method: "get", action: "show" %></li>
+        <li><i class="fa fa-pencil"></i><%= link_to "Edit Profile", edit_user_path(session[:id]), method: "get", action: "users#edit" %></li>
+        <li><i class="fa fa-sign-out"></i><%= link_to "Log Out", logout_path, method: "delete" %></li>
     </ul>
 </div>
 
