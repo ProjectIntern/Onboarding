@@ -122,9 +122,8 @@ input#search {
 #comments_content {
   height: 77.5%;
   width: 100%;
-  margin-top: 116px;
+  margin-top: 14%;
   background-color: white;
-  border-bottom: 4px solid #F5F5F5;
   overflow: auto;
 }
 
@@ -195,6 +194,8 @@ form#new_comment.new_comment {
 .push-right {
   text-align: right;
   margin-right: 13.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /******************************************/
@@ -205,6 +206,8 @@ form#new_comment.new_comment {
   text-align: left;
   margin-left: 13.5px;
   color: rgb(0,40,97);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .push-left img{
