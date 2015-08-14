@@ -269,10 +269,13 @@ input#comment_comment {
 }
 
 .profile_wrapper {
-  height: 549px;
-  width: 450px;
+  height: 480px;
+  width: 440px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
 }
 
 i.title.fa.fa-user {
@@ -283,7 +286,7 @@ i.title.fa.fa-user {
 .information_container {
   width: 157.5px;
   height: 276.3px;
-  margin: 22.5px 27px 22.5px 27px;
+  margin: 22.5px 27px 22.5px 0px;
   float: right;
 }
 
