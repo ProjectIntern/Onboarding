@@ -142,17 +142,27 @@ input#search {
 /******************************************/
 
 .comments_text {
-  height: 45px;
+  height: 7%;
   width: 99.5%;
   margin: 0 0 0 0;
   position: absolute;
   bottom: 0;
 }
 
-input#comment_comment {
-  height: 46px;
-  outline: none;
+input#comment {
   margin: 0;
+  height: 70%;
+}
+
+form#new_comment.new_comment {
+  color: black;
+  width: 100%;
+  border: 2.7px, solid, white;
+  border-radius: 0px;
+  height: 100%;
+  margin: 6.3px auto;
+  font-size: 10pt;
+  font-weight: lighter;
 }
 
 .comments-submit {
