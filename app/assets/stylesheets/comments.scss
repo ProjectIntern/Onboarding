@@ -335,9 +335,27 @@ i.title.fa.fa-user {
 /* Styling for media screens, phones, tablets. */
 /***********************************************/
 
-@media screen and (min-height: 500px) {
-  .comments_content {
+@media (min-height: 805px) {
+  #comments_content {
     height: 640px;
+  }
+}
+
+@media (min-height: 979px) {
+  #comments_content {
+    height: 810px;
+  }
+}
+
+@media (min-height: 1035px) {
+  #comments_content {
+    height: 870px;
+  }
+}
+
+@media (min-height: 1105px) {
+  #comments_content {
+    height: 937px;
   }
 }
 
