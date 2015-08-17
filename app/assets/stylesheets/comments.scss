@@ -353,6 +353,16 @@ i.title.fa.fa-user {
   }
 }
 
+@media (min-height: 929px) {
+  #comments_content {
+    height: 763px;
+  }
+
+  .message_board_content {
+    height: 770px;
+  }
+}
+
 @media (min-height: 1105px) {
   #comments_content {
     height: 937px;

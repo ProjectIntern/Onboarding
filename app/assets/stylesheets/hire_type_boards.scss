@@ -95,7 +95,7 @@ td {
 }
 
 .message_board_content {
-  height: 78.5%;
+  height: 730px;
   width: 99.5%;
   margin-top: 9px;
   background-color: white;
@@ -185,4 +185,12 @@ td {
   background-color: white;
   color: rgb(0,26,80);
 }
+
+@media (min-height: 929px) {
+
+  .message_board_content {
+    height: 770px;
+  }
+}
+
 
