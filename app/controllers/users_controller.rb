@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @comment = Comment.new
-    @comments = Comment.all
+    @comments = Comment.all.order("created_at DESC")
     @contacts = []
     @users = []
     Comment.all.each do |n|
