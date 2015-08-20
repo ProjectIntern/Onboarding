@@ -16,9 +16,9 @@ Things that this README covers:
 
 * Usage
 
-* Deployment instructions
-
 * Bugs
+
+* Future features
 
 
 == Ruby/Rails Version
@@ -62,6 +62,9 @@ and
 
 == Tables
 
+Sqlite3 was used in developing the application.
+PostgreSQL was used to deploy to Heroku. 
+
 A SQL table is created for the following which stores data (the parametes of each object): 
 
 * User table: Parameters - First name, last name, email, password, password confirmation, code, facebook url, linkedin url, twitter url, instagram url, location, position, about, and terms. There is seeded data for this table in <tt>seeds.rb</tt> mainly for demo purposes.
@@ -93,7 +96,9 @@ If using a Mac.
 6. Run <tt>rake db:seed</tt> to seed the user data.
 7. Run <tt>rails s -p 8080</tt> to start a webserver using your localhost and follow this link to the web application http://localhost:8080
 
+== Bugs
 
+== Future Features
   
 
 
