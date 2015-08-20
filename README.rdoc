@@ -30,33 +30,33 @@ and
 
 == Controllers
 
- * Brands controller: Manages the "Brands" page and only has an index action (only contains static information).
+* Brands controller: Manages the "Brands" page and only has an index action (only contains static information).
 
- * Comments controller: Manages the comments that users exchange with one another on their profile pages. (Should replace this with a form of instant messaging. Maybe Faye messaging?)
+* Comments controller: Manages the comments that users exchange with one another on their profile pages. (Should replace this with a form of instant messaging. Maybe Faye messaging?)
 
- * Expect controller: Manages the "What to Expect" page and only has an index action (only contains static information). 
+* Expect controller: Manages the "What to Expect" page and only has an index action (only contains static information). 
 
- * Global controller: Manages the "Global Team" page and only has an index action (only contains static information).
+* Global controller: Manages the "Global Team" page and only has an index action (only contains static information).
 
- * Hire Type Boards controller: Manages the "FAQ" page. Originally had an idea to seperate the FAQ page to different question boards depending on the department new hires were in and started implementing the code to do this. However, decided to have a general FAQ page for all hires and didn't have enough time to implement new code/controller to do this. Instead, used/altered old hire type boards controller code for manage the FAQ page. 
+* Hire Type Boards controller: Manages the "FAQ" page. Originally had an idea to seperate the FAQ page to different question boards depending on the department new hires were in and started implementing the code to do this. However, decided to have a general FAQ page for all hires and didn't have enough time to implement new code/controller to do this. Instead, used/altered old hire type boards controller code for manage the FAQ page. 
 
- * Home controller: Manages the "Home" page and is the page that users get redirected to after logging in/signing up for an account. Only has an index action. 
+* Home controller: Manages the "Home" page and is the page that users get redirected to after logging in/signing up for an account. Only has an index action. 
 
- * Messages controller: Part of the "FAQ" page. Manages the responses users give to a FAQ. Didn't have enough time to change this controller to a response controller. This controller should also be redone and changed to a response controller.
+* Messages controller: Part of the "FAQ" page. Manages the responses users give to a FAQ. Didn't have enough time to change this controller to a response controller. This controller should also be redone and changed to a response controller.
 
- * Sessions controller: Manages the login page which is also the root page of the application. A new session is created when a user logins. That same session is destroyed when a user logs out. This is how the application keeps track of whether or not a user is logged in. 
+* Sessions controller: Manages the login page which is also the root page of the application. A new session is created when a user logins. That same session is destroyed when a user logs out. This is how the application keeps track of whether or not a user is logged in. 
 
- * Shuttle controller: Manages the "Shuttle" page and only has an index action (only contains static information). 
+* Shuttle controller: Manages the "Shuttle" page and only has an index action (only contains static information). 
 
- * Users controller: Manages the user sign up page. Users sign up for an account on this page. 
+* Users controller: Manages the user sign up page. Users sign up for an account on this page. 
 
- == Models
+== Models
 
- * Comment model: Establishes the relation that a comment belongs to a user.
+* Comment model: Establishes the relation that a comment belongs to a user.
 
- * Hire type board model: Establishes the relation that a board (FAQ) has many messages (responses). 
+* Hire type board model: Establishes the relation that a board (FAQ) has many messages (responses). 
 
- * Message model: Establishes the relation that a message (response) belongs to a user and hire type board (FAQ).
+* Message model: Establishes the relation that a message (response) belongs to a user and hire type board (FAQ).
   
 
 
