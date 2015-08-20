@@ -86,7 +86,7 @@ The only service that this application is using is imagemagick 6.9.1. However, s
 2. Install Rails. 
 3. Install ImageMagick. 
 4. Run bundle install to install the required gems.
-  1. bundle install
+* bundle install
 5. Run rake db:migrate to migrate the tables. 
   rake db:migrate
 6. Run rake db:seed to seed the user data.
