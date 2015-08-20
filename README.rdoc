@@ -86,12 +86,12 @@ The only service that this application is using is imagemagick 6.9.1. However, s
 2. Install Rails. 
 3. Install ImageMagick. 
 4. Run bundle install to install the required gems.
-  bundle install
+  * bundle install
 5. Run rake db:migrate to migrate the tables. 
   rake db:migrate
 6. Run rake db:seed to seed the user data.
   rake db:seed
-7. Run rails s -p 8080 to start a webserver using your localhost and follow this link to the web application https://localhost:8080/
+7. Run rails s -p 8080 to start a webserver using your localhost and follow this link to the web application http://localhost:8080
   rails s -p 8080
 
 
