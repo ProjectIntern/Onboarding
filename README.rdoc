@@ -1,28 +1,105 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README covers the general purpose of the web application, as well as steps to maintain it and suggestions to enhance the user experience.
 
-Things you may want to cover:
+Things that this README covers:
 
-* Ruby version
+* Ruby/Rails version
 
-* System dependencies
+* Controllers
 
-* Configuration
+* Models
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+* Tables
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Usage
 
-* ...
+* Bugs
+
+* Future features
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Ruby/Rails Version
+ 
+This application was written using
+<tt>ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</tt>
+and
+<tt>Rails 4.2.3</tt>
+
+== Controllers
+
+* Brands controller: Manages the "Brands" page and only has an index action (only contains static information).
+
+* Comments controller: Manages the comments that users exchange with one another on their profile pages. (Should replace this with a form of instant messaging. Maybe Faye messaging?)
+
+* Expect controller: Manages the "What to Expect" page and only has an index action (only contains static information). 
+
+* Global controller: Manages the "Global Team" page and only has an index action (only contains static information).
+
+* Hire Type Boards controller: Manages the "FAQ" page. Originally had an idea to seperate the FAQ page to different question boards depending on the department new hires were in and started implementing the code to do this. However, decided to have a general FAQ page for all hires and didn't have enough time to implement new code/controller to do this. Instead, used/altered old hire type boards controller code for manage the FAQ page. 
+
+* Home controller: Manages the "Home" page and is the page that users get redirected to after logging in/signing up for an account. Only has an index action. 
+
+* Messages controller: Part of the "FAQ" page. Manages the responses users give to a FAQ. Didn't have enough time to change this controller to a response controller. This controller should also be redone and changed to a response controller.
+
+* Sessions controller: Manages the login page which is also the root page of the application. A new session is created when a user logins. That same session is destroyed when a user logs out. This is how the application keeps track of whether or not a user is logged in. 
+
+* Shuttle controller: Manages the "Shuttle" page and only has an index action (only contains static information). 
+
+* Users controller: Manages the user sign up page. Users sign up for an account on this page. 
+
+== Models
+
+* Comment model: Establishes the relation that a comment belongs to a user.
+
+* Hire type board model: Establishes the relation that a board (FAQ) has many messages (responses). 
+
+* Message model: Establishes the relation that a message (response) belongs to a user and hire type board (FAQ).
+
+* User model: Contains code for error handling during user sign up. Emails have to be in the correct format and unique (not already existing in the user database), the terms have to be accepted, users have to enter in both a first and last name, the sign up code has to be accurate, and both the password have password confirmation have to be the same. Also contains code for uploading an image, which is processed using a jcrop plugin and imagemagick service. Users can have an attatched file which is an image in either a png or jpeg format. 
+
+== Tables
+
+Sqlite3 was used in developing the application.
+PostgreSQL was used to deploy to Heroku. 
+
+A SQL table is created for the following which stores data (the parametes of each object): 
+
+* User table: Parameters - First name, last name, email, password, password confirmation, code, facebook url, linkedin url, twitter url, instagram url, location, position, about, and terms. There is seeded data for this table in <tt>seeds.rb</tt> mainly for demo purposes.
+
+* Messages (Response) table: Parameters - Description (Response content), user name, and user id. Should be redone and changed to a response table which the parameters, content, user name, and user id. 
+
+* Add hire type to messages: Adds hire type and message columns which are strings, to the messages table. Originally, a new object message would be created with a hire type so that users would be able to sort out the messages based on the hire type. However, this idea was replaced with the FAQ. Should get rid of this. 
+
+* Comments table: Parameters - comment, sender email, sender name, sender id, receiver email, receiver name, receiver id. A comment object is created when users leave a comment/message on another users profile. This should be replaced with an instant messaging table. 
+
+* Add attachment image to users: Adds an attachment type parameter to the User table. Needed for uploading an image to a user profile through jcrop plugin and imagemagick service. 
+
+* Hire type board (FAQ) table: Parameters - Name, user id, and user name. Should be changed to a FAQ table for clarity. 
+
+== Services
+
+The only service that this application is using is imagemagick 6.9.1. However, subscribing to the Faye messaging service would be an ideal solution for instant messaging. 
+
+== Usage
+
+If using a Mac.
+
+1. Install Ruby through RVM(Ruby Version Manager). <tt>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</tt> <tt>\curl -sSL https://get.rvm.io | bash -s stable --ruby</tt>
+2. Install Rails. <tt>gem install rails</tt>
+3. Install homebrew. <tt>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</tt> 
+3. Install ImageMagick. <tt>brew install imagemagick</tt>
+4. Run <tt>bundle install</tt> to install the required gems.
+5. Run <tt>rake db:migrate</tt> to migrate the tables.
+6. Run <tt>rake db:seed</tt> to seed the user data.
+7. Run <tt>rails s -p 8080</tt> to start a webserver using your localhost and follow this link to the web application http://localhost:8080
+
+== Bugs
+
+== Future Features
+  
+
+
+
