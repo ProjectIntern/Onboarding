@@ -112,6 +112,7 @@ If using a Mac.
 * "Around Campus" tab
 * Metrics and data analytics on clicks
 * Chat that will directly to the manager’s mail
+* Write tests
 
 
 
