@@ -82,8 +82,11 @@ The only service that this application is using is imagemagick 6.9.1. However, s
 
 == Usage
 
-1. Install Ruby.
-2. Install Rails. 
+If using a Mac.
+
+1. Install Ruby through RVM(Ruby Version Manager).<tt>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</tt><tt>\curl -sSL https://get.rvm.io | bash -s stable --ruby</tt>
+2. Install Rails.<tt>gem install rails</tt>
+3. Install homebrew.<tt>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</tt> 
 3. Install ImageMagick. 
 4. Run <tt>bundle install</tt> to install the required gems.
 5. Run <tt>rake db:migrate</tt> to migrate the tables.
