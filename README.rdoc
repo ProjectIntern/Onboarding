@@ -98,8 +98,20 @@ If using a Mac.
 
 == Bugs
 
+* Image cropping not cropping correctly
+
 == Future Features
   
+* Add CSS for mobile/tablet view
+* Scaling
+* People locator
+* Better security
+* Search FAQ
+* Upvote FAQ
+* Make messaging instant
+* "Around Campus" tab
+* Metrics and data analytics on clicks
+* Chat that will directly to the manager’s mail
 
 
 
