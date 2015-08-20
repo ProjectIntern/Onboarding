@@ -18,5 +18,9 @@ Things that this README covers:
 
 
 == Ruby/Rails Version
-<tt>rake doc:app</tt>.
+ 
+This application was written using
+<tt>ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]</tt>
+and
+<tt>Rails 4.2.3</tt>
 
