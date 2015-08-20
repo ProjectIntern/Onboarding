@@ -10,15 +10,15 @@ Things that this README covers:
 
 * Models
 
-* Configuration
-
-* Database creation
-
-* Database initialization
+* Tables
 
 * Services (job queues, cache servers, search engines, etc.)
 
+* Usage
+
 * Deployment instructions
+
+* Bugs
 
 
 == Ruby/Rails Version
@@ -57,6 +57,32 @@ and
 * Hire type board model: Establishes the relation that a board (FAQ) has many messages (responses). 
 
 * Message model: Establishes the relation that a message (response) belongs to a user and hire type board (FAQ).
+
+* User model: Contains code for error handling during user sign up. Emails have to be in the correct format and unique (not already existing in the user database), the terms have to be accepted, users have to enter in both a first and last name, the sign up code has to be accurate, and both the password have password confirmation have to be the same. Also contains code for uploading an image, which is processed using a jcrop plugin and imagemagick service. Users can have an attatched file which is an image in either a png or jpeg format. 
+
+== Tables
+
+A SQL table is created for the following which stores data (the parametes of each object): 
+
+* User table: Parameters - First name, last name, email, password, password confirmation, code, facebook url, linkedin url, twitter url, instagram url, location, position, about, and terms. There is seeded data for this table in <tt>seeds.rb</tt> mainly for demo purposes.
+
+* Messages (Response) table: Parameters - Description (Response content), user name, and user id. Should be redone and changed to a response table which the parameters, content, user name, and user id. 
+
+* Add hire type to messages: Adds hire type and message columns which are strings, to the messages table. Originally, a new object message would be created with a hire type so that users would be able to sort out the messages based on the hire type. However, this idea was replaced with the FAQ. Should get rid of this. 
+
+* Comments table: Parameters - comment, sender email, sender name, sender id, receiver email, receiver name, receiver id. A comment object is created when users leave a comment/message on another users profile. This should be replaced with an instant messaging table. 
+
+* Add attachment image to users: Adds an attachment type parameter to the User table. Needed for uploading an image to a user profile through jcrop plugin and imagemagick service. 
+
+* Hire type board (FAQ) table: Parameters - Name, user id, and user name. Should be changed to a FAQ table for clarity. 
+
+== Services
+
+The only service that this application is using is imagemagick 6.9.1. However, subscribing to the Faye messaging service would be an ideal solution for instant messaging. 
+
+== Usage
+
+
   
 
 
